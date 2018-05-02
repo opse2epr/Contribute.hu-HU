@@ -8,11 +8,11 @@ ms.date: 01/04/2018
 ms.prod: non-product-specific
 ms.topic: contributor-guide
 ms.custom: external-contributor-guide
-ms.openlocfilehash: 62c4b234f23b470ffea33cacdfc469fbd7e526bd
-ms.sourcegitcommit: dd1b4e915f4996ac029d2a0704ced785438d3484
+ms.openlocfilehash: 0ca942e557640db1ba36d3f5b1064656ed3dea8d
+ms.sourcegitcommit: 3ec397fab57ea582edb03a59609f62d886410ee8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="install-content-authoring-tools"></a>Tartalomkészítő eszközök telepítése
 
@@ -22,9 +22,9 @@ A cikk ismerteti a lépéseket, melyekkel interaktív módon telepíthetők a Gi
 > * A [Visual Studio Code](https://code.visualstudio.com/) telepítése
 
 >[!IMPORTANT]
-> Ha csak kisebb módosításokat végez egy cikken, akkor *nem szükséges* elvégeznie az itt ismertetett lépéseket, és továbbléphet a [kisebb/alkalmi módosítások munkafolyamatához](light-workflow.md).
+> Ha csak kisebb módosításokat végez egy cikken, akkor *nem szükséges* elvégeznie az itt ismertetett lépéseket, és továbbléphet a [kisebb módosítások munkafolyamatához](index.md#quick-edits-to-existing-documents).
 >
-> Javasoljuk azonban, hogy a nagyobb változtatásokat végző közreműködők végezzék el ezt a lépést is, hogy a [nagyobb/tartós változtatásokat](full-workflow.md) is el tudják végezni. Még ha van is írási engedélye a fő tárházban, akkor is *kifejezetten ajánljuk a tárház elágaztatását és klónozását (és ebben az útmutatóban feltételezzük is, hogy ezt megtette)*, hogy rendelkezzen írási és olvasási jogosultsággal a javasolt módosítások tárolásához az elágazásban.
+> Javasoljuk azonban, hogy a nagyobb változtatásokat végző közreműködők végezzék el ezt a lépést is, hogy a [nagyobb/tartós változtatásokat](how-to-write-workflows-major.md) is el tudják végezni. Még ha van is írási engedélye a fő tárházban, akkor is *kifejezetten ajánljuk a tárház elágaztatását és klónozását (és ebben az útmutatóban feltételezzük is, hogy ezt megtette)*, hogy rendelkezzen írási és olvasási jogosultsággal a javasolt módosítások tárolásához az elágazásban.
 
 ## <a name="install-git-client-tools-on-windows"></a>A Git-ügyféleszközök telepítése Windows rendszeren
 
