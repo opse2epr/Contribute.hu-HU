@@ -1,18 +1,18 @@
 ---
 title: Tartalomkészítő eszközök telepítése
 description: Ez a cikk azt ismerteti, hogyan tölthetők le azok az eszközök, amelyek a Git használatához és a Markdown-fájlok szerkesztéséhez szükségesek.
-author: bryanla
-ms.author: bryanla
-manager: mbaldwin
-ms.date: 01/04/2018
+author: jasonwhowell
+ms.author: jasonh
+manager: kfile
+ms.date: 04/30/2018
 ms.prod: non-product-specific
 ms.topic: contributor-guide
 ms.custom: external-contributor-guide
-ms.openlocfilehash: 0ca942e557640db1ba36d3f5b1064656ed3dea8d
-ms.sourcegitcommit: 3ec397fab57ea582edb03a59609f62d886410ee8
+ms.openlocfilehash: 1011c3fc829202a3df134ddc80eb05b8959b7bf6
+ms.sourcegitcommit: 7b668124f25b8ad0442937a3ad05b19a47af5970
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/28/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="install-content-authoring-tools"></a>Tartalomkészítő eszközök telepítése
 
@@ -20,6 +20,7 @@ A cikk ismerteti a lépéseket, melyekkel interaktív módon telepíthetők a Gi
 > [!div class="checklist"]
 > * A [Git for Windows](https://git-scm.com/download/win) telepítése
 > * A [Visual Studio Code](https://code.visualstudio.com/) telepítése
+> * A [Közreműködői csomag a Docs webhelyhez](https://marketplace.visualstudio.com/items?itemName=docsmsft.docs-authoring-pack) telepítése
 
 >[!IMPORTANT]
 > Ha csak kisebb módosításokat végez egy cikken, akkor *nem szükséges* elvégeznie az itt ismertetett lépéseket, és továbbléphet a [kisebb módosítások munkafolyamatához](index.md#quick-edits-to-existing-documents).
@@ -58,6 +59,16 @@ Töltse le és telepítse a [VS Code](https://code.visualstudio.com/) eszközt. 
 
 > [!TIP]
 > A VS Code elindításához és az aktuális mappa megnyitásához futtassa a következő parancsot a parancssorban vagy a Bash felületen: `code .`. Ha az aktuális mappa egy helyi Git-tárház része, a GitHub-integráció automatikusan megjelenik a Visual Studio Code-ban.
+
+## <a name="docs-authoring-pack"></a>Közreműködői csomag a Docs webhelyhez
+Telepítse a Visual Studio Code-hoz használható Közreműködői csomagot a Docs webhelyhez. Ez a bővítménycsomag alapszintű segítséget nyújt a közreműködői tevékenységhez Markdown-formátumban való íráshoz, és előnézeti funkciót is tartalmaz, így megnézheti, hogyan néz majd ki a Markdown-szöveg a docs.microsoft.com webhely stílusával.
+
+   Keresse fel a [Marketplace-webhelyet](https://marketplace.visualstudio.com/items?itemName=docsmsft.docs-authoring-pack), majd válassza a **Telepítés** lehetőséget, vagy keresse meg a `docsmsft.docs-authoring-pack` elemet a VS Code-ablak bővítménylistájában. 
+
+   A Közreműködői csomag a Docs webhelyhez az Alt+M billentyűkombinációval érhető el a VS Code-ban. Az eszköztár alapbeállítás szerint el van rejtve, de megjeleníthető. Az eszköztár megjelenítéséhez módosítsa a VS Code beállításait (Control+vessző) `"markdown.showToolbar": true` felhasználói beállítások hozzáadásával.
+
+   További információt a [Közreműködői csomag a Docs webhelyhez](how-to-write-docs-auth-pack.md) oldalán találhat.
+
 
 ## <a name="next-steps"></a>Következő lépések
 
