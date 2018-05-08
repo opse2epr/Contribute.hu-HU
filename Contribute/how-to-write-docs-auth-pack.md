@@ -1,19 +1,18 @@
 ---
 title: Docs-közreműködői csomag a VS Code alkalmazáshoz
-description: VS Code-bővítmény a docs.microsoft.com webhely Markdown formázású tartalmainak szerkesztéséhez.
+description: Ez a cikk ismerteti a VS Code-bővítmény a docs.microsoft.com webhely Markdown formázású tartalmainak szerkesztéséhez.
 author: meganbradley
 ms.author: mbradley
 manager: jemash
 ms.date: 04/06/2018
-ms.article: contributor-guide
-ms.prod: n.a
-ms.service: n.a
-ms.technology: n.a
-ms.openlocfilehash: 5c857deb07e28e1f6744c895a291bf78a6acf1df
-ms.sourcegitcommit: dd1b4e915f4996ac029d2a0704ced785438d3484
+ms.prod: non-product-specific
+ms.topic: contributor-guide
+ms.custom: external-contributor-guide
+ms.openlocfilehash: d0d61db2faf88598ecd2c800fb5fbe8df8ec44f5
+ms.sourcegitcommit: 7b668124f25b8ad0442937a3ad05b19a47af5970
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="docs-authoring-pack-for-vs-code"></a>Docs-közreműködői csomag a VS Code alkalmazáshoz
 
@@ -35,7 +34,7 @@ A Docs Markdown menüjének eléréséhez nyomja le az `ALT+M` billentyűkombin�
 
 |Funkció     |Parancs             |Leírás           |
 |-------------|--------------------|----------------------|
-|Bold         |`formatBold`        |**Félkövér** formázást alkalmaz a szövegre.|
+|Félkövér         |`formatBold`        |**Félkövér** formázást alkalmaz a szövegre.|
 |Italic       |`formatItalic`      |*Dőlt* formázást alkalmaz a szövegre.|
 |Code         |`formatCode`        |Ha egy sornyi vagy annál rövidebb szöveg van kijelölve, `inline code` formázást alkalmaz a szövegre.<br><br>Ha több sornyi szöveg van kijelölve, különválasztott kódblokként formázza azt, és lehetővé teszi az OPS által támogatott programnyelvek egyikének megadását.|
 |Alert        |`insertAlert`       |Beszúr egy Megjegyzés, Fontos, Figyelmeztetés vagy Tipp típusú blokkot.<br><br>Válassza a menüben az Alert parancsot, majd válassza ki a tartalom kívánt típusát. Ha a parancs végrehajtásakor jelölt ki szöveget, akkor a program a kijelölt szöveg köré szúrja be a választott szintaxist. Ha nincs szöveg kijelölve, akkor egy új, helyőrző szöveget tartalmazó tartalomblokkot szúr be a program.|
@@ -46,7 +45,7 @@ A Docs Markdown menüjének eléréséhez nyomja le az `ALT+M` billentyűkombin�
 |Image        |`insertImage`     |Gépelje be a helyettesítő szöveget (akadálymentességi okokból szükséges), jelölje azt ki, futtassa ezt a parancsot a tárházban lévő támogatott képfájlok listázásához, szűrje a listát, majd válassza ki a kívánt képfájlt. Ha a parancs végrehajtásakor nincs helyettesítő szöveg kijelölve, akkor a program kérni fogja a helyettesítő szöveg megadását, mielőtt képfájlt választhatna.|
 |Include      |`insertInclude`   |Megkereshet és beágyazhat egy fájlt az aktuális fájlba.|
 |Snippet      |`insertSnippet`   |Megkeresheti a tárház egyik kódrészletét, és beágyazhatja azt az aktuális fájlba.|
-|Video        |`insertVideo`     |Hozzáad egy beágyazott videót a szöveghez.|
+|Videó        |`insertVideo`     |Hozzáad egy beágyazott videót a szöveghez.|
 |Preview      |`previewTopic`    |Megjeleníti az aktuális témakör formázott előnézetét a DocFX bővítmény segítségével egy, a tartalom mellett megjelenő ablakban.  Ha a DocFX bővítmény nincs telepítve vagy le van tiltva, akkor a témakör előnézete nem jelenik meg.
 
 
@@ -87,7 +86,7 @@ A korábbi „Gauntlet” kódnevű bővítményt ismerő felhasználók észrev
 
 ## <a name="known-issues"></a>Ismert problémák
 
-- [DocFX Preview] MacOS és Linux: A DocFX Preview nem nyitja meg megfelelően az előnézetet (az előnézet a VS Code Markdown-előnézetét jeleníti meg alapértelmezés szerint e platformokon).
-- [DocFx Preview] Összes platform: Bizonyos szintaxisok, például az API-kra mutató xref kereszthivatkozások, nem jelennek meg megfelelően az előnézetben, és esetenként hézagokat láthat a tartalomban.
-- [Külső könyvjelzők] Linux: A fájllista megjelenik, de nem tartalmaz egyetlen kiválasztható címsort sem.
-- [Fájlbelefoglalások] Linux: A fájllista megjelenik, de a fájl kiválasztása után nem szúr be a program hivatkozást.
+- DocFX Preview: MacOS és Linux: A DocFX Preview nem nyitja meg megfelelően az előnézetet (az előnézet a VS Code Markdown-előnézetét jeleníti meg alapértelmezés szerint e platformokon).
+- DocFx Preview: Összes platform: Bizonyos szintaxisok, például az API-kra mutató xref kereszthivatkozások, nem jelennek meg megfelelően az előnézetben, és esetenként hézagokat láthat a tartalomban.
+- Külső könyvjelzők: Linuxon a fájllista megjelenik, de nem tartalmaz egyetlen kiválasztható címsort sem.
+- Fájlbelefoglalások: Linuxon a fájllista megjelenik, de a fájl kiválasztása után nem szúr be a program hivatkozást.

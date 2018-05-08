@@ -4,46 +4,68 @@ description: Ez az útmutató bemutatja, hogyan működhet közre a Microsoft do
 author: bryanla
 ms.author: bryanla
 manager: mbaldwin
-ms.date: 01/25/2018
+ms.date: 04/17/2018
 ms.prod: non-product-specific
 ms.topic: contributor-guide
 ms.custom: external-contributor-guide
-ms.openlocfilehash: af07ddaaf196f6913c4c0a4816621535c3193ba0
-ms.sourcegitcommit: dd1b4e915f4996ac029d2a0704ced785438d3484
+ms.openlocfilehash: 1cda40c890e5b30e6e1e10f3bcee0278f8004653
+ms.sourcegitcommit: 3ec397fab57ea582edb03a59609f62d886410ee8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="microsoft-docs-contributor-guide-overview"></a>Microsoft Docs-közreműködői útmutató – áttekintés
 
 Üdvözöljük a [docs.microsoft.com](https://docs.microsoft.com) (más néven Docs) Közreműködői útmutatójában!!
 
-## <a name="about-this-guide"></a>Az útmutatóról
+A dokumentumkészleteink közül több nyílt forrású, és a GitHub üzemelteti. Mindig egyre több csapat adaptálja ezt a modellt. Még a nem teljesen nyílt forrású dokumentumkészletek is rendelkeznek nyilvánosan elérhető adattárakkal, ahol lekéréses kérelmeket indíthat. Ez leegyszerűsíti és javítja a termékfejlesztő mérnökök, a tartalomkészítő csapatok és az ügyfelek közötti kommunikációt. A nyílt munkavégzésnek több előnye is van:
 
-Ebben az útmutatóban mindent megtalál, amire szüksége lehet a Docs-cikkekhez való közreműködéshez a Microsoft Open Publishing Services (OPS) platformjának használatával. Megismerhet többek között segítő eszközöket és a folyamatokat is.
+- A nyílt forrású adattáraknál a tervezés nyílt, hogy visszajelzést kapjanak, milyen dokumentumokra van a leginkább szükség.
+- A nyílt forrású adattáraknál az áttekintés nyílt, hogy már az első kiadásban a leghasznosabb tartalom jelenhessen meg.
+- Az nyílt forrású adattáraknál a frissítés nyílt, hogy egyszerűbb legyen a tartalom folyamatos javítása.
 
-A bal oldali tartalomjegyzék segítségével megteheti az első lépéseket, és eredményesen működhet közre a Microsoft Docs készítésében. A bevezető cikkek gyors ismertetőt nyújtanak a közreműködői munkával kapcsolatos általános feladatokról. A további cikkek az egyes konkrét feladatokhoz kapcsolódnak, így elsősorban az Önt érdeklő szakaszra kell figyelnie. Számos cikk segédanyagként is használható, ezért javasoljuk, hogy mentse őket a kedvencek vagy a könyvjelzők közé. Arra is felhívjuk a figyelmét, hogy több hivatkozás a docs.microsoft.com-on kívüli webhelyekre mutat, amelyek nem részei ennek az útmutatónak.
+A [docs.microsoft.com](https://docs.microsoft.com) felhasználói felületén a [GitHub](https://github.com)-munkafolyamatok közvetlen integrációja ezt még egyszerűbbé teszi. Kezdje a [megtekintett dokumentum szerkesztésével](#quick-edits-to-existing-documents). Vagy segítsen [új témakörök áttekintésével](#review-open-prs) vagy [minőségi problémák jelentésével](#create-quality-issues).
 
-## <a name="contribution-tasks"></a>Közreműködői feladatok
+> [!IMPORTANT]
+> A docs.microsoft.com felületen közzétevő tárházak mindegyike elfogadta a [Microsoft nyílt forráskódra vonatkozó viselkedési szabályzatát](https://opensource.microsoft.com/codeofconduct/) vagy a [.NET Foundation viselkedési szabályzatát](https://dotnetfoundation.org/code-of-conduct). További információkért keresse fel a [Viselkedési szabályzattal kapcsolatos gyakori kérdések](https://opensource.microsoft.com/codeofconduct/faq/) oldalát, illetve elküldheti kérdéseit és észrevételeit az [opencode@microsoft.com](mailto:opencode@microsoft.com) vagy a [conduct@dotnetfoundation.org](mailto:conduct@dotnetfoundation.org) címre.<br>
+>
+> A nyilvános tárházakban publikált dokumentációhoz és kódmintákhoz beküldött kisebb javításokra vagy pontosításokra a [docs.microsoft.com használati feltételei](https://docs.microsoft.com/legal/termsofuse) vonatkoznak. Új vagy jelentős módosítások esetén a lekéréses kérelemben megjelenik egy megjegyzés, amely arra szólítja fel, hogy ha nem Microsoft-alkalmazott, akkor küldje be az online Közreműködői Licencszerződést (CLA). A lekéréses kérelmet csak akkor tekinthetjük át vagy fogadhatjuk el, ha előzőleg kitöltötte az online űrlapot.
 
-A dokumentációhoz többféleképpen járulhat hozzá:
+## <a name="quick-edits-to-existing-documents"></a>Meglévő dokumentumok gyors szerkesztése
 
-- [Téma létrehozásával](how-to-contribute.md#create-issues) új cikket ajánlhat, vagy javíthatja a már meglévő cikkeket.
-- [Gyors szerkesztéssel](how-to-contribute.md#quick-edits) kisebb mértékben módosíthatja a cikkeket a GitHub online szerkesztőjében.
-- [Lektorálhatja az új cikkek vázlatát](how-to-contribute.md#review-new-articles) a megfelelő minőség és a technikai pontosság érdekében.
-- [Új cikkeket hozhat létre](how-to-contribute.md#create-new-articles) az egyes témákban, ha a tartalomhoz kíván hozzájárulni.
-- Mintákat [frissíthet](how-to-contribute.md#update-samples) vagy [hozhat létre](how-to-contribute.md#create-samples) a fontos fogalmakat illusztráló kódminták javításához.
+A gyors szerkesztésekkel leegyszerűsítő a jelentési folyamat, és javíthatók a dokumentum kisebb hibái és kihagyásai. Minden erőfeszítés ellenére kisebb nyelvtani vagy helyesírási hibák előfordulhatnak a közzétett dokumentumokban. Problémák jelzésével jelentheti a hibákat, de gyorsabb és egyszerűbb a probléma megoldásához lekéréses kérelmet (PR) létrehozni. Majdnem minden cikk mellett megjelenik a Szerkesztés gomb, amint az az alább ábrán látható. Ha rákattint a **Szerkesztés** gombra, akkor megnyílik a forrásfájl a GitHubon.
 
-Minden nyilvános tárhelyünk a GitHubon található, a cikkek a Markdown jelölőnyelven készülnek. A közreműködéshez az alábbiakra lesz szüksége:
+![Az Edit (Szerkesztés) hivatkozás helye](./media/index/edit-article.png)
 
-1. Ha még nem rendelkezik GitHub-fiókkal, [hozzon létre egyet](https://github.com/join).
-2. A Docs-cikkek a Markdown nevű jelölőnyelven készülnek. Alapfokon ismernie kell a [Markdown](https://daringfireball.net/projects/markdown/syntax) szintaxisát.
+Ez után a cikk szerkesztéséhez kattintson a ceruza ikonra, amely a következő ábrán látható.
 
-## <a name="quick-start-to-propose-an-article-change"></a>Gyorsútmutató cikkek módosítására vonatkozó javaslathoz
+> [!NOTE]
+> Ha a ceruza ikon kiszürkítve látható, akkor jelentkezzen be a GitHub-fiókjába, vagy hozzon létre egy új fiókot. Végezze el a módosításokat a webszerkesztőben. A módosítás formázásának ellenőrzéséhez rákattinthat a **Preview changes** (Módosítások előnézete) fülre.
 
-Ha nincs ideje a teljes útmutató feldolgozására vagy az eszközök telepítésére, és csak kisebb közreműködői tevékenységet kell elvégeznie, az alábbiak a tudnivalók. A [webes szerkesztési munkafolyamatot](how-to-contribute.md#quick-edits) követve, pull-kérelem használatával küldheti el a hozzájárulását a GitHubon. A tartalmat a böngészőben szerkesztheti, és a pull-kérelmet is onnan indíthatja el.
+![A ceruzaikon helye](./media/index/editicon.png)
 
-## <a name="additional-ways-to-contribute-to-docsmicrosoftcom-content"></a>További lehetőségek a docs.microsoft.com-tartalomban való közreműködésre
+Miután elvégezte a módosításokat görgessen a lap aljára. Adja meg a lekéréses kérelem címét és leírását, majd kattintson a **Propose file change** (Fájlmódosítás javasolása) elemre az alábbi ábrának megfelelően:
 
-A különböző feladatokról a [Hogyan működhet közre](how-to-contribute.md) című cikkben olvashat többet.
+![módosítás javasolása](./media/index/submit-pull-request.png)
 
+Ennyi az egész! A tartalomcsapat tagjai át fogják tekinteni és egyesíteni fogják a lekéréses kérelmet. Ha nagyobb módosításokat végzett változtatásokat kérő visszajelzést kaphat.
+
+A GitHub szerkesztői felhasználói felülete az adattárban meglévő engedélyeinek megfelelő választ ad. Az előző képek olyan közreműködő esetén pontosak, akinek nincsenek írási jogosultságai a céladatbázisban. A GitHub automatikusan létrehoz egy adattármásolatot a céladattárról a fiókjában. Ha írási engedélye van a céladattárban, a GitHub létrehoz egy új ágat a céladattárban. Az ág nevének formátuma **\<GitHubAzonosító\>-javítás-n** a GitHub-azonosítót és egy számazonosítót használva a javítóághoz.
+
+Minden módosításhoz lekéréses kérelmeket használunk, még az írási engedéllyel rendelkező közreműködőknél is. A legtöbb adattárban a `master` ág védett, ezért a frissítéseket lekéréses kérelemként kell beküldeni.
+
+A böngészőn belüli szerkesztési környezet kisebb vagy ritka módosítások esetén a legjobb. Ha nagyobb terjedelmű szövegeket ír, vagy speciális Git-funkciókat (például ágkezelést vagy fejlett egyesítéskori ütközésfeloldást) használ, akkor [adattármásolatot kell készítenie, és a helyi számítógépen kell dolgoznia](how-to-write-workflows-major.md).
+
+## <a name="review-open-prs"></a>Nyitott lekéréses kérelmek áttekintése
+
+A jelenleg nyitott lekéréses kérelmek átnézésével elolvashatja az új témaköröket, még mielőtt közzétennék őket. Az áttekintések a [GitHub-folyamatot](https://guides.github.com/introduction/flow/) követik. Megtekintheti a javasolt frissítéseket és az új cikkeket a nyilvános adattárakban. Tekintse át őket, és fűzzön hozzájuk megjegyzéseket. Keresse fel bármelyik dokumentációs adattárunkat, majd tekintse meg a nyitott lekéréses kérelmeket az Önt érdeklő területeken. A javasolt frissítéseket illető közösségi visszajelzések az egész közösséget segítik.
+
+## <a name="create-quality-issues"></a>Minőségi problémák jelzése
+
+Dokumentumainkat folyamatosan fejlesztjük. A jelzett problémák segítenek, hogy erőfeszítéseinket a közösség számára legfontosabb dolgokra összpontosítsuk. Minél több részletet meg tud adni, annál nagyobb segítségünkre lesz a probléma. Mondja el, milyen információt keresett. Írja le a használt keresési kifejezéseket. Ha nem tudta megtenni az első lépéseket, mondja el, hogyan szeretné elkezdeni egy új technológia felfedezését.
+
+A problémák jelzésével elindul a párbeszéd arról, hogy mire van szükség. A tartalomcsapat ezekre a jelzett problémákra a dokumentáció bővítésére vonatkozó ötletekkel fog válaszolni, és megkérdezi a véleményét. Vázlat létrehozásakor megkérjük, hogy [tekintse át a lekéréses kérelmet](#review-open-prs).
+
+## <a name="get-more-involved"></a>Vegyen részt még több mindenben
+
+Más témakörök segítenek, hogy termelékenyen hozzájárulhasson a Microsoft Docs tartalmainak bővítéséhez. Elmagyarázzák a Microsoft Docs platformon használt GitHub-tárházakkal, Markdown-eszközökkel és bővítményekkel való munkavégzést.

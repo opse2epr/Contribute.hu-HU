@@ -8,11 +8,11 @@ ms.date: 01/18/2018
 ms.prod: non-product-specific
 ms.topic: contributor-guide
 ms.custom: external-contributor-guide
-ms.openlocfilehash: d9c7211641fb05aaca8a76e10c7216ff61a5d23c
-ms.sourcegitcommit: dd1b4e915f4996ac029d2a0704ced785438d3484
+ms.openlocfilehash: f702d0d29ee7dc9c69cb26b79bf6283d91b6b6bc
+ms.sourcegitcommit: 3ec397fab57ea582edb03a59609f62d886410ee8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="set-up-git-repository-locally-for-documentation"></a>Git-tárház helyi beállítása dokumentációhoz
 
@@ -27,7 +27,7 @@ A közreműködés megkezdéséhez a következő egyszeri beállítási tevéken
 > * A felső (upstream) távoli érték konfigurálása
 
 > [!IMPORTANT]
-> Ha csak apró változtatásokat végez egy cikken, *nem* kell elvégeznie a cikkben szereplő lépéseket. Lépjen tovább közvetlenül a [kisebb/alkalmi módosítások munkafolyamatára](light-workflow.md).
+> Ha csak apró változtatásokat végez egy cikken, *nem* kell elvégeznie a cikkben szereplő lépéseket. Folytathatja közvetlenül a [gyorsmódosítások munkafolyamattal](index.md#quick-edits-to-existing-documents).
 >
 
 ## <a name="overview"></a>Áttekintés
@@ -46,7 +46,7 @@ A [docs.microsoft.com](https://docs.microsoft.com) webhelyen szolgáltatott doku
 
 1. Ha nem biztos benne, hogy melyik tárházat kell használnia, nyissa meg a cikket a docs.microsoft.com webhelyen a webböngészővel. Válassza a **Szerkesztés** hivatkozást (a ceruza ikont) a cikk jobb felső sarkában.
 
-   ![A tárház és a fájl helyének meghatározásához kattintson a Szerkesztés lehetőségre.](media/edit-article.png)
+   ![A tárház és a fájl helyének meghatározásához kattintson a Szerkesztés lehetőségre.](media/index/edit-article.png)
 
 2. A hivatkozás a megfelelő tárházban található kapcsolódó Markdown-fájl github.com-beli helyét nyitja meg. A tárház nevének megtekintéséhez figyelje meg az URL-címet.
 
