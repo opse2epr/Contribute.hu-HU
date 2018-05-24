@@ -8,11 +8,11 @@ ms.date: 06/30/2017
 ms.prod: non-product-specific
 ms.topic: contributor-guide
 ms.custom: external-contributor-guide
-ms.openlocfilehash: 5ad2ca323b680078c2bfd2fc4cac6fb1883c411f
-ms.sourcegitcommit: dd1b4e915f4996ac029d2a0704ced785438d3484
+ms.openlocfilehash: 5f7f90b69953e23833906202c739d2168b139d7e
+ms.sourcegitcommit: e046e7aad8ed22bffe5380d63a9d40f0baeecc57
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="git-and-github-essentials-for-docs"></a>Git- és GitHub-alapismeretek a Docs webhelyhez
 
@@ -80,7 +80,7 @@ Segítségképpen általában minden tárház gyökérkönyvtárában találhat�
 
 A *pull-kérelem* kényelmes módot kínál a közreműködőknek arra, hogy javaslatot tegyenek módosítások egy készletének az alapértelmezett ágon való alkalmazására. A módosítások (más szóval *véglegesítések*) egy közreműködő ágában tárolódnak, lehetővé téve, hogy a GitHub először modellezze az alapértelmezett ággal való *egyesítés* következményeit. A lekéréses kérelmek ugyanakkor annak mechanizmusaként is szolgálnak, hogy a közreműködők visszajelzést kapjanak az összeállítás és az ellenőrzés folyamatáról, a lekéréses kérelem véleményezőjétől, hogy az esetleges problémákat és kérdéseket tisztázni tudják, mielőtt a változások egyesítve lennének az alapértelmezett ággal.
 
-A javasolt változtatások méretétől függően a pull-kérelmeket két különböző módon használhatja a közreműködéshez. Erről a jelen útmutatónak [a GitHub-munkafolyamattal](light-workflow.md) foglalkozó részében olvashat bővebben.
+A javasolt változtatások méretétől függően a pull-kérelmeket két különböző módon használhatja a közreműködéshez. Erről a jelen útmutatónak [a GitHub-munkafolyamattal](how-to-write-workflows-major.md) foglalkozó részében olvashat bővebben.
 
 <!---- Reference links for Docs landing pages, associated GitHub repositories, and related Forums matrix. ------------------>
 <!---- PLEASE INSERT URLS IN ASCENDING SORT ORDER, AND REMOVE LOCALE SEGMENT FROM URLS (that is, en-us) FOR LOCALIZED FORUMS! -->
