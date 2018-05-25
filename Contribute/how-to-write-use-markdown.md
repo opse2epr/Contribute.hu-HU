@@ -8,17 +8,22 @@ ms.date: 07/13/2017
 ms.prod: non-product-specific
 ms.topic: contributor-guide
 ms.custom: external-contributor-guide
-ms.openlocfilehash: 96d00abc052c3b23ca62201dccdbe590a927e72d
-ms.sourcegitcommit: de6e6b6ca641fdd5b30eb46deee9ac3a500089ef
+ms.openlocfilehash: 041398361aef90c44bdf3a0dad4aaa2d40a38289
+ms.sourcegitcommit: 782b689882cce3ce07f5613763322989f2d0d63f
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="how-to-use-markdown-for-writing-docs"></a>A Markdown használata Docs-tartalmak írásához
 
 A docs.microsoft.com-cikkek a rendkívül egyszerű [Markdown](https://daringfireball.net/projects/markdown/) jelölőnyelv használatával készülnek, amely könnyen olvasható és könnyen elsajátítható. Ez az oka, hogy rövid idő alatt iparági szabvánnyá vált.
 
-Mivel a Docs-tartalmak a GitHubon vannak tárolva, azokhoz használható a Markdown [GitHub-stílusú Markdown (GFM)](https://help.github.com/categories/writing-on-github/) nevű bővítése, amely további funkciókat biztosít a gyakori formázási igényekhez. Ezen kívül az Open Publishing Services (OPS) a DocFX-stílusú Markdownt (DFM) implementálja. A DFM nagy mértékben kompatibilis a GitHub-stílusú Markdownnal (GFM), és további funkciókkal támogatja a Docs specifikus szolgáltatásainak használatát.
+Mivel a Docs-tartalmak a GitHubon vannak tárolva, azokhoz használható a Markdown [GitHub-stílusú Markdown (GFM)](https://help.github.com/categories/writing-on-github/) nevű bővítése, amely további funkciókat biztosít a gyakori formázási igényekhez. Ezen kívül az Open Publishing Services (OPS) a Markdig Markdown Parsert implementálja. A Markdig nagy mértékben kompatibilis a GitHub-stílusú Markdownnal (GFM), és további funkciókkal támogatja a Docs specifikus szolgáltatásainak használatát.
+
+* A Markdig egy gyors, hatékony, CommonMark-megfelelőséggel rendelkező, bővíthető Markdown-feldolgozó .NET környezetekhez.
+* https://github.com/lunet-io/markdig
+* Jobb közösségi támogatás
+* Jobb szabványtámogatás
 
 ## <a name="markdown-basics"></a>A Markdown alapjai
 
@@ -145,7 +150,7 @@ az alábbi módon jelenik meg:
 
 További információ a táblázatok létrehozásáról:
 
-- A DFM széles táblázatok formázását segítő [táblázatbehatárolási funkcióját](#table-wrapping) ismertető szakasz
+- A Markdig széles táblázatok formázását segítő [táblázatbehatárolási funkcióját](#table-wrapping) ismertető szakasz
 - Az [Organizing information with tables](https://help.github.com/articles/organizing-information-with-tables/) (Információk rendszerezése táblázatokkal) című GitHub-cikk
 - A [Markdown Tables Generator](https://www.tablesgenerator.com/markdown_tables) webalkalmazás
 - [Adam Pritchard: Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#wiki-tables) (Markdown-segédlet)
@@ -161,7 +166,7 @@ A soron belül elhelyezett hivatkozások Markdown-szintaxisa a hivatkozásként 
 További információ a hivatkozások használatáról:
 
 - A Markdown alapvető hivatkozástámogatásáról a [Markdown syntax guide](https://daringfireball.net/projects/markdown/syntax#link) (Útmutató a Markdown-szintaxishoz) című oldalon található további információ.
-- A DFM által biztosított hivatkozási szintaxisról a jelen útmutató [Links](how-to-write-links.md) (Hivatkozások) című oldalán található részletesebb információ.
+- A Markdig által biztosított hivatkozási szintaxisról a jelen útmutató [Links](how-to-write-links.md) (Hivatkozások) című oldalán található részletesebb információ.
 
 ### <a name="code-snippets"></a>Kódrészletek
 
@@ -272,9 +277,9 @@ CREATE TABLE T1 (
 ## <a name="ops-custom-markdown-extensions"></a>Egyedi OPS Markdown-bővítmények
 
 > [!NOTE]
-> Az Open Publishing Services (OPS) a DocFX-stílusú Markdownt (DFM) implementálja, amely nagy mértékben kompatibilis a GitHub-stílusú Markdownnal (GFM). A DFM néhány funkciót biztosít a Markdown-bővítmények révén. A jelen útmutatóban az OPS teljes szerzői útmutatójának kiválasztott témakörei szerepelnek referenciaként. (Például lásd a „DFM- és Markdown-bővítmények” és a „Kódrészletek” címeket a tartalomjegyzékben.)
+> Az Open Publishing Services (OPS) a Markdig Parser Markdownt implementálja, amely nagy mértékben kompatibilis a GitHub-stílusú Markdownnal (GFM). A Markdig néhány funkciót biztosít a Markdown-bővítmények révén. A jelen útmutatóban az OPS teljes szerzői útmutatójának kiválasztott témakörei szerepelnek referenciaként. (Például lásd a „Markdig- és Markdown-bővítmények” és a „Kódrészletek” címeket a tartalomjegyzékben.)
 
-A Docs-cikkek formázásának nagy része, például a bekezdések, a hivatkozások, a listák és a fejlécek a GFM használatával készülnek. A kifinomultabb formázáshoz a cikkekben többek között az alábbi DFM-funkciók használhatók:
+A Docs-cikkek formázásának nagy része, például a bekezdések, a hivatkozások, a listák és a fejlécek a GFM használatával készülnek. A kifinomultabb formázáshoz a cikkekben többek között az alábbi Markdig-funkciók használhatók:
 
 - Megjegyzésblokkok
 - Beágyazások
@@ -282,7 +287,7 @@ A Docs-cikkek formázásának nagy része, például a bekezdések, a hivatkozá
 - Beágyazott videók
 - Kódrészletek és -minták
 
-A teljes listát a tartalomjegyzék „DFM- és Markdown-bővítmények” és „Kódrészletek” fejezetcíme alatt találhatja.
+A teljes listát a tartalomjegyzék „Markdig- és Markdown-bővítmények” és „Kódrészletek” fejezetcíme alatt találhatja.
 
 ### <a name="note-blocks"></a>Megjegyzésblokkok
 
@@ -297,7 +302,7 @@ A megjegyzésblokkok 4 típusa közül választhat, hogy felhívja a figyelmet a
 
 ### <a name="includes"></a>Beágyazások
 
-Ha újrafelhasználható szöveg- vagy képfájlokat kell „beágyaznia” a cikkek fájljaiba, akkor a DFM fájlbeágyazási funkciójával hivatkozhat a beágyazandó fájlra. Ez a funkció arra utasítja az OPS-t, hogy az összeállítás során az adott fájlt is foglalja bele a cikkbe, így annak tartalma már szerepelni fog a közzétett cikkben. A tartalmak újrafelhasználását háromféle beágyazás segíti:
+Ha újrafelhasználható szöveg- vagy képfájlokat kell „beágyaznia” a cikkek fájljaiba, akkor a Markdig fájlbeágyazási funkciójával hivatkozhat a beágyazandó fájlra. Ez a funkció arra utasítja az OPS-t, hogy az összeállítás során az adott fájlt is foglalja bele a cikkbe, így annak tartalma már szerepelni fog a közzétett cikkben. A tartalmak újrafelhasználását háromféle beágyazás segíti:
 
 - Soron belüli: egy egyszerű szövegrészlet egy másik mondatban való újrafelhasználását teszi lehetővé.
 - Blokk: egy teljes Markdown-fájl egy cikk egy szakaszába beágyazva való újrafelhasználását teszi lehetővé.
@@ -309,7 +314,7 @@ Néhány követelmény és megfontolandó szempont a beágyazásokhoz:
 
 - Bármikor használhat beágyazást, amikor ugyanazt a szöveget több cikkben is szeretné használni.
 - A blokk típusú beágyazás használata nagyobb mennyiségű tartalomhoz – egy-két bekezdéshez, egy közös eljáráshoz vagy egy közös szakaszhoz – ajánlott. Ne használja egy mondatnál kisebb terjedelmű szöveghez.
-- A beágyazott tartalmak a cikk GitHub által előállított nézetében nem jelennek meg, ugyanis azok DFM-bővítményeket igényelnek. Azok csak közzététel után jelennek meg.
+- A beágyazott tartalmak a cikk GitHub által előállított nézetében nem jelennek meg, ugyanis azok Markdig-bővítményeket igényelnek. Azok csak közzététel után jelennek meg.
 - Ügyeljen rá, hogy a beágyazott szöveg teljes mondatokból vagy kifejezésekből álljon, amelyek nem függnek a hivatkozást tartalmazó cikknek a beágyazást megelőző vagy azt követő szövegétől. Ezt az ajánlást figyelmen kívül hagyva lefordíthatatlan szövegrészlet jön létre a cikkben, amely megtöri a honosított felületet.
 - Ne alkalmazzon beágyazást más beágyazásokon belül. Ez nem támogatott.
 - A médiafájlokat a beágyazási almappában megadott médiamappában kell elhelyezni. Ez lehet például a `<repo>`/includes/media mappa. A médiamappa gyökere nem tartalmazhat képfájlokat. Ha a beágyazás nem tartalmaz képeket, akkor a hozzá tartozó médiamappára nincs szükség.
@@ -318,13 +323,13 @@ Néhány követelmény és megfontolandó szempont a beágyazásokhoz:
 
 ### <a name="selectors"></a>Választómezők
 
-Technikai cikkekben akkor használjon választómezőket, ha ugyanannak a cikknek többféle változatát írja meg a különböző technológiák és platformok különbségeinek figyelembe vételével. Ez általában a fejlesztőknek szánt, mobilplatformokkal kapcsolatos tartalom esetében a legjellemzőbb. A DFM-ben jelenleg kétféle választómező van, az egyszerű és a többszintű.
+Technikai cikkekben akkor használjon választómezőket, ha ugyanannak a cikknek többféle változatát írja meg a különböző technológiák és platformok különbségeinek figyelembe vételével. Ez általában a fejlesztőknek szánt, mobilplatformokkal kapcsolatos tartalom esetében a legjellemzőbb. A Markdigben jelenleg kétféle választómező van, az egyszerű és a többszintű.
 
 Mivel a választott témakörök mindegyikébe ugyanaz a választómezőhöz tartozó Markdown kerül, javasolt a választómezőt egy beágyazható fájlban elhelyezni, majd erre hivatkozni az összes olyan témakörben, amely ugyanazt a választómezőt használja.
 
 ### <a name="code-snippets"></a>Kódrészletek
 
-A DFM a kódrészlet-bővítményével programkódok a cikkekben való speciális megjelenítését is támogatja. A speciális megjelenítés a GFM olyan funkciói mellett, mint például a programozási nyelv kiválasztása és a szintaxisszínek használata, többek között a következő további hasznos lehetőségekre épül:
+A Markdig a kódrészlet-bővítményével programkódok a cikkekben való speciális megjelenítését is támogatja. A speciális megjelenítés a GFM olyan funkciói mellett, mint például a programozási nyelv kiválasztása és a szintaxisszínek használata, többek között a következő további hasznos lehetőségekre épül:
 
 - Központosított kódminták vagy -részletek beágyazása külső tárházból.
 - Lapokra osztott felhasználói felület a kódminták különböző verzióinak különböző nyelveken való megjelenítéséhez.
