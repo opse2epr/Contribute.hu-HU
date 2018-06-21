@@ -1,19 +1,13 @@
 ---
 title: Git- és GitHub-alapismeretek a dokumentációs webhelyhez
 description: Ebből a cikkből megismerheti a Gitet, a GitHub-tárházakat, illetve a docs.microsoft.com webhelyen használt tartalomrendszerezést és elnevezési konvenciókat.
-author: bryanla
-ms.author: bryanla
-manager: mbaldwin
 ms.date: 06/30/2017
-ms.prod: non-product-specific
-ms.topic: contributor-guide
-ms.custom: external-contributor-guide
-ms.openlocfilehash: 5f7f90b69953e23833906202c739d2168b139d7e
-ms.sourcegitcommit: 782b689882cce3ce07f5613763322989f2d0d63f
+ms.openlocfilehash: 8a116067fdd7d031c560abfb7055236e0bfb1a3d
+ms.sourcegitcommit: 92aef5ea8bdd692c5c393d5c8f99b9e4f672ef2b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34469486"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36239802"
 ---
 # <a name="git-and-github-essentials-for-docs"></a>Git- és GitHub-alapismeretek a Docs webhelyhez
 

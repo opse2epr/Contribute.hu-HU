@@ -1,19 +1,13 @@
 ---
 title: A Markdown használata Docs-tartalmak írásához
 description: Ez a cikk alapvető információkat és tájékoztatást nyújt a docs.microsoft.com-cikkekben használt Markdown jelölőnyelvről.
-author: bryanla
-ms.author: bryanla
-manager: mbaldwin
 ms.date: 07/13/2017
-ms.prod: non-product-specific
-ms.topic: contributor-guide
-ms.custom: external-contributor-guide
-ms.openlocfilehash: 041398361aef90c44bdf3a0dad4aaa2d40a38289
-ms.sourcegitcommit: 782b689882cce3ce07f5613763322989f2d0d63f
+ms.openlocfilehash: dca1ccba2ae4ebd08b6039f5d780e7a7ac92e79f
+ms.sourcegitcommit: 92aef5ea8bdd692c5c393d5c8f99b9e4f672ef2b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34469946"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36238966"
 ---
 # <a name="how-to-use-markdown-for-writing-docs"></a>A Markdown használata Docs-tartalmak írásához
 
@@ -316,7 +310,7 @@ Néhány követelmény és megfontolandó szempont a beágyazásokhoz:
 - Bármikor használhat beágyazást, amikor ugyanazt a szöveget több cikkben is szeretné használni.
 - A blokk típusú beágyazás használata nagyobb mennyiségű tartalomhoz – egy-két bekezdéshez, egy közös eljáráshoz vagy egy közös szakaszhoz – ajánlott. Ne használja egy mondatnál kisebb terjedelmű szöveghez.
 - A beágyazott tartalmak a cikk GitHub által előállított nézetében nem jelennek meg, ugyanis azok Markdig-bővítményeket igényelnek. Azok csak közzététel után jelennek meg.
-- Ügyeljen rá, hogy a beágyazott szöveg teljes mondatokból vagy kifejezésekből álljon, amelyek nem függnek a hivatkozást tartalmazó cikknek a beágyazást megelőző vagy azt követő szövegétől. Ezt az ajánlást figyelmen kívül hagyva lefordíthatatlan szövegrészlet jön létre a cikkben, amely megtöri a honosított felületet.
+- Ügyeljen rá, hogy a beágyazott szöveg teljes mondatokból vagy kifejezésekből álljon, amelyek nem függnek a hivatkozást tartalmazó cikknek a beágyazást megelőző vagy azt követő szövegétől. Ezt az ajánlást figyelmen kívül hagyva lefordíthatatlan sztring jön létre a cikkben, amely megtöri a honosított felületet.
 - Ne alkalmazzon beágyazást más beágyazásokon belül. Ez nem támogatott.
 - A médiafájlokat a beágyazási almappában megadott médiamappában kell elhelyezni. Ez lehet például a `<repo>`/includes/media mappa. A médiamappa gyökere nem tartalmazhat képfájlokat. Ha a beágyazás nem tartalmaz képeket, akkor a hozzá tartozó médiamappára nincs szükség.
 - A hagyományos cikkekhez hasonlóan itt se osszon meg médiát a beágyazott fájlok között. Minden egyes beágyazáshoz és cikkhez használjon külön fájlt, egyedi névvel. A médiafájlt tárolja a beágyazáshoz társított médiamappában.
