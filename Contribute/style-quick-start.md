@@ -1,19 +1,13 @@
 ---
 title: Docs stíluskalauz – gyorsútmutató
 description: Ez a cikk röviden összefoglalja a stílusra vonatkozó legfontosabb megfontolásokat a docs.microsoft.com-on való közreműködés megkezdéséhez.
-author: bryanla
-ms.author: bryanla
-manager: mbaldwin
 ms.date: 07/25/2017
-ms.prod: non-product-specific
-ms.topic: contributor-guide
-ms.custom: external-contributor-guide
-ms.openlocfilehash: 74f78b72f61cfebddb0cb03b73a3a806f4fe4a10
-ms.sourcegitcommit: 782b689882cce3ce07f5613763322989f2d0d63f
+ms.openlocfilehash: 34cd0dc1760f2a569f8bfec782f04b2691a74470
+ms.sourcegitcommit: 92aef5ea8bdd692c5c393d5c8f99b9e4f672ef2b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34469394"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36239603"
 ---
 # <a name="docs-style-and-voice-quick-start"></a>Docs-stílus és hangvétel – gyorsútmutató
 
@@ -56,5 +50,6 @@ Technikai témájú cikkeinket több nyelvre lefordítják, némelyiket módosí
 ## <a name="localized-documentation"></a>Honosított dokumentáció
 
 - Ha honosított dokumentációban működik közre, használja a [Microsoft Language Portalt](https://www.microsoft.com/Language/Default.aspx).
-- A honosítási stíluskalauzok, a technikai publikációk stílusára és nyelvhasználatára vonatkozó információk, valamint az adott piacokon érvényes adatformátumok a célnyelven letölthető [Stíluskalauzban](https://www.microsoft.com/Language/StyleGuides.aspx) érhetők el.
-- A honosított Microsoft-terminológiát keresse a [termékspecifikus jóváhagyott terminológiát](https://www.microsoft.com/Language/Search.aspx) tartalmazó oldalon, vagy töltse le a [Microsoft terminológiai gyűjteményét](https://www.microsoft.com/Language/Terminology.aspx) a célnyelven.
+- A honosítási stíluskalauzok, a technikai publikációk stílusára és nyelvhasználatára vonatkozó információk, valamint az adott piacokon érvényes adatformátumok a célnyelven letölthető [Stíluskalauzban](https://www.microsoft.com/Language/StyleGuides) érhetők el.
+- A honosított Microsoft-terminológiát keresse a [termékspecifikus jóváhagyott terminológiát](https://www.microsoft.com/Language/Default.aspx) tartalmazó oldalon, vagy töltse le a [Microsoft terminológiai gyűjteményét](https://www.microsoft.com/Language/Terminology.aspx) a célnyelven.
+- További információt a Microsoft stíluskalauzának [lokalizációról szóló szakaszában](https://docs.microsoft.com/style-guide/global-communications/) talál.

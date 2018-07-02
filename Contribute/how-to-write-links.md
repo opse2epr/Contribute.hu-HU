@@ -1,19 +1,13 @@
 ---
 title: Hivatkozások használata a dokumentációban
 description: Ebből a cikkből megtudhatja, hogyan hozhat létre más tartalmakra mutató hivatkozásokat a docs.microsoft.com webhelyen.
-author: bryanla
-ms.author: bryanla
-manager: mbaldwin
 ms.date: 06/29/2017
-ms.prod: non-product-specific
-ms.topic: contributor-guide
-ms.custom: external-contributor-guide
-ms.openlocfilehash: 1699e57ac6a4dc4c5a1ef099ea183b3cbc6307cd
-ms.sourcegitcommit: 782b689882cce3ce07f5613763322989f2d0d63f
+ms.openlocfilehash: a66e2fb4febf1947afe01919b96b1c10873cf57d
+ms.sourcegitcommit: 92aef5ea8bdd692c5c393d5c8f99b9e4f672ef2b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34469532"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36239726"
 ---
 # <a name="using-links-in-documentation"></a>Hivatkozások használata a dokumentációban
 Ebből a cikkből megtudhatja, hogyan használhat hivatkozásokat a docs.microsoft.com webhelyen közzétett lapokon. A hivatkozások Markdown jelölőnyelven való hozzáadása egyszerű: csupán néhány konvenciót kell követnie. A hivatkozások mutathatnak ugyanannak a lapnak egy másik részére, egy másik kapcsolódó lapra, illetve külső webhelyekre és URL-címekre.
@@ -63,7 +57,10 @@ Ha egy műszaki Docs-cikkben ugyanannak a dokumentumkészletnek egy másik műsz
   `[link text](../directory/article-name.md)`
 
 - A cikk egy másik dokumentumkészletben lévő cikkre mutat (egyazon tárházon belül is): `[link text](./directory/article-name)`
-  
+
+> [!IMPORTANT]
+> A fenti példák egyikében sem szerepel a `~/` hivatkozás részeként. Ha a tárház gyökerében található útvonalra mutató hivatkozást készít, használja a `/` karaktert. A `~/` használata érvénytelen hivatkozást eredményez a GitHub forrástárházaiba valló navigáláskor. A probléma kikerülhető, ha az útvonal elején a `/` szerepel.
+
 ## <a name="links-to-anchors"></a>Horgonyokra mutató hivatkozások
 
 Nem szükséges horgonyokat létrehozni. Ezeket ugyanis a közzététel időpontjában hozza létre automatikusan a rendszer az összes H2-fejléchez. Önnek nincs más dolga, mint létrehozni a H2-fejlécekre mutató hivatkozásokat.
