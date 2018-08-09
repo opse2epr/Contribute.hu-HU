@@ -158,7 +158,7 @@ A &lt;moniker-name&gt; rész nem kötelező. Ha ezt kihagyja, akkor a rendszer a
 Ha ezeket az URL-címeket használja, akkor a rendszer a legújabb verziójú tartalomra irányítja majd át. Ennek köszönhetően nem kell verziós kézjegyet megadnia. Így nem kell fogalmi tartalomra mutató, a verzió változásakor frissítendő hivatkozásokat sem használnia.
 
 A megfelelő hivatkozás létrehozásához keresse meg a böngészőben hivatkozni kívánt oldalt, és másolja az URL-címet.
-Aztán távolítsa el a "https://docs.microsoft.com"-t és a területi beállítási beállítást.
+Aztán távolítsa el a "https://docs.microsoft.com" -t és a területi beállítási beállítást.
 
 Amikor tartalomjegyzékben hoz létre hivatkozást, akkor a területi információval kapcsolatos adatok nélküli teljes URL-címet kell használnia.
 
