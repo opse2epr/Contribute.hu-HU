@@ -5,18 +5,18 @@ author: jasonwhowell
 ms.author: jasonh
 manager: kfile
 ms.date: 04/30/2018
-ms.openlocfilehash: 00631485f1f4eed9e0de2f6df98d973a819dfe4d
-ms.sourcegitcommit: 92aef5ea8bdd692c5c393d5c8f99b9e4f672ef2b
+ms.openlocfilehash: 9f22a416810711c076645a9483f022112a3a7642
+ms.sourcegitcommit: 886ca76086a302d1d6124967df12a5bcfe4fd4b5
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36238920"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "40251464"
 ---
 # <a name="install-content-authoring-tools"></a>Tartalomkészítő eszközök telepítése
 
 A cikk ismerteti a lépéseket, melyekkel interaktív módon telepíthetők a Git ügyféleszközei és a Visual Studio Code.
 > [!div class="checklist"]
-> * A [Git for Windows](https://git-scm.com/download/win) telepítése
+> * A [Git](https://git-scm.com/) telepítése
 > * A [Visual Studio Code](https://code.visualstudio.com/) telepítése
 > * A [Közreműködői csomag a Docs webhelyhez](https://marketplace.visualstudio.com/items?itemName=docsmsft.docs-authoring-pack) telepítése
 
@@ -25,9 +25,13 @@ A cikk ismerteti a lépéseket, melyekkel interaktív módon telepíthetők a Gi
 >
 > Javasoljuk azonban, hogy a nagyobb változtatásokat végző közreműködők végezzék el ezt a lépést is, hogy a [nagyobb/tartós változtatásokat](how-to-write-workflows-major.md) is el tudják végezni. Még ha van is írási engedélye a fő tárházban, akkor is *kifejezetten ajánljuk a tárház elágaztatását és klónozását (és ebben az útmutatóban feltételezzük is, hogy ezt megtette)*, hogy rendelkezzen írási és olvasási jogosultsággal a javasolt módosítások tárolásához az elágazásban.
 
-## <a name="install-git-client-tools-on-windows"></a>A Git-ügyféleszközök telepítése Windows rendszeren
+## <a name="install-git-client-tools"></a>A Git-ügyféleszközök telepítése 
 
- Telepítse a [Software Freedom Conservancy Git-ügyféleszközeit](https://git-scm.com/download/). A telepítés tartalmazza a Git verziókövetési rendszert és a Git Bash parancssori alkalmazást, amely a helyi Git-tárházzal való kommunikációhoz használható.
+ Telepítse a [Software Freedom Conservancy Git-ügyféleszközeit](https://git-scm.com/download/) saját platformjához. 
+
+* [Git for Windows](https://git-scm.com/download/win). A telepítés tartalmazza a Git verziókövetési rendszert és a Git Bash parancssori alkalmazást, amely a helyi Git-tárházzal való kommunikációhoz használható.
+* A Git for Mac az Xcode parancssori eszközök részeként érhető el. Egyszerűen futtassa a parancssorból a következő parancsot: `git`. Ha szükséges, a rendszer kérni fogja, hogy telepítse a parancssori eszközöket. A [Git for Mac](https://git-scm.com/download/mac) a Software Freedom Conservancy webhelyéről is letölthető.
+* [Git Linuxhoz és Unixhoz](https://git-scm.com/download/linux)
 
 Ha parancssori eszköz helyett inkább grafikus felhasználói felületet szeretne használni, a legnépszerűbb eszközöket megtalálja a [Software Freedom Conservancy elérhető GUI-eszközöket bemutató](https://git-scm.com/downloads/guis) oldalán, vagy próbálja ki a [GitHubon elérhető GitHub Desktopot](https://desktop.github.com/) vagy a [Visual Studio Code-ot](https://www.visualstudio.com/products/code-vs.aspx).
 

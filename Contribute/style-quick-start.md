@@ -2,22 +2,22 @@
 title: Docs stíluskalauz – gyorsútmutató
 description: Ez a cikk röviden összefoglalja a stílusra vonatkozó legfontosabb megfontolásokat a docs.microsoft.com-on való közreműködés megkezdéséhez.
 ms.date: 07/25/2017
-ms.openlocfilehash: 34cd0dc1760f2a569f8bfec782f04b2691a74470
-ms.sourcegitcommit: 92aef5ea8bdd692c5c393d5c8f99b9e4f672ef2b
+ms.openlocfilehash: 3a91669ba9ad6711bcc436952d1d6cb311b9d4f6
+ms.sourcegitcommit: 886ca76086a302d1d6124967df12a5bcfe4fd4b5
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36239603"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "40243023"
 ---
 # <a name="docs-style-and-voice-quick-start"></a>Docs-stílus és hangvétel – gyorsútmutató
 
-Ez a minimális időráfordítást igénylő útmutató jó kiindulópont annak megértéséhez, hogy miképpen alkalmazhatja a legfontosabb Docs-stíluselemeket a docs.microsoft.com számára írt cikkekhez. Az itt ismertetett irányelvek egyaránt vonatkoznak új dokumentumok létrehozására és létező dokumentumok frissítésére.
+Ez a gyorsútmutató röviden bemutatja, hogyan lehet műszaki tartalmat írni a docs.microsoft.com webhelyen való publikáláshoz. Az itt ismertetett irányelvek egyaránt vonatkoznak új dokumentumok létrehozására és létező dokumentumok frissítésére.
 
-Minimális követelmények:
+Ajánlott eljárások:
 
 - Ellenőrizze a helyesírást és a nyelvtant a cikkekben, még akkor is, ha ehhez ki kell másolnia a szöveget, és beillesztenie a Wordben.
 - Használjon közvetlen és barátságos hangvételt, mintha személyesen szólna valakihez.
-- Használjon egyszerű mondatokat. Ezek könnyebben érthetők, és könnyebben fordíthatók akár emberi, akár gépi fordítók számára.
+- Használjon egyszerű mondatokat. A könnyen olvasható szövegnek köszönhetően az olvasó azonnal használhatja is az útmutatásokat.
 
 ## <a name="use-the-microsoft-voice-principles"></a>A Microsoft hangvételre vonatkozó alapelveinek betartása
 

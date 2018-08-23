@@ -5,18 +5,18 @@ author: billwagner
 ms.author: wiwagn
 manager: wpickett
 ms.date: 04/17/2018
-ms.openlocfilehash: a0c52fea8f3a57cdfe89c2cd7a24ef7b511ada7c
-ms.sourcegitcommit: 92aef5ea8bdd692c5c393d5c8f99b9e4f672ef2b
+ms.openlocfilehash: 6206f61a69c14575a726da9ce64ad0b765c7aa87
+ms.sourcegitcommit: 886ca76086a302d1d6124967df12a5bcfe4fd4b5
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36239769"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "40251482"
 ---
 # <a name="microsoft-docs-contributor-guide-overview"></a>Microsoft Docs-közreműködői útmutató – áttekintés
 
 Üdvözöljük a [docs.microsoft.com](https://docs.microsoft.com) (más néven Docs) Közreműködői útmutatójában!!
 
-A dokumentumkészleteink közül több nyílt forrású, és a GitHub üzemelteti. Mindig egyre több csapat adaptálja ezt a modellt. Még a nem teljesen nyílt forrású dokumentumkészletek is rendelkeznek nyilvánosan elérhető adattárakkal, ahol lekéréses kérelmeket indíthat. Ez leegyszerűsíti és javítja a termékfejlesztő mérnökök, a tartalomkészítő csapatok és az ügyfelek közötti kommunikációt. A nyílt munkavégzésnek több előnye is van:
+A dokumentumkészleteink közül több nyílt forrású, és a GitHub üzemelteti. A Microsoftnál mindig egyre több csapat adaptálja ezt a modellt. Még a nem teljesen nyílt forrású dokumentumkészletek is rendelkeznek nyilvánosan elérhető adattárakkal, ahol lekéréses kérelmeket indíthat. Ez leegyszerűsíti és javítja a termékfejlesztő mérnökök, a tartalomkészítő csapatok és az ügyfelek közötti kommunikációt. A nyílt munkavégzésnek több előnye is van:
 
 - A nyílt forrású adattáraknál a tervezés nyílt, hogy visszajelzést kapjanak, milyen dokumentumokra van a leginkább szükség.
 - A nyílt forrású adattáraknál az áttekintés nyílt, hogy már az első kiadásban a leghasznosabb tartalom jelenhessen meg.
