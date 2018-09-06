@@ -6,14 +6,14 @@ author: syntaxc4
 manager: erifkin
 ms.date: 07/24/2018
 ms.author: cfowler
-zone_pivot_groups: keyvault-languages, keyvault-platforms
+zone_pivot_groups: keyvault-languages
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 8b758274203748bb6e04c03dec5de38fb77947b4
-ms.sourcegitcommit: b0105f322f91bb4dbde47f6da35b3c12271d5b03
+ms.openlocfilehash: 27ebd3e348fc231d8b82e6c17f282bd9ca4afb9f
+ms.sourcegitcommit: 5e508a7ad2991632a38f302e4769b36e3bf37eb2
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43239571"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43308824"
 ---
 # <a name="quickstart-set-and-retrieve-a-secret-from-azure-key-vault"></a>Rövid útmutató: Titkos kulcs beállítása és lekérése az Azure Key Vaultból
 
@@ -29,24 +29,17 @@ Ez a rövid útmutató azt mutatja be, hogyan lehet tárolni a titkos kulcsokat 
 
 Mielőtt folytatná, győződjön meg arról, hogy tisztában van az [alapvető fogalmakkal](https://docs.microsoft.com/azure/key-vault/key-vault-whatis#basic-concepts).
 
->[!NOTE]
-Ahhoz, hogy megérthesse, miért az alábbi oktatóanyagban ismertetett folyamat az ajánlott eljárás, néhány fogalommal tisztában kell lennie. A Key Vault egy központi adattár a titkos kulcsok programozott módon való tárolásához. A használatához azonban az alkalmazásoknak/felhasználóknak először hitelesíteniük kell magukat a Key Vaultban, azaz be kell mutatniuk egy titkos kulcsot. Az ajánlott biztonsági eljárások betartása érdekében ezt az első titkos kulcsot rendszeres időközönként le kell váltani. Az Azure-ban futó [Managed Service Identity](https://docs.microsoft.com/azure/active-directory/managed-service-identity/overview)-alkalmazásokhoz jár egy olyan identitás, amelyet az Azure automatikusan felügyel. Ez segít megoldani a **titkos kulcsok bemutatásának problémáját**, mivel a felhasználók/alkalmazások követhetik az ajánlott eljárásokat, és nem kell aggódniuk az első titkos kulcs leváltása miatt
+> [!NOTE]
+> Ahhoz, hogy megérthesse, miért az alábbi oktatóanyagban ismertetett folyamat az ajánlott eljárás, néhány fogalommal tisztában kell lennie. A Key Vault egy központi adattár a titkos kulcsok programozott módon való tárolásához. A használatához azonban az alkalmazásoknak/felhasználóknak először hitelesíteniük kell magukat a Key Vaultban, azaz be kell mutatniuk egy titkos kulcsot. Az ajánlott biztonsági eljárások betartása érdekében ezt az első titkos kulcsot rendszeres időközönként le kell váltani. Az Azure-ban futó [Managed Service Identity](https://docs.microsoft.com/azure/active-directory/managed-service-identity/overview)-alkalmazásokhoz jár egy olyan identitás, amelyet az Azure automatikusan felügyel. Ez segít megoldani a **titkos kulcsok bemutatásának problémáját**, mivel a felhasználók/alkalmazások követhetik az ajánlott eljárásokat, és nem kell aggódniuk az első titkos kulcs leváltása miatt
 
 ## <a name="prerequisites"></a>Előfeltételek
 
 ::: zone pivot="nodejs"
-* [Node JS](https://nodejs.org/en/) ::: zone-end
-
-::: zone pivot="dotnet, windows"
+* [Node JS](https://nodejs.org/en/) ::: zone-end ::: zone pivot="dotnet"
 * A [Visual Studio 2017 szoftver 15.7.3-as vagy újabb verziója](https://www.microsoft.com/net/download/windows) a következő számítási feladatokkal:
   * ASP.NET és webfejlesztés
   * .NET Core platformfüggetlen fejlesztés
-* [.NET Core 2.1 SDK vagy újabb](https://www.microsoft.com/net/download/windows) :::zone-end
-
-::: zone pivot="dotnet, mac"
-* Lásd a [Visual Studio for Mac újdonságait](https://visualstudio.microsoft.com/vs/mac/) bemutató cikket.
-:::zone-end
-
+* [.NET Core 2.1 SDK vagy újabb](https://www.microsoft.com/net/download/windows) ::: zone-end
 * Git ([letöltés](https://git-scm.com/downloads)).
 * Azure-előfizetés. Ha nem rendelkezik Azure-előfizetéssel, mindössze néhány perc alatt létrehozhat egy [ingyenes fiókot](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) a virtuális gép létrehozásának megkezdése előtt.
 * Az [Azure CLI](https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest) 2.0.4-es vagy újabb verziója. Ez elérhető Windows, Mac és Linux rendszerekhez.
@@ -168,10 +161,10 @@ Az alábbiak ismertetik azt a néhány lépést, amelyet végre kell hajtanunk
     ```bash
     git remote add azure <url>
     ```
+    
 ::: zone-end
 
 ::: zone pivot="dotnet"
-
 ## <a name="open-and-edit-the-solution"></a>A megoldás megnyitása és szerkesztése
 
 Módosítsa a program.cs fájlt, hogy a minta az adott kulcstartó nevével fusson:
@@ -197,7 +190,6 @@ Tegye közzé ezt az alkalmazást az Azure-ban, hogy élő webalkalmazásként m
 5. Kattintson a **Létrehozás** gombra.
 
 >[!VIDEO https://sec.ch9.ms/ch9/e93d/a6ac417f-2e63-4125-a37a-8f34bf0fe93d/KeyVault_high.mp4]
-
 ::: zone-end
 
 ## <a name="enable-managed-service-identities"></a>Felügyeltszolgáltatás-identitások engedélyezése
@@ -242,7 +234,9 @@ git push azure master
 ```
 
 Ezután a https://<app_name>.azurewebsites.net helyre lépve már láthatja a titkos kód értékét.
-Ne feledje a(z) <YourKeyVaultName> helyőrzőt lecserélni a tároló nevére ::: zone-end
+Ne feledje a(z) <YourKeyVaultName> helyőrzőt lecserélni a tároló nevére
+
+::: zone-end
 
 ::: zone pivot="dotnet" Az alkalmazás futtatásakor meg kell jelennie a titkos kulcs lekért értékének.
 ::: zone-end
