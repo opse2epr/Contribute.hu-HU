@@ -5,12 +5,12 @@ author: billwagner
 ms.author: wiwagn
 manager: wpickett
 ms.date: 04/17/2018
-ms.openlocfilehash: 6206f61a69c14575a726da9ce64ad0b765c7aa87
-ms.sourcegitcommit: 886ca76086a302d1d6124967df12a5bcfe4fd4b5
+ms.openlocfilehash: 94fad6f4b2faeefff687eb57cd2de8a0fb5bbbf3
+ms.sourcegitcommit: 5e508a7ad2991632a38f302e4769b36e3bf37eb2
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "40251482"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43308893"
 ---
 # <a name="microsoft-docs-contributor-guide-overview"></a>Microsoft Docs-közreműködői útmutató – áttekintés
 
@@ -31,7 +31,7 @@ A [docs.microsoft.com](https://docs.microsoft.com) felhasználói felületén a 
 
 ## <a name="quick-edits-to-existing-documents"></a>Meglévő dokumentumok gyors szerkesztése
 
-A gyors szerkesztésekkel leegyszerűsítő a jelentési folyamat, és javíthatók a dokumentum kisebb hibái és kihagyásai. Minden erőfeszítés ellenére kisebb nyelvtani vagy helyesírási hibák előfordulhatnak a közzétett dokumentumokban. Problémák jelzésével jelentheti a hibákat, de gyorsabb és egyszerűbb a probléma megoldásához lekéréses kérelmet (PR) létrehozni. Majdnem minden cikk mellett megjelenik a Szerkesztés gomb, amint az az alább ábrán látható. Ha rákattint a **Szerkesztés** gombra, akkor megnyílik a forrásfájl a GitHubon.
+A gyors szerkesztésekkel leegyszerűsítő a jelentési folyamat, és javíthatók a dokumentum kisebb hibái és kihagyásai. Minden erőfeszítés ellenére kisebb nyelvtani vagy helyesírási hibák előfordulhatnak a közzétett dokumentumokban. Problémák jelzésével jelentheti a hibákat, de gyorsabb és egyszerűbb a probléma megoldásához lekéréses kérelmet (PR) létrehozni. Majdnem minden cikk mellett megjelenik a Szerkesztés gomb, amint az az alább ábrán látható. Ha rákattint a **Szerkesztés** (vagy más nyelven ugyanilyen) gombra, akkor megnyílik a forrásfájl a GitHubon.
 
 ![Az Edit (Szerkesztés) hivatkozás helye](./media/index/edit-article.png)
 
@@ -46,6 +46,12 @@ Miután elvégezte a módosításokat görgessen a lap aljára. Adja meg a leké
 
 ![módosítás javasolása](./media/index/submit-pull-request.png)
 
+A módosításjavaslat után arra kell kérnie a tárház tulajdonosait, hogy „kérjék le” (angolul pull) a módosításokat a tárházukba. Ezt a lekéréses kérelem (angolul pull request) használatával teheti meg. Amikor a fenti **Fájlmódosítás javasolása** lehetősége kattintott, akkor az alábbi képen láthatóhoz hasonló oldalra került:
+
+![lekéréses kérelem létrehozása](media/index/create-pull-request.png)
+
+Kattintson a **Lekéréses kérelem létrehozása** lehetőségre, a lekéréses kérelemhez adjon meg egy címet (és ha szeretné, leírást is), majd kattintson újra a **Lekéréses kérelem létrehozása** elemre.
+
 Ennyi az egész! A tartalomcsapat tagjai át fogják tekinteni és egyesíteni fogják a lekéréses kérelmet. Ha nagyobb módosításokat végzett változtatásokat kérő visszajelzést kaphat.
 
 A GitHub szerkesztői felhasználói felülete az adattárban meglévő engedélyeinek megfelelő választ ad. Az előző képek olyan közreműködő esetén pontosak, akinek nincsenek írási jogosultságai a céladatbázisban. A GitHub automatikusan létrehoz egy adattármásolatot a céladattárról a fiókjában. Ha írási engedélye van a céladattárban, a GitHub létrehoz egy új ágat a céladattárban. Az ág nevének formátuma **\<GitHubAzonosító\>-javítás-n** a GitHub-azonosítót és egy számazonosítót használva a javítóághoz.
@@ -53,6 +59,12 @@ A GitHub szerkesztői felhasználói felülete az adattárban meglévő engedél
 Minden módosításhoz lekéréses kérelmeket használunk, még az írási engedéllyel rendelkező közreműködőknél is. A legtöbb adattárban a `master` ág védett, ezért a frissítéseket lekéréses kérelemként kell beküldeni.
 
 A böngészőn belüli szerkesztési környezet kisebb vagy ritka módosítások esetén a legjobb. Ha nagyobb terjedelmű szövegeket ír, vagy speciális Git-funkciókat (például ágkezelést vagy fejlett egyesítéskori ütközésfeloldást) használ, akkor [adattármásolatot kell készítenie, és a helyi számítógépen kell dolgoznia](how-to-write-workflows-major.md).
+
+> [!NOTE]
+> Ha ez a lehetőség engedélyezve van, akkor **bármilyen nyelvű** cikket módosíthat, és a szerkesztés típusától függően a következő történik majd:
+> 1. minden jóváhagyott nyelvi módosítás hozzájárul a gépi fordítási motorunk fejlesztéséhez is
+> 2. az olyan módosítások, amelyek jelentős mértékben megváltoztatják a cikk tartalmát, belsőleg lesznek kezelve, melynek során a módosítást ugyanannak a cikknek az angol nyelvű változatához is elküldjük, így az minden nyelvre lokalizálva lesz, ha a módosítást jóváhagyják.
+> Így a javasolt módosítások nem csak a saját nyelvén, de minden elérhető nyelven is megjelennek, és javítják a cikkeket.
 
 ## <a name="review-open-prs"></a>Nyitott lekéréses kérelmek áttekintése
 
