@@ -2,12 +2,12 @@
 title: Hivatkozások használata a dokumentációban
 description: Ebből a cikkből megtudhatja, hogyan hozhat létre más tartalmakra mutató hivatkozásokat a docs.microsoft.com webhelyen.
 ms.date: 06/29/2017
-ms.openlocfilehash: dad0460cfb36594c17cef1b079c5fc14191f56f7
-ms.sourcegitcommit: 886ca76086a302d1d6124967df12a5bcfe4fd4b5
+ms.openlocfilehash: 92c23f2b91c67d7a1695c5f1e5dcdc80a8517f6e
+ms.sourcegitcommit: 37cd16636d7dcfc5222ef5a5d60e4ff30f74485c
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "40251461"
+ms.lasthandoff: 10/02/2018
+ms.locfileid: "48030933"
 ---
 # <a name="using-links-in-documentation"></a>Hivatkozások használata a dokumentációban
 Ebből a cikkből megtudhatja, hogyan használhat hivatkozásokat a docs.microsoft.com webhelyen közzétett lapokon. A hivatkozások Markdown jelölőnyelven való hozzáadása egyszerű: csupán néhány konvenciót kell követnie. A hivatkozások mutathatnak ugyanannak a lapnak egy másik részére, egy másik kapcsolódó lapra, illetve külső webhelyekre és URL-címekre.
@@ -158,7 +158,7 @@ A &lt;moniker-name&gt; rész nem kötelező. Ha ezt kihagyja, akkor a rendszer a
 Ha ezeket az URL-címeket használja, akkor a rendszer a legújabb verziójú tartalomra irányítja majd át. Ennek köszönhetően nem kell verziós kézjegyet megadnia. Így nem kell fogalmi tartalomra mutató, a verzió változásakor frissítendő hivatkozásokat sem használnia.
 
 A megfelelő hivatkozás létrehozásához keresse meg a böngészőben hivatkozni kívánt oldalt, és másolja az URL-címet.
-Aztán távolítsa el a "https://docs.microsoft.com" -t és a területi beállítási beállítást.
+Aztán távolítsa el a ´ "https://docs.microsoft.com" ´ -t és a területi beállítási beállítást.
 
 Amikor tartalomjegyzékben hoz létre hivatkozást, akkor a területi információval kapcsolatos adatok nélküli teljes URL-címet kell használnia.
 
