@@ -7,7 +7,12 @@
       "locale": "hu-HU",
       "monikers": [],
       "moniker_ranges": [],
-      "open_to_public_contributors": true,
+      "open_to_public_contributors": true,"type_mapping": {
+        "Conceptual": "Content",
+        "ManagedReference": "Content",
+        "RestApi": "Content",
+        "ZonePivotGroups": "Toc"
+      },
       "build_entry_point": "docs",
       "template_folder": "_themes"
     }
