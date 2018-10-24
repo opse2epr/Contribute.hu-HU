@@ -2,12 +2,12 @@
 title: Docs stíluskalauz – gyorsútmutató
 description: Ez a cikk röviden összefoglalja a stílusra vonatkozó legfontosabb megfontolásokat a docs.microsoft.com-on való közreműködés megkezdéséhez.
 ms.date: 07/25/2017
-ms.openlocfilehash: 3a91669ba9ad6711bcc436952d1d6cb311b9d4f6
-ms.sourcegitcommit: 886ca76086a302d1d6124967df12a5bcfe4fd4b5
+ms.openlocfilehash: 861181c7bfa22881fdd11327d19b2d7d517775c8
+ms.sourcegitcommit: 6f1997864c000a9cd25fb9171a8f8fdb8b5b5ece
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "40243023"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49084399"
 ---
 # <a name="docs-style-and-voice-quick-start"></a>Docs-stílus és hangvétel – gyorsútmutató
 
@@ -15,8 +15,8 @@ Ez a gyorsútmutató röviden bemutatja, hogyan lehet műszaki tartalmat írni a
 
 Ajánlott eljárások:
 
-- Ellenőrizze a helyesírást és a nyelvtant a cikkekben, még akkor is, ha ehhez ki kell másolnia a szöveget, és beillesztenie a Wordben.
-- Használjon közvetlen és barátságos hangvételt, mintha személyesen szólna valakihez.
+- Ellenőrizze a cikkek helyesírását és nyelvtani helyességét, akár úgy is, hogy átmásolja a szöveget a Microsoft Wordbe.
+- Használjon kötetlen, barátságos hangnemet, mintha kettesben beszélgetne valakivel.
 - Használjon egyszerű mondatokat. A könnyen olvasható szövegnek köszönhetően az olvasó azonnal használhatja is az útmutatásokat.
 
 ## <a name="use-the-microsoft-voice-principles"></a>A Microsoft hangvételre vonatkozó alapelveinek betartása
@@ -45,11 +45,11 @@ Technikai témájú cikkeinket több nyelvre lefordítják, némelyiket módosí
 - A kódtöredékeket tartalmazó lépésekhez megjegyzések formájában adja hozzá a kiegészítő információt. Ez csökkenti az átolvasandó szöveg terjedelmét. A kódprojektbe bemásolt kulcsinformáció emlékezteti a kód működésére azokat, akik később hivatkoznak rá.
 - Használjon nagybetűzést minden címben és fejlécben.
 - A „bejelentkezés” kifejezésre a „log-in” helyett a „sign-in” alakot használja.
-- Listát vagy kódtöredéket megelőző mondatokban mindig használja a „following” vagy „as follows” (következő, következik) szavakat.
+- További irányelvekért lásd a [ Microsoft írásstílusra vonatkozó útmutatóját](https://docs.microsoft.com/style-guide/welcome).
 
 ## <a name="localized-documentation"></a>Honosított dokumentáció
 
 - Ha honosított dokumentációban működik közre, használja a [Microsoft Language Portalt](https://www.microsoft.com/Language/Default.aspx).
 - A honosítási stíluskalauzok, a technikai publikációk stílusára és nyelvhasználatára vonatkozó információk, valamint az adott piacokon érvényes adatformátumok a célnyelven letölthető [Stíluskalauzban](https://www.microsoft.com/Language/StyleGuides) érhetők el.
 - A honosított Microsoft-terminológiát keresse a [termékspecifikus jóváhagyott terminológiát](https://www.microsoft.com/Language/Default.aspx) tartalmazó oldalon, vagy töltse le a [Microsoft terminológiai gyűjteményét](https://www.microsoft.com/Language/Terminology.aspx) a célnyelven.
-- További információt a Microsoft stíluskalauzának [lokalizációról szóló szakaszában](https://docs.microsoft.com/style-guide/global-communications/) talál.
+- A honosításról részletesen a [Microsoft írásstílusra vonatkozó útmutatójának](https://docs.microsoft.com/style-guide/global-communications) globális kommunikációról szóló szakaszában olvashat.
