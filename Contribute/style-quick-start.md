@@ -2,12 +2,12 @@
 title: Docs stíluskalauz – gyorsútmutató
 description: Ez a cikk röviden összefoglalja a stílusra vonatkozó legfontosabb megfontolásokat a docs.microsoft.com-on való közreműködés megkezdéséhez.
 ms.date: 07/25/2017
-ms.openlocfilehash: 861181c7bfa22881fdd11327d19b2d7d517775c8
-ms.sourcegitcommit: 6f1997864c000a9cd25fb9171a8f8fdb8b5b5ece
+ms.openlocfilehash: f5c32d3fb71ef3513c68b9c506c823997bfe4d8f
+ms.sourcegitcommit: d3c7b49dc854dae8da9cd49da8ac4035789a5010
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49084399"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49805582"
 ---
 # <a name="docs-style-and-voice-quick-start"></a>Docs-stílus és hangvétel – gyorsútmutató
 
@@ -51,5 +51,5 @@ Technikai témájú cikkeinket több nyelvre lefordítják, némelyiket módosí
 
 - Ha honosított dokumentációban működik közre, használja a [Microsoft Language Portalt](https://www.microsoft.com/Language/Default.aspx).
 - A honosítási stíluskalauzok, a technikai publikációk stílusára és nyelvhasználatára vonatkozó információk, valamint az adott piacokon érvényes adatformátumok a célnyelven letölthető [Stíluskalauzban](https://www.microsoft.com/Language/StyleGuides) érhetők el.
-- A honosított Microsoft-terminológiát keresse a [termékspecifikus jóváhagyott terminológiát](https://www.microsoft.com/Language/Default.aspx) tartalmazó oldalon, vagy töltse le a [Microsoft terminológiai gyűjteményét](https://www.microsoft.com/Language/Terminology.aspx) a célnyelven.
+- A honosított Microsoft-terminológiát keresse a [termékspecifikus jóváhagyott terminológiát](https://www.microsoft.com/Language/Default.aspx) tartalmazó oldalon, vagy töltse le a [Microsoft terminológiai gyűjteményét](https://www.microsoft.com/language/Terminology) a célnyelven.
 - A honosításról részletesen a [Microsoft írásstílusra vonatkozó útmutatójának](https://docs.microsoft.com/style-guide/global-communications) globális kommunikációról szóló szakaszában olvashat.
