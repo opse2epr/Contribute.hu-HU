@@ -2,12 +2,12 @@
 title: Git- és GitHub-alapismeretek a dokumentációs webhelyhez
 description: Ebből a cikkből megismerheti a Gitet, a GitHub-tárházakat, illetve a docs.microsoft.com webhelyen használt tartalomrendszerezést és elnevezési konvenciókat.
 ms.date: 06/30/2017
-ms.openlocfilehash: 8a116067fdd7d031c560abfb7055236e0bfb1a3d
-ms.sourcegitcommit: 92aef5ea8bdd692c5c393d5c8f99b9e4f672ef2b
+ms.openlocfilehash: 05c758845007f859382014166e88fd9614cdb873
+ms.sourcegitcommit: d3c7b49dc854dae8da9cd49da8ac4035789a5010
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36239802"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49805700"
 ---
 # <a name="git-and-github-essentials-for-docs"></a>Git- és GitHub-alapismeretek a Docs webhelyhez
 
@@ -30,8 +30,8 @@ A Git többszintű struktúrában tárolja és kezeli az adott projekthez tartoz
 
 A közreműködők helyi szinten és a GitHub szintjén egyaránt a Git használatával frissítik és kezelik a tárházakat:
 
-- Helyben olyan eszközökkel, mint például a helyi tárházakat kezelő és GitHub-tárházakkal kommunikáló Git-parancsokat támogató Git Bash konzol
-- A [www.github.com](https://www.github.com) webhelyen keresztül, amely a Gitet integrálva kezeli a fő tárházba visszaérkező közreműködések egyeztetését
+- Helyben olyan eszközökkel, mint például a helyi tárházakat kezelő és GitHub-tárházakkal kommunikáló Git-parancsokat támogató Git Bash konzol.
+- A [www.github.com](https://www.github.com) webhelyen keresztül, amely a Gitet integrálva kezeli a fő tárházba visszaérkező közreműködések egyeztetését.
 
 ## <a name="github"></a>GitHub
 
@@ -46,7 +46,7 @@ Minden munkafolyamat a GitHub szintjén kezdődik és ér véget, ahol minden eg
 
 A korábban leírtaknak megfelelően egy projekt alapértelmezett/master ága a projekt tartalmának aktuális verziójaként szolgál. A főág – és az abból létrehozott ágak – tartalma hozzávetőlegesen megfeleltethető annak a Docs megfelelő oldalain található cikkek elrendezésének. Alkönyvtárakkal különíthető el a tartalom (például szolgáltatások), a médiatartalom (például képek) és (a tartalmak újrafelhasználását lehetővé tevő) beágyazható fájlok.
 
-A tárház gyökérkönyvtárában általában megtalálható egy fő `articles` könyvtár. A cikkek könyvtára több alkönyvtárral rendelkezik. Az alkönyvtárakban lévő cikkek *.md* kiterjesztésű, Markdown-formátumú fájlok. Egyes, több szolgáltatást támogató tárházak egy általános `/articles` alkönyvtárat használnak. Ilyen például a [https://github.com/microsoft/Azure-Docs](https://github.com/microsoft/Azure-Docs) tárház. Mások a szolgáltatásra utaló nevet használnak, mint például a [https://github.com/microsoft/IntuneDocs](https://github.com/microsoft/IntuneDocs) tárház, amely a `/IntuneDocs` nevet használja.
+A tárház gyökérkönyvtárában általában megtalálható egy fő `articles` könyvtár. A cikkek könyvtára több alkönyvtárral rendelkezik. Az alkönyvtárakban lévő cikkek *.md* kiterjesztésű, Markdown-formátumú fájlok. Egyes, több szolgáltatást támogató tárházak egy általános `/articles` alkönyvtárat használnak. Ilyen például a [Azure-Docs](https://github.com/MicrosoftDocs/Azure-Docs) tárház. Mások a szolgáltatásra utaló nevet használnak, mint például az [IntuneDocs](https://github.com/MicrosoftDocs/IntuneDocs) tárház, amely az `/IntuneDocs` nevet használja.
 
 Ennek a könyvtárnak a gyökerében találhatók a szolgáltatás vagy termék egészére vonatkozó, általános tartalmú cikkek. Ezt többnyire más, a funkciókhoz, szolgáltatásokhoz vagy gyakori forgatókönyvekhez tartozó alkönyvtárak egészítik ki. Az Azure „Virtual Machine” (virtuális gép) témájú cikkei például a `/virtual-machines` alkönyvtárban, az Intune „Understand & Explore” (Az Intune bemutatása) témájú cikkei pedig az `/understand-explore` alkönyvtárban helyezkednek el, stb.
 

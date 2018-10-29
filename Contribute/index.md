@@ -5,12 +5,12 @@ author: billwagner
 ms.author: wiwagn
 manager: wpickett
 ms.date: 04/17/2018
-ms.openlocfilehash: 94fad6f4b2faeefff687eb57cd2de8a0fb5bbbf3
-ms.sourcegitcommit: 5e508a7ad2991632a38f302e4769b36e3bf37eb2
+ms.openlocfilehash: 921c63c2748149543bfc73e4b38278a2ed74ac56
+ms.sourcegitcommit: d3c7b49dc854dae8da9cd49da8ac4035789a5010
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43308893"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49805792"
 ---
 # <a name="microsoft-docs-contributor-guide-overview"></a>Microsoft Docs-közreműködői útmutató – áttekintés
 
@@ -38,7 +38,7 @@ A gyors szerkesztésekkel leegyszerűsítő a jelentési folyamat, és javíthat
 Ez után a cikk szerkesztéséhez kattintson a ceruza ikonra, amely a következő ábrán látható.
 
 > [!NOTE]
-> Ha a ceruza ikon kiszürkítve látható, akkor jelentkezzen be a GitHub-fiókjába, vagy hozzon létre egy új fiókot. Végezze el a módosításokat a webszerkesztőben. A módosítás formázásának ellenőrzéséhez rákattinthat a **Preview changes** (Módosítások előnézete) fülre.
+> Ha a ceruza ikon kiszürkítve látható, akkor jelentkezzen be a GitHub-fiókjába, vagy hozzon létre egy új fiókot. Végezze el a módosításokat a webszerkesztőben. A módosítás formázásának ellenőrzéséhez kattintson a **Preview changes** (Módosítások előnézete) fülre.
 
 ![A ceruzaikon helye](./media/index/editicon.png)
 
@@ -64,7 +64,7 @@ A böngészőn belüli szerkesztési környezet kisebb vagy ritka módosítások
 > Ha ez a lehetőség engedélyezve van, akkor **bármilyen nyelvű** cikket módosíthat, és a szerkesztés típusától függően a következő történik majd:
 > 1. minden jóváhagyott nyelvi módosítás hozzájárul a gépi fordítási motorunk fejlesztéséhez is
 > 2. az olyan módosítások, amelyek jelentős mértékben megváltoztatják a cikk tartalmát, belsőleg lesznek kezelve, melynek során a módosítást ugyanannak a cikknek az angol nyelvű változatához is elküldjük, így az minden nyelvre lokalizálva lesz, ha a módosítást jóváhagyják.
-> Így a javasolt módosítások nem csak a saját nyelvén, de minden elérhető nyelven is megjelennek, és javítják a cikkeket.
+> Így a javasolt módosítások nem csak a saját nyelvén, de minden elérhető nyelven is megjelennek a cikkeknél.
 
 ## <a name="review-open-prs"></a>Nyitott lekéréses kérelmek áttekintése
 

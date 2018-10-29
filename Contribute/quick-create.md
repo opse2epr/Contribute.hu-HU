@@ -8,16 +8,16 @@ ms.date: 07/24/2018
 ms.author: cfowler
 zone_pivot_groups: keyvault-languages
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 27ebd3e348fc231d8b82e6c17f282bd9ca4afb9f
-ms.sourcegitcommit: 5e508a7ad2991632a38f302e4769b36e3bf37eb2
+ms.openlocfilehash: 497631fe46ac4e2c9c495a609547753a84d662bf
+ms.sourcegitcommit: d3c7b49dc854dae8da9cd49da8ac4035789a5010
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43308824"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49805744"
 ---
 # <a name="quickstart-set-and-retrieve-a-secret-from-azure-key-vault"></a>Rövid útmutató: Titkos kulcs beállítása és lekérése az Azure Key Vaultból
 
-Ez a rövid útmutató azt mutatja be, hogyan lehet tárolni a titkos kulcsokat a Key Vaultban, és hogyan lehet őket lekérni egy webalkalmazással. Ahhoz, hogy láthassa a titkos kulcs értékét, az Azure-ban kell dolgoznia. A rövid útmutató Node.js kódot és felügyeltszolgáltatás-identitásokat (MSI-ket) alkalmaz
+Ez a rövid útmutató azt mutatja be, hogyan lehet tárolni a titkos kulcsokat a Key Vaultban, és hogyan lehet őket lekérni egy webalkalmazással. Ahhoz, hogy láthassa a titkos kulcs értékét, az Azure-ban kell dolgoznia. A rövid útmutató Node.js kódot és felügyeltszolgáltatás-identitásokat (MSI-ket) alkalmaz.
 
 > [!div class="checklist"]
 > * Key Vault létrehozása.
@@ -35,11 +35,14 @@ Mielőtt folytatná, győződjön meg arról, hogy tisztában van az [alapvető 
 ## <a name="prerequisites"></a>Előfeltételek
 
 ::: zone pivot="nodejs"
-* [Node JS](https://nodejs.org/en/) ::: zone-end ::: zone pivot="dotnet"
+* [Node JS](https://nodejs.org/en/)
+::: zone-end
+::: zone pivot="dotnet"
 * A [Visual Studio 2017 szoftver 15.7.3-as vagy újabb verziója](https://www.microsoft.com/net/download/windows) a következő számítási feladatokkal:
   * ASP.NET és webfejlesztés
   * .NET Core platformfüggetlen fejlesztés
-* [.NET Core 2.1 SDK vagy újabb](https://www.microsoft.com/net/download/windows) ::: zone-end
+* [.NET Core 2.1 SDK vagy újabb](https://www.microsoft.com/net/download/windows)
+::: zone-end
 * Git ([letöltés](https://git-scm.com/downloads)).
 * Azure-előfizetés. Ha nem rendelkezik Azure-előfizetéssel, mindössze néhány perc alatt létrehozhat egy [ingyenes fiókot](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) a virtuális gép létrehozásának megkezdése előtt.
 * Az [Azure CLI](https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest) 2.0.4-es vagy újabb verziója. Ez elérhető Windows, Mac és Linux rendszerekhez.
@@ -110,7 +113,10 @@ git clone https://github.com/Azure-Samples/key-vault-node-quickstart.git
 
 ## <a name="install-dependencies"></a>Függőségek telepítése
 
-Itt a függőségeket telepítjük. Futtassa a következő parancsokat: cd key-vault-node-quickstart npm install
+Itt a függőségeket telepítjük. Futtassa az alábbi parancsot:
+
+    cd key-vault-node-quickstart
+    npm install
 
 Ez a projekt 2 csomópontmodult használt:
 
@@ -119,14 +125,14 @@ Ez a projekt 2 csomópontmodult használt:
 
 ## <a name="publish-the-web-application-to-azure"></a>A webalkalmazás közzététele az Azure-ban
 
-Az alábbiak ismertetik azt a néhány lépést, amelyet végre kell hajtanunk
+Az alkalmazás Azure-ban való közzétételét az alábbi néhány lépéssel lehet elvégezni.
 
 * Az első lépés egy [Azure App Service](https://azure.microsoft.com/services/app-service/)-csomag létrehozása. Ebben a csomagban több webalkalmazást is tárolhat.
 
     ```azurecli
     az appservice plan create --name myAppServicePlan --resource-group myResourceGroup
     ```
-* Ezután létrehozunk egy webalkalmazást. A következő példában cserélje ki az <app_name> helyőrzőt egy globálisan egyedi névre (érvényes karakterek: a–z, 0–9 és -). A futtatókörnyezet beállítása: NODE|6.9. Az összes támogatott futtatókörnyezet megtekintéséhez futtassa az az webapp list-runtimes parancsot
+* Ezután létrehozunk egy webalkalmazást. A következő példában cserélje ki az <app_name> helyőrzőt egy globálisan egyedi névre (érvényes karakterek: a–z, 0–9 és -). A futtatókörnyezet beállítása: NODE|6.9. Az összes támogatott futtatókörnyezet megtekintéséhez futtassa az `az webapp list-runtimes` parancsot
 
     ```azurecli
     az webapp create --resource-group myResourceGroup --plan myAppServicePlan --name <app_name> --runtime "NODE|6.9" --deployment-local-git
@@ -238,7 +244,8 @@ Ne feledje a(z) <YourKeyVaultName> helyőrzőt lecserélni a tároló nevére
 
 ::: zone-end
 
-::: zone pivot="dotnet" Az alkalmazás futtatásakor meg kell jelennie a titkos kulcs lekért értékének.
+::: zone pivot="dotnet"
+Az alkalmazás futtatásakor meg kell jelennie a titkos kulcs lekért értékének.
 ::: zone-end
 
 ## <a name="next-steps"></a>Következő lépések
@@ -247,10 +254,12 @@ Ne feledje a(z) <YourKeyVaultName> helyőrzőt lecserélni a tároló nevére
 * [Az Azure Key Vault kezdőlapja](https://azure.microsoft.com/services/key-vault/)
 * [Az Azure Key Vault dokumentációja](https://docs.microsoft.com/azure/key-vault/)
 * [Azure SDK For Node](https://docs.microsoft.com/javascript/api/overview/azure/key-vault)
-* [Azure – REST API-referencia](https://docs.microsoft.com/rest/api/keyvault/) ::: zone-end
+* [Azure – REST API-referencia](https://docs.microsoft.com/rest/api/keyvault/)
+::: zone-end
 
 ::: zone pivot="dotnet"
 * [Az Azure Key Vault kezdőlapja](https://azure.microsoft.com/services/key-vault/)
 * [Az Azure Key Vault dokumentációja](https://docs.microsoft.com/azure/key-vault/)
 * [Azure SDK for .NET](https://github.com/Azure/azure-sdk-for-net)
-* [Azure – REST API-referencia](https://docs.microsoft.com/rest/api/keyvault/) ::: zone-end
+* [Azure – REST API-referencia](https://docs.microsoft.com/rest/api/keyvault/)
+::: zone-end

@@ -2,18 +2,18 @@
 title: A GitHub-fiók beállításának lépései
 description: Ez a cikk végigvezeti a docs.microsoft.com webhelyen található tartalmakban való közreműködéshez szükséges GitHub-fiók beállításának folyamatán.
 ms.date: 02/27/2018
-ms.openlocfilehash: 15fa7c11090a5c4faefe38d00d273e92c231329b
-ms.sourcegitcommit: 92aef5ea8bdd692c5c393d5c8f99b9e4f672ef2b
+ms.openlocfilehash: 4bbf110fdbc1a60f77362a36a9c2c5b654d450cf
+ms.sourcegitcommit: d3c7b49dc854dae8da9cd49da8ac4035789a5010
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36238943"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49805493"
 ---
 # <a name="github-account-setup"></a>A GitHub-fiók beállítása
 
 ## <a name="set-up-your-github-account"></a>GitHub-fiók beállítása
 
-A Docs műszaki tartalmakban való közreműködéshez be kell állítania a saját GitHub-fiókját. A jó hír az, hogy a lépések többségét mindössze egyszer kell elvégeznie.
+A Docs műszaki tartalmakban való közreműködéshez be kell állítania a saját GitHub-fiókját. Jó hír azonban, hogy ezeket a lépéseket csak egyszer kell elvégeznie.
 
 ### <a name="1-create-a-github-account-and-set-up-your-profile"></a>1. GitHub-fiók létrehozása, és a profil beállítása
 

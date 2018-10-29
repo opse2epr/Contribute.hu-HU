@@ -3,14 +3,13 @@ title: Git-tárház helyi beállítása
 description: Ez a cikk útmutatást nyújt a helyi Git-tárház létrehozásához és a dokumentációban való közreműködéshez, beleértve a tárház elágaztatásának és klónozásának folyamatát is.
 author: jasonwhowell
 ms.author: jasonh
-manager: kfile
 ms.date: 01/18/2018
-ms.openlocfilehash: 2ad0de552d481e2460ca0f56570181e33d0a6608
-ms.sourcegitcommit: 92aef5ea8bdd692c5c393d5c8f99b9e4f672ef2b
+ms.openlocfilehash: 895c0fb0d64708e8e3d0f632c10a060791d15b65
+ms.sourcegitcommit: d3c7b49dc854dae8da9cd49da8ac4035789a5010
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36238989"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49805677"
 ---
 # <a name="set-up-git-repository-locally-for-documentation"></a>Git-tárház helyi beállítása dokumentációhoz
 
@@ -30,7 +29,7 @@ A közreműködés megkezdéséhez a következő egyszeri beállítási tevéken
 
 ## <a name="overview"></a>Áttekintés
 
-A Microsoft dokumentációs webhelyének készítésében való közreműködéshez helyileg hozhat létre és szerkeszthet Markdown-fájlokat a megfelelő dokumentációs tárház klónozásával. A Microsoft megköveteli, hogy létrehozza a megfelelő tárház elágazását a saját GitHub-fiókjában annak érdekében, hogy rendelkezzen olvasási és írási jogosultságokkal abban a javasolt módosításainak tárolásához. Ezután lekéréses kérelmekkel egyesítheti a módosításokat a csak olvasható központi megosztott tárházzal.
+A Microsoft dokumentációs webhelyének készítésében való közreműködéshez helyileg hozhat létre és szerkeszthet Markdown-fájlokat a megfelelő dokumentációs tárház klónozásával. A Microsoft megköveteli, hogy létrehozza a megfelelő tárház elágazását a saját GitHub-fiókjában annak érdekében, hogy abban rendelkezzen olvasási és írási jogosultságokkal a javasolt módosításainak tárolásához. Ezután lekéréses kérelmekkel egyesítheti a módosításokat a csak olvasható központi megosztott tárházzal.
 
 ![A GitHub-háromszög](./media/git-and-github-initial-setup.png)
 
@@ -60,7 +59,7 @@ A [docs.microsoft.com](https://docs.microsoft.com) webhelyen szolgáltatott doku
 ## <a name="fork-the-repository"></a>A tárház elágaztatása
 Készítsen egy elágaztatott példányt a megfelelő tárházról a saját GitHub-fiókjába a GitHub webhelyen keresztül.
 
-Erre a személyes elágaztatott tárházra mindenképp szüksége lesz, mert az összes fő dokumentációs tárház csak olvasási engedélyt biztosít, azaz közvetlenül a tárházban nem végezhet tartalmi módosításokat. A tartalom módosításához [pull-kérelmet](git-github-fundamentals.md#pull-requests) kell küldenie a fő tárházba az Ön saját elágaztatott példányából. Ehhez először létre kell hoznia a tárház saját példányát, amelyben írási engedéllyel is rendelkezik. A GitHub *elágazás (fork)* erre a célra szolgál.
+A személyes elágazás használata azért kötelező, mert minden fő dokumentáció csak olvasható hozzáférést engedélyez. A tartalom módosításához [pull-kérelmet](git-github-fundamentals.md#pull-requests) kell küldenie a fő tárházba az Ön saját elágaztatott példányából. Ehhez először létre kell hoznia a tárház saját példányát, amelyben írási engedéllyel is rendelkezik. A GitHub *elágazás (fork)* erre a célra szolgál.
 
 1. Nyissa meg a fő tárház GitHub-oldalát, és a jobb első sarokban kattintson a **Fork** (elágaztatás) gombra.
 

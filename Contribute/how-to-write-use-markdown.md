@@ -2,18 +2,18 @@
 title: A Markdown használata Docs-tartalmak írásához
 description: Ez a cikk alapvető információkat és tájékoztatást nyújt a docs.microsoft.com-cikkekben használt Markdown jelölőnyelvről.
 ms.date: 07/13/2017
-ms.openlocfilehash: dca1ccba2ae4ebd08b6039f5d780e7a7ac92e79f
-ms.sourcegitcommit: 92aef5ea8bdd692c5c393d5c8f99b9e4f672ef2b
+ms.openlocfilehash: 6bb8a1fa20957512addb07dda0e68abec4b0a83f
+ms.sourcegitcommit: d3c7b49dc854dae8da9cd49da8ac4035789a5010
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36238966"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49805725"
 ---
 # <a name="how-to-use-markdown-for-writing-docs"></a>A Markdown használata Docs-tartalmak írásához
 
-A docs.microsoft.com-cikkek a rendkívül egyszerű [Markdown](https://daringfireball.net/projects/markdown/) jelölőnyelv használatával készülnek, amely könnyen olvasható és könnyen elsajátítható. Ez az oka, hogy rövid idő alatt iparági szabvánnyá vált.
+A [docs.microsoft.com](http://docs.microsoft.com) cikkei a rendkívül egyszerű [Markdown](https://daringfireball.net/projects/markdown/) jelölőnyelv használatával készülnek, amely könnyen olvasható és könnyen elsajátítható. Ez az oka, hogy rövid idő alatt iparági szabvánnyá vált.
 
-Mivel a Docs-tartalmak a GitHubon vannak tárolva, azokhoz használható a Markdown [GitHub-stílusú Markdown (GFM)](https://help.github.com/categories/writing-on-github/) nevű bővítése, amely további funkciókat biztosít a gyakori formázási igényekhez. Ezen kívül az Open Publishing Services (OPS) a Markdig Markdown Parsert implementálja. A Markdig nagy mértékben kompatibilis a GitHub-stílusú Markdownnal (GFM), és további funkciókkal támogatja a Docs specifikus szolgáltatásainak használatát.
+Mivel a Docs-tartalmak a GitHubon vannak tárolva, azokhoz használható a Markdown [GitHub-stílusú Markdown (GFM)](https://help.github.com/categories/writing-on-github/) nevű bővítése, amely további funkciókat biztosít a gyakori formázási igényekhez. Ezen kívül az Open Publishing Services (OPS) a Markdig Markdown Parsert implementálja. A Markdig nagy mértékben kompatibilis a GFM-mel, és további funkciókkal támogatja a Docs specifikus szolgáltatásainak használatát.
 
 * A Markdig egy gyors, hatékony, CommonMark-megfelelőséggel rendelkező, bővíthető Markdown-feldolgozó .NET környezetekhez.
 * https://github.com/lunet-io/markdig
@@ -27,10 +27,10 @@ Mivel a Docs-tartalmak a GitHubon vannak tárolva, azokhoz használható a Markd
 Fejlécek a kettőskereszt karakterrel (#) hozhatók létre, a következőképpen:
 
 ```markdown
-    # This is heading 1
-    ## This is heading 2
-    ### This is heading 3
-    #### This is heading 4
+# This is heading 1
+## This is heading 2
+### This is heading 3
+#### This is heading 4
 ```
 
 ### <a name="bold-and-italic-text"></a>Félkövér és dőlt szöveg
@@ -38,19 +38,19 @@ Fejlécek a kettőskereszt karakterrel (#) hozhatók létre, a következőképpe
 A **félkövérként** formázandó szöveget zárja dupla csillagjelek közé:
 
 ```markdown
-    This text is **bold**.
+This text is **bold**.
 ```
 
 A *dőltként* formázandó szöveget zárja egyszeres csillagjelek közé:
 
 ```markdown
-    This text is *italic*.
+This text is *italic*.
 ```
 
 A ***félkövérként és dőltként*** is formázandó szöveget zárja háromszoros csillagjelek közé:
 
 ```markdown
-    This is text is both ***bold and italic***.
+This is text is both ***bold and italic***.
 ```
 
 ### <a name="lists"></a>Listák
@@ -107,16 +107,16 @@ Listák egymásba ágyazásához behúzással írja le a gyermeklista sorait. P�
 
 ```markdown
 1. First instruction
-    1. Sub-instruction
-    2. Sub-instruction
+   1. Sub-instruction
+   2. Sub-instruction
 2. Second instruction
 ```
 
 az alábbi módon jelenik meg:
 
 1. Első utasítás
-    1. Alutasítás
-    2. Alutasítás
+   1. Alutasítás
+   2. Alutasítás
 2. Második utasítás
 
 ### <a name="tables"></a>Táblázatok
@@ -145,12 +145,12 @@ az alábbi módon jelenik meg:
 
 További információ a táblázatok létrehozásáról:
 
-- A Markdig széles táblázatok formázását segítő [táblázatbehatárolási funkcióját](#table-wrapping) ismertető szakasz
-- Az [Organizing information with tables](https://help.github.com/articles/organizing-information-with-tables/) (Információk rendszerezése táblázatokkal) című GitHub-cikk
-- A [Markdown Tables Generator](https://www.tablesgenerator.com/markdown_tables) webalkalmazás
-- [Adam Pritchard: Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#wiki-tables) (Markdown-segédlet)
-- [Michel Fortin: Markdown Extra](https://michelf.ca/projects/php-markdown/extra/#table)
-- [HTML-táblázatok konvertálása Markdown-formátumra](https://jmalarcon.github.io/markdowntables/)
+- A Markdig széles táblázatok formázását segítő [táblázatbehatárolási funkcióját](#table-wrapping) ismertető szakasz.
+- Az [Információk rendszerezése táblázatokkal](https://help.github.com/articles/organizing-information-with-tables/) című GitHub-cikk.
+- A [Markdown Tables Generator](https://www.tablesgenerator.com/markdown_tables) webalkalmazás.
+- [Adam Pritchard: Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#wiki-tables) (Markdown-segédlet).
+- [Michel Fortin: Markdown Extra](https://michelf.ca/projects/php-markdown/extra/#table).
+- [HTML-táblázatok konvertálása Markdown-formátumra](https://jmalarcon.github.io/markdowntables/).
 
 ### <a name="links"></a>Hivatkozások
 
@@ -161,7 +161,7 @@ A soron belül elhelyezett hivatkozások Markdown-szintaxisa a hivatkozásként 
 További információ a hivatkozások használatáról:
 
 - A Markdown alapvető hivatkozástámogatásáról a [Markdown syntax guide](https://daringfireball.net/projects/markdown/syntax#link) (Útmutató a Markdown-szintaxishoz) című oldalon található további információ.
-- A Markdig által biztosított hivatkozási szintaxisról a jelen útmutató [Links](how-to-write-links.md) (Hivatkozások) című oldalán található részletesebb információ.
+- A Markdig által biztosított hivatkozási szintaxisról a jelen útmutató [Hivatkozások](how-to-write-links.md) című oldalán található részletesebb információ.
 
 ### <a name="code-snippets"></a>Kódrészletek
 
@@ -212,6 +212,7 @@ Ezekhez a nyelvekhez a rendszer támogatja a névformázást, és legtöbbjük e
 |PowerShell|powershell|
 |Python|python|
 |Q#|qsharp|
+|R|r|
 |Ruby|ruby|
 |SQL|sql|
 |Swift|swift|
@@ -336,18 +337,19 @@ A Markdig a kódrészlet-bővítményével programkódok a cikkekben való speci
 Az aláhúzásjeleket tartalmazó helyettesítő szövegek nem jelennek meg helyesen. Például a következő szöveg helyett:
 
 ```markdown
-![ADextension_2FA_Configure_Step4] (./media/bogusfilename/ADextension_2FA_Configure_Step4.PNG)
+![ADextension_2FA_Configure_Step4](./media/bogusfilename/ADextension_2FA_Configure_Step4.PNG)
 ```
 
 Az aláhúzás jeleket így jelenítheti meg:
 
 ```markdown
-![ADextension\_2FA\_Configure\_Step4] (./media/bogusfilename/ADextension_2FA_Configure_Step4.PNG)
+![ADextension\_2FA\_Configure\_Step4](./media/bogusfilename/ADextension_2FA_Configure_Step4.PNG)
 ```
 
 ### <a name="apostrophes-and-quotation-marks"></a>Aposztrófok és idézőjelek
 
-Ha a Wordből másol a Markdown-szerkesztőbe, akkor a szöveg „intelligens” (íves) aposztrófokat és időzőjeleket tartalmazhat. Ezeket kódolni kell, vagy pedig egyszerű aposztrófokra, illetve idézőjelekre kell cserélni, különben a fájl közzétételekor a következőhöz hasonló eredményt kaphat: Itâ€™s
+Ha a Wordből másol a Markdown-szerkesztőbe, akkor a szöveg „intelligens” (íves) aposztrófokat és időzőjeleket tartalmazhat. Ezeket kódolni kell, vagy pedig egyszerű aposztrófokra, illetve idézőjelekre kell cserélni,
+különben a fájl közzétételekor a következőhöz hasonló eredményt kaphat: Itâ€™s
 
 Ezen írásjelek „intelligens” verzióinak kódolásai a következők:
 
@@ -358,7 +360,7 @@ Ezen írásjelek „intelligens” verzióinak kódolásai a következők:
 
 ### <a name="angle-brackets"></a>Csúcsos zárójelek
 
-Ha csúcsos zárójeleket használ a fájl szövegében (nem a kódban), például egy helyőrző jelölésére, akkor a csúcsos zárójeleket manuálisan kell kódolnia. Ellenkező esetben a Markdown úgy fogja értelmezni, hogy HTML-címkének szánták őket.
+Helyőrzők jelölésére általában csúcsos zárójeleket alkalmazunk. Ha ezt szövegben használja (és nem kódban), a csúcsos zárójelet kódolnia kell. Ellenkező esetben a Markdown úgy fogja értelmezni, hogy HTML-címkének szánták őket.
 
 A `<script name>` kódolása például a következő: `&lt;script name&gt;`
 
@@ -369,3 +371,4 @@ A `<script name>` kódolása például a következő: `&lt;script name&gt;`
 - [Introduction to Markdown](https://daringfireball.net/projects/markdown/syntax) (Bevezetés a Markdown használatába)
 - [Markdown-segédlet a Docshoz](./media/documents/markdown-cheatsheet.pdf?raw=true)
 - [GitHub's Markdown Basics](https://help.github.com/articles/markdown-basics/) (A GitHub a Markdown alapjait ismertető cikke)
+- [Markdown-útmutató](https://www.markdownguide.org/)
