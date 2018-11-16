@@ -5,12 +5,12 @@ author: billwagner
 ms.author: wiwagn
 manager: wpickett
 ms.date: 04/17/2018
-ms.openlocfilehash: 921c63c2748149543bfc73e4b38278a2ed74ac56
-ms.sourcegitcommit: d3c7b49dc854dae8da9cd49da8ac4035789a5010
+ms.openlocfilehash: dab2de80654fb55382b2ca7c9f78df36df9971dc
+ms.sourcegitcommit: 44eb4f5ee65c1848d7f36fca107b296eb7687397
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49805792"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51609361"
 ---
 # <a name="microsoft-docs-contributor-guide-overview"></a>Microsoft Docs-közreműködői útmutató – áttekintés
 
@@ -37,10 +37,12 @@ A gyors szerkesztésekkel leegyszerűsítő a jelentési folyamat, és javíthat
 
 Ez után a cikk szerkesztéséhez kattintson a ceruza ikonra, amely a következő ábrán látható.
 
-> [!NOTE]
-> Ha a ceruza ikon kiszürkítve látható, akkor jelentkezzen be a GitHub-fiókjába, vagy hozzon létre egy új fiókot. Végezze el a módosításokat a webszerkesztőben. A módosítás formázásának ellenőrzéséhez kattintson a **Preview changes** (Módosítások előnézete) fülre.
-
 ![A ceruzaikon helye](./media/index/editicon.png)
+
+> [!NOTE]
+> Ha a ceruza ikon kiszürkítve látható, akkor jelentkezzen be a GitHub-fiókjába, vagy hozzon létre egy új fiókot.
+
+Végezze el a módosításokat a webszerkesztőben. A módosítás formázásának ellenőrzéséhez kattintson a **Preview changes** (Módosítások előnézete) fülre.
 
 Miután elvégezte a módosításokat görgessen a lap aljára. Adja meg a lekéréses kérelem címét és leírását, majd kattintson a **Propose file change** (Fájlmódosítás javasolása) elemre az alábbi ábrának megfelelően:
 
