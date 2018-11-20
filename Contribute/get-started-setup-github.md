@@ -2,12 +2,12 @@
 title: A GitHub-fiók beállításának lépései
 description: Ez a cikk végigvezeti a docs.microsoft.com webhelyen található tartalmakban való közreműködéshez szükséges GitHub-fiók beállításának folyamatán.
 ms.date: 02/27/2018
-ms.openlocfilehash: 4bbf110fdbc1a60f77362a36a9c2c5b654d450cf
-ms.sourcegitcommit: d3c7b49dc854dae8da9cd49da8ac4035789a5010
+ms.openlocfilehash: 89f45c32f969fe1186eff3b442cb995fd08a8d11
+ms.sourcegitcommit: 44eb4f5ee65c1848d7f36fca107b296eb7687397
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49805493"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51609476"
 ---
 # <a name="github-account-setup"></a>A GitHub-fiók beállítása
 
@@ -20,8 +20,8 @@ A Docs műszaki tartalmakban való közreműködéshez be kell állítania a saj
 Ha még nem rendelkezik GitHub-fiókkal, [hozzon létre egyet](https://github.com/join). A GitHub-profilban azonosítsa az esetleges alkalmazotti viszonyokat. A [docs.microsoft.com](https://docs.microsoft.com) webhely készítésében való közreműködéseket számításba veszik az [MVP díj](https://mvp.microsoft.com) odaítélése során. Az azonosítás segít abban, hogy felépítsük minden tevékenységének teljes profilját.
 
 >[!NOTE]
-> A nyílt forráskódú projektekben részt vevő Microsoft-alkalmazottak mindig ekként azonosítják magukat a GitHub-profiljaikban. A közösségi közreműködőknek biztosítaniuk kell, hogy a profil nem utal helytelenül alkalmazotti kapcsolatra.
+> A nyílt forráskódú projektekben részt vevő Microsoft-alkalmazottak mindig így azonosítják magukat a GitHub-profiljaikban. A közösségi közreműködőknek biztosítaniuk kell, hogy a profil nem utal helytelenül alkalmazotti kapcsolatra.
 
-## <a name="next-steps"></a>Következő lépések
+## <a name="next-step"></a>Következő lépés
 
 * Lépjen tovább a [Eszközre telepítés](get-started-setup-tools.md) című cikkre a Git Bash, egy Markdown-szerkesztő és egyéb eszközök telepítéséhez.

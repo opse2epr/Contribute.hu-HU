@@ -4,12 +4,12 @@ description: Ez a cikk útmutatást nyújt a helyi Git-tárház létrehozásáho
 author: jasonwhowell
 ms.author: jasonh
 ms.date: 01/18/2018
-ms.openlocfilehash: 895c0fb0d64708e8e3d0f632c10a060791d15b65
-ms.sourcegitcommit: d3c7b49dc854dae8da9cd49da8ac4035789a5010
+ms.openlocfilehash: 5373bf34399105c15caabe0abdc1ea0692c46a4a
+ms.sourcegitcommit: 44eb4f5ee65c1848d7f36fca107b296eb7687397
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49805677"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51609499"
 ---
 # <a name="set-up-git-repository-locally-for-documentation"></a>Git-tárház helyi beállítása dokumentációhoz
 
@@ -41,7 +41,7 @@ Ha most ismerkedik a GitHubbal, tekintse meg az alábbi videót, amelyben megism
 
 A [docs.microsoft.com](https://docs.microsoft.com) webhelyen szolgáltatott dokumentáció a [github.com](https://www.github.com) számos különböző tárhelyén található.
 
-1. Ha nem biztos benne, hogy melyik tárházat kell használnia, nyissa meg a cikket a docs.microsoft.com webhelyen a webböngészővel. Válassza a **Szerkesztés** hivatkozást (a ceruza ikont) a cikk jobb felső sarkában.
+1. Ha nem biztos benne, hogy melyik tárházat kell használnia, nyissa meg a cikket a [docs.microsoft.com](https://docs.microsoft.com) webhelyen a webböngészővel. Válassza a **Szerkesztés** hivatkozást (a ceruza ikont) a cikk jobb felső sarkában.
 
    ![A tárház és a fájl helyének meghatározásához kattintson a Szerkesztés lehetőségre.](media/index/edit-article.png)
 
@@ -92,7 +92,7 @@ Hozzon létre egy mappát a számítógépén a tárház helyi példányának. E
 Készüljön fel a Git Bash segítségével a **clone** parancs futtatására, mellyel a tárház saját használatú példányát az eszköze aktuális könyvtárába fogja másolni. 
 
 ### <a name="authenticate-by-using-git-credential-manager"></a>Hitelesítés a Git Credential Manager használatával
-Ha a Git for Windows legújabb verziójával rendelkezik, és annak telepítésénél az alapértelmezés szerinti beállításokat fogadta el, akkor a Git Credential Manager alapértelmezés szerint engedélyezve van. A Git Credential Manager jelentősen leegyszerűsíti a hitelesítést, hiszen így nem szükséges majd előkeresnie a személyes hozzáférési tokent minden olyan alkalommal, amikor a hitelesített GitHub-kapcsolatot vagy a távoli kapcsolatot újraindítja.
+Ha a Git for Windows legújabb verziójával rendelkezik, és annak telepítésénél az alapértelmezés szerinti beállításokat fogadta el, akkor a Git Credential Manager alapértelmezés szerint engedélyezve van. A Git Credential Manager jelentősen leegyszerűsíti a hitelesítést, hiszen így nem szükséges majd előkeresnie a személyes hozzáférési tokent minden alkalommal, amikor újraindítja a GitHubbal létesített hitelesített kapcsolatot vagy a távoli kapcsolatot.
 
 1. Futtassa a **clone** parancsot a tárház nevének megadásával. A klónozás letölti (klónozza) az elágaztatott tárházat a helyi számítógépére. 
 

@@ -8,16 +8,16 @@ ms.date: 05/18/2018
 ms.topic: contributor-guide
 ms.prod: non-product-specific
 audience: internal,external
-ms.openlocfilehash: e248eafb0247b200313ba198f2545eca947f5627
-ms.sourcegitcommit: d3c7b49dc854dae8da9cd49da8ac4035789a5010
+ms.openlocfilehash: 64921bacf48e638221048db4b24e1a941f1d2777
+ms.sourcegitcommit: 44eb4f5ee65c1848d7f36fca107b296eb7687397
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49805911"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51609545"
 ---
 # <a name="markdown-reference-for-ops"></a>Markdown-referencia az OPS-hez
 
-A Markdown egy egyszerűen kezelhető jelölőnyelv, amely a formázatlan szövegek formázására alkalmas szintaxist használ. Az OPS támogatja a Markdown CommonMark szabványát, és emellett számos olyan egyéni Markdown-bővítményt is, amelyekkel sokrétűbbé tehetők a docs.microsoft.com webhelyen található tartalmak. A cikk betűrendbe szedett referenciát nyújt a Markdown OPS-ben történő és docs.microsoft.com-tartalmak létrehozásához való használatához.
+A Markdown egy egyszerűen kezelhető jelölőnyelv, amely a formázatlan szövegek formázására alkalmas szintaxist használ. Az Open Publishing Services (OPS) támogatja a Markdown CommonMark szabványát, és emellett számos olyan egyéni Markdown-bővítményt is, amelyekkel sokrétűbbé tehetők a docs.microsoft.com webhelyen található tartalmak. A cikk betűrendbe szedett referenciát nyújt a Markdown OPS-ben történő és docs.microsoft.com-tartalmak létrehozásához való használatához.
 
 Markdown-szintaxist bármilyen szövegszerkesztő használatával írhat. Ha olyan szövegszerkesztőt keres, amely a szabványos Markdown-szintaxis mellett támogatja az egyéni OPS-bővítményeket is, javasoljuk a [VS Code](https://code.visualstudio.com/) alkalmazás a [Docs Authoring Pack (Docs-közreműködői csomag)](https://aka.ms/DocsAuthoringPack) bővítmény telepítésével való használatát.
 
@@ -122,7 +122,7 @@ A legtöbb esetben az OPS hagyományos Markdown-hivatkozásokat használ a más 
 > A VS Code alkalmazáshoz készült Docs-közreműködői csomag anélkül segíti a relatív hivatkozások és könyvjelzők helyes beszúrását, hogy az elérési utakkal kellene bajlódnia.
 
 > [!IMPORTANT]
-> Microsoft-oldalakra mutató hivatkozás készítésekor ne használjon olyan területibeállítás-kódokat, mint például a hu-HU. A kódban explicit módon megadott területi beállítások megakadályozhatják a honosított tartalmak megjelenítését, ez pedig rontja a más területi beállítást használók felhasználói élményét, és jelentős honosítási költségeket vonhat maga után. Amikor kimásol egy URL-címet a böngészőből, alapértelmezetten hozzáadásra kerül a területi beállítás kódja is, ezért azt saját kezűleg kell törölnie, amikor a hivatkozást létrehozza. Használja például így:
+> Microsoft-oldalakra mutató hivatkozás készítésekor ne használjon olyan területibeállítás-kódokat, mint például a hu-HU. A kódban explicit módon megadott területi beállítások megakadályozhatják a honosított tartalmak megjelenítését, ez pedig rontja a más területi beállítást használók felhasználói élményét, és jelentős honosítási költségeket vonhat maga után. Amikor kimásol egy URL-címet a böngészőből, a rendszer alapértelmezetten hozzáadja a területi beállítás kódját is, ezért azt saját kezűleg kell törölnie, amikor a hivatkozást létrehozza. Használja például így:
 >
 > `[Microsoft](https://www.microsoft.com)`
 >
@@ -206,7 +206,7 @@ To go to a section on another page.
 Az aktuális dokumentumkészletben vagy más dokumentumkészletekben szereplő, automatikusan generált API-referenciaoldalakra mutató hivatkozás létrehozásához használjon XREF-hivatkozásokat az egyedi azonosítóval (UID).
 
 > [!NOTE]
-> A más dokumentumkészletek API-referenciaoldalaira mutató hivatkozások készítéséhez hozzá kell adnia az `xrefService` beállítást a `docfx.json` fájlhoz.
+> A más dokumentumkészletek API-referenciaoldalaira mutató hivatkozások készítéséhez hozzá kell adnia az `xrefService` konfigurációt a `docfx.json` fájlhoz.
 > ```
 > "build": {
 >   ...

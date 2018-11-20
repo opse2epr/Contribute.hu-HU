@@ -2,12 +2,12 @@
 title: GitHub-közreműködői munkafolyamat nagyobb vagy hosszú távú módosításokhoz
 description: Ez a cikk bemutatja, hogyan működhet közre a docs.microsoft.com cikkein a „nagy” közreműködői munkafolyamat követésével.
 ms.date: 08/30/2017
-ms.openlocfilehash: 31f9421fc5edbc2f65c5ff20a86da08c70211ec7
-ms.sourcegitcommit: 92aef5ea8bdd692c5c393d5c8f99b9e4f672ef2b
+ms.openlocfilehash: 93e659df4f72c6a272d15fd7487eb3a997bdf3c8
+ms.sourcegitcommit: 44eb4f5ee65c1848d7f36fca107b296eb7687397
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36239825"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51609405"
 ---
 # <a name="github-contribution-workflow-for-major-or-long-running-changes"></a>GitHub-közreműködői munkafolyamat nagyobb vagy hosszú távú módosításokhoz
 
@@ -31,7 +31,7 @@ Mindenekelőtt tekintse át a Git/GitHub néhány, a munkafolyamatban használt 
 | Név | Leírás |
 |-----------|-------------|
 |elágazás (fork)|Általában főnévként használják, egy fő GitHub-tárház másolatát értve alatta. Egy elágazás a gyakorlatban nem más, mint egy újabb tárház. Mégis különleges abban az értelemben, hogy a GitHub fenntartja annak kapcsolatát a fő/szülőtárházzal. Igeként is használják, a következő példához hasonlóan: „Először el kell ágaztatnia a tárházat.”.|
-|távoli (remote)|Névvel rendelkező kapcsolat egy távoli tárházzal, amilyen a „forrás” vagy a „felső”. A Git azért nevezi ezeket távoliaknak, mert egy másik számítógépen üzemeltetett tárházra való hivatkozásra használják őket. Ebben a munkafolyamatban a távoli mindig GitHub-tárházat jelent.|
+|távoli (remote)|Névvel rendelkező kapcsolat egy távoli tárházzal, amilyen a „forrás” vagy a „felső”. A Git azért nevezi távolinak, mert egy másik számítógépen üzemeltetett tárházra való hivatkozásra használják. Ebben a munkafolyamatban a távoli mindig GitHub-tárházat jelent.|
 |forrás (origin)|Annak a kapcsolatnak a neve, amely a helyi tárház és azon tárház között áll fenn, amelyből azt klónozták. Ebben a munkafolyamatban a forrás mindig az elágazással való kapcsolatot jelenti. Előfordul, hogy magát a forrástárházat értik alatta, például a következőképpen: „Ne felejtse el leküldeni a változásokat a forrásba”.|
 |felső (upstream)|A forrás távoli kapcsolathoz hasonlóan a felső is névvel rendelkező kapcsolatot jelent egy másik tárházzal. Ebben a munkafolyamatban a felső a helyi tárház és azon fő tárház közötti kapcsolatot jelenti, amelyből az elágazást létrehozták. Előfordul, hogy magát az felső tárházat értik alatta, például a következőképpen: „Ne felejtse el lekérni a változásokat a felsőből”.|
 

@@ -1,13 +1,15 @@
 ---
 title: Hivatkozások használata a dokumentációban
 description: Ebből a cikkből megtudhatja, hogyan hozhat létre más tartalmakra mutató hivatkozásokat a docs.microsoft.com webhelyen.
-ms.date: 06/29/2017
-ms.openlocfilehash: 1820ed9af561964d7afe0b29827ee43526c72489
-ms.sourcegitcommit: d3c7b49dc854dae8da9cd49da8ac4035789a5010
+author: gewarren
+ms.author: gewarren
+ms.date: 10/31/2018
+ms.openlocfilehash: e56bc0fe3a5428af2a79641a8959b4da21270d53
+ms.sourcegitcommit: 44eb4f5ee65c1848d7f36fca107b296eb7687397
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49805769"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51609430"
 ---
 # <a name="using-links-in-documentation"></a>Hivatkozások használata a dokumentációban
 Ebből a cikkből megtudhatja, hogyan használhat hivatkozásokat a docs.microsoft.com webhelyen közzétett lapokon. A hivatkozások Markdown jelölőnyelven való hozzáadása egyszerű: csupán néhány konvenciót kell követnie. A hivatkozások mutathatnak ugyanannak a lapnak egy másik részére, egy másik kapcsolódó lapra, illetve külső webhelyekre és URL-címekre.
@@ -56,7 +58,7 @@ Ha egy műszaki Docs-cikkben ugyanannak a dokumentumkészletnek egy másik műsz
 
   `[link text](../directory/article-name.md)`
 
-- A cikk egy másik dokumentumkészletben lévő cikkre mutat (egyazon tárházon belül is): `[link text](./directory/article-name)`
+- A cikk egy másik dokumentumkészletben lévő cikkre mutat (egyazon tárházon belül is):  `[link text](./directory/article-name)`
 
 > [!IMPORTANT]
 > A fenti példák egyikében sem szerepel a `~/` hivatkozás részeként. Ha a tárház gyökerében található útvonalra mutató hivatkozást készít, használja a `/` karaktert. A `~/` használata érvénytelen hivatkozást eredményez a GitHub forrástárházaiba valló navigáláskor. A probléma kikerülhető, ha az útvonal elején a `/` szerepel.
@@ -84,17 +86,23 @@ Nem szükséges horgonyokat létrehozni. Ezeket ugyanis a közzététel időpont
 
 A beágyazott fájlok másik könyvtárban találhatók, ezért hosszabb relatív elérési utakat kell használnia. Ha beágyazott fájlból szeretne cikkre mutató hivatkozást létrehozni, használja a következő formátumot:
 
-    [link text](../articles/folder/article-name.md)
+   ```markdown
+   [link text](../articles/folder/article-name.md)
+   ```
 
 ## <a name="links-in-selectors"></a>A választókban lévő hivatkozások
 
-Ha beágyazásba ágyazott választókkal rendelkezik – amilyeneket az Azure dokumentációs csapata is használ –, akkor a következő hivatkozásszerkezetet kell használnia:
+A kiválasztó egy navigációs összetevő, amely legördülő lista formájában jelenik meg a Docs-cikkekben. Amikor az olvasó kiválaszt egy értéket a legördülő listából, a böngészőben megnyílik a kiválasztott cikk. A kiválasztó-lista általában a szorosan kapcsolódó cikkekre, például ugyanarra a témára több programnyelven, vagy egy szorosan kapcsolódó cikksorozatra mutató hivatkozásokat tartalmaz. 
 
-    > [AZURE.SELECTOR-LIST (Legördülő menü1 | Legördülő menü2 )]
-    - [(Szöveg1 | Példa1 )](../articles/folder/article-name1.md)
-    - [(Szöveg1 | Példa2 )](../articles/folder/article-name2.md)
-    - [(Szöveg2 | Példa3 )](../articles/folder/article-name3.md)
-    - [(Szöveg2 | Példa4 )](../articles/folder/article-name4.md) -->
+Ha beágyazásba ágyazott kiválasztókkal rendelkezik, akkor a következő hivatkozásszerkezetet kell használnia:
+
+   ```markdown
+   > [AZURE.SELECTOR-LIST (Dropdown1 | Dropdown2 )]
+   - [(Text1 | Example1 )](../articles/folder/article-name1.md)
+   - [(Text1 | Example2 )](../articles/folder/article-name2.md)
+   - [(Text2 | Example3 )](../articles/folder/article-name3.md)
+   - [(Text2 | Example4 )](../articles/folder/article-name4.md) -->
+   ```
 
 ## <a name="reference-style-links"></a>Referencia típusú hivatkozások
 
@@ -102,23 +110,29 @@ Referencia típusú hivatkozások használatával leegyszerűsíthető a forrás
 
 Beágyazott szöveg:
 
-    I get 10 times more traffic from [Google][1] than from [Yahoo][2] or [MSN][3].
+   ```markdown
+   I get 10 times more traffic from [Google][1] than from [Yahoo][2] or [MSN][3].
+   ```
 
 Cikk végén található hivatkozások:
 
-    <!--Reference links in article-->
-    [1]: http://google.com/
-    [2]: http://search.yahoo.com/
-    [3]: http://search.msn.com/
-
+   ```markdown
+   <!--Reference links in article-->
+   [1]: http://google.com/
+   [2]: http://search.yahoo.com/
+   [3]: http://search.msn.com/
+   ```
+   
 Ügyeljen arra, hogy a kettőspont és a hivatkozás között szóközt hagyjon. Ha más műszaki cikkekre mutató hivatkozást hoz létre, és elfelejt szóközt hagyni, akkor a hivatkozás hibásan szerepel majd a közzétett cikkben.
 
 ## <a name="links-to-pages-that-are-not-part-of-the-technical-documentation-set"></a>Hivatkozás a műszaki dokumentációkészlet részét nem képező lapokra
 
 Ha a Microsoft tulajdonában lévő másik lapra mutató hivatkozást szeretne létrehozni (például az egyik díjszabási lapra, SLA-lapra vagy bármi olyanra, amely nem dokumentációs cikk), használjon abszolút URL-címet, de hagyja ki a területi kódot. A cél itt az, hogy a hivatkozások működjenek a GitHubban és a megjelenített webhelyen:
 
-    [link text](https://azure.microsoft.com/pricing/details/virtual-machines/)
-
+   ```markdown
+   [link text](https://azure.microsoft.com/pricing/details/virtual-machines/)
+   ```
+   
 ## <a name="links-to-third-party-sites"></a>Külső webhelyekre mutató hivatkozások
 
 A legjobb felhasználói környezet az, amely minimális szintre csökkenti a felhasználók másik webhelyre való küldését. Ezért a (néha valóban szükséges) külső webhelyekre mutató hivatkozásokat a következő információk alapján hozza létre:
@@ -146,7 +160,7 @@ Az URL-cím szerkezete:
   - `/powershell/azure/<topic-file-name>[?view=<moniker-name>]`
   - `/powershell/azure/<service-name>/<topic-file-name>[?view=<moniker-name>]`
 
-A &lt;moniker-name&gt; rész nem kötelező. Ha ezt kihagyja, akkor a rendszer a legújabb verziójú tartalomra irányítja majd át. A &lt;service-name&gt; rész a következő alap URL-címek között szereplő példák egyike:
+A `<moniker-name>` rész nem kötelező. Ha ezt kihagyja, akkor a rendszer a legújabb verziójú tartalomra irányítja majd át. A `<service-name>` rész a következő alap URL-címek között szereplő példák egyike:
 
 - Azure PowerShell- (AzureRM-) tartalom: [https://docs.microsoft.com/powershell/azure/](https://docs.microsoft.com/powershell/azure/)
 - Azure PowerShell- (ASM-) tartalom: [https://docs.microsoft.com/powershell/azure/_servicemanagement_](https://docs.microsoft.com/powershell/azure/servicemanagement)

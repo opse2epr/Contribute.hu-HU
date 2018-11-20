@@ -11,6 +11,11 @@
 ## [Stílus és hangvétel – gyorsútmutató](style-quick-start.md)
 ## [Hivatkozások](how-to-write-links.md)
 ## [Közreműködői csomag a Docs webhelyhez](how-to-write-docs-auth-pack.md)
+# Dokumentációkészlet-specifikus útmutatás
+## [.NET-dokumentáció](dotnet-contribute.md)
+### [Közreműködés a .NET-dokumentációban](dotnet-contribute-process.md)
+### [.NET-dokumentációs stíluskonvenciók](dotnet-style-guide.md)
+### [Útmutató a szöveg hangjához és hangneméhez](dotnet-voice-tone.md)
 
 <!--
 ## Creating new content

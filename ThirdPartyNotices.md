@@ -5,6 +5,6 @@ A Microsoft, Windows, Microsoft Azure és/vagy más Microsoft-termékek, amelyek
 A jelen projekthez kapott licencek nem jogosítják fel Önt Microsoft-nevek, -emblémák vagy -védjegyek használatára.
 A Microsoft általános védjegyútmutatóját itt találhatja: http://go.microsoft.com/fwlink/?LinkID=254653.
 
-Az adatvédelmi információkat itt találhatja: https://privacy.microsoft.com/en-us/
+Az adatvédelmi információkat itt találhatja: https://privacy.microsoft.com/
 
 A Microsoft és minden közreműködője minden jogot fenntart akár saját szerzői jogi szabályainak, szabadalmainak vagy védjegyeinek értelmében, akár közvetve vagy bármilyen más módon.
