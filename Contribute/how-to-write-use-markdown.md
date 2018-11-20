@@ -2,12 +2,12 @@
 title: A Markdown használata Docs-tartalmak írásához
 description: Ez a cikk alapvető információkat és tájékoztatást nyújt a docs.microsoft.com-cikkekben használt Markdown jelölőnyelvről.
 ms.date: 07/13/2017
-ms.openlocfilehash: 6bb8a1fa20957512addb07dda0e68abec4b0a83f
-ms.sourcegitcommit: d3c7b49dc854dae8da9cd49da8ac4035789a5010
+ms.openlocfilehash: 21194c4bd6020d847b526a4d9544c826aa199e2a
+ms.sourcegitcommit: 44eb4f5ee65c1848d7f36fca107b296eb7687397
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49805725"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51609522"
 ---
 # <a name="how-to-use-markdown-for-writing-docs"></a>A Markdown használata Docs-tartalmak írásához
 
@@ -22,9 +22,9 @@ Mivel a Docs-tartalmak a GitHubon vannak tárolva, azokhoz használható a Markd
 
 ## <a name="markdown-basics"></a>A Markdown alapjai
 
-### <a name="headings"></a>Fejlécek
+### <a name="headings"></a>Címsorok
 
-Fejlécek a kettőskereszt karakterrel (#) hozhatók létre, a következőképpen:
+Címsorok a kettőskereszt karakterrel (#) hozhatók létre, a következőképpen:
 
 ```markdown
 # This is heading 1
@@ -32,6 +32,14 @@ Fejlécek a kettőskereszt karakterrel (#) hozhatók létre, a következőképpe
 ### This is heading 3
 #### This is heading 4
 ```
+
+A címsorokat atx-stílussal kell megadni. Ez azt jelenti, hogy 1–6 kettőskereszt karaktert (#) kell a sor elejére írni, a számuk a H1–H6 HTML-címsorszintjét jelöli. Fent a címsorokra látható példa, az elsőtől a negyedik szintig.
+
+Egy témakörben **egy és csak egy** első szintű címsornak (H1) kell lennie, ez fog megjelenni a lapon címként.
+
+Ha `#` a cím az utolsó karaktere, akkor még egy `#` karaktert kell a cím végére írni ahhoz, hogy helyesen jelenjen meg. Például így: `# Async Programming in F# #`.
+
+A második szintű címsorokból generálódik a lapon lévő tartalomjegyzék, ez jelenik meg a lap címe alatti „A cikk tartalma” szakaszban.
 
 ### <a name="bold-and-italic-text"></a>Félkövér és dőlt szöveg
 
@@ -52,6 +60,18 @@ A ***félkövérként és dőltként*** is formázandó szöveget zárja hároms
 ```markdown
 This is text is both ***bold and italic***.
 ```
+
+### <a name="blockquotes"></a>Idézetblokkok
+
+Az idézetblokkok létrehozására a `>` karakter használatos:
+
+```markdown
+> The drought had lasted now for ten million years, and the reign of the terrible lizards had long since ended. Here on the Equator, in the continent which would one day be known as Africa, the battle for existence had reached a new climax of ferocity, and the victor was not yet in sight. In this barren and desiccated land, only the small or the swift or the fierce could flourish, or even hope to survive.
+```
+
+Az előző példa a következőképpen jelenik meg:
+
+> Ekkorra már tízmillió éve aszályos volt az időjárás, és a rettentő gyíkok uralma már rég véget ért. Itt az egyenlítőnél, a később Afrika néven ismert kontinensen példátlan hevességű lett a létért folyó harc, a győztes pedig még fel sem tűnt a láthatáron. Ezen a sivár és kiszikkadt vidéken csak az apró, a gyors és a harcias tudott életben maradni, vagy akár csak reménykedni is benne.
 
 ### <a name="lists"></a>Listák
 
@@ -93,8 +113,8 @@ Rendezett vagy lépéseket ismertető listákat a megfelelő számok használat�
 
 ```markdown
 1. First instruction
-2. Second instruction
-3. Third instruction
+1. Second instruction
+1. Third instruction
 ```
 
 az alábbi módon jelenik meg:
@@ -108,8 +128,8 @@ Listák egymásba ágyazásához behúzással írja le a gyermeklista sorait. P�
 ```markdown
 1. First instruction
    1. Sub-instruction
-   2. Sub-instruction
-2. Second instruction
+   1. Sub-instruction
+1. Second instruction
 ```
 
 az alábbi módon jelenik meg:
@@ -118,6 +138,8 @@ az alábbi módon jelenik meg:
    1. Alutasítás
    2. Alutasítás
 2. Második utasítás
+
+Felhívjuk figyelmét, hogy minden bejegyzésnél az „1.” jelölést használjuk. Ez megkönnyíti az eltérések ellenőrzését, ha a későbbi frissítésekbe új lépések kerülnek, vagy törlünk a lépések közül.
 
 ### <a name="tables"></a>Táblázatok
 
@@ -194,6 +216,8 @@ Ezekhez a nyelvekhez a rendszer támogatja a névformázást, és legtöbbjük e
 |C++/CX|cppcx|
 |C++/WinRT|cppwinrt|
 |C#|csharp|
+|C# böngészőben|csharp-interactive|
+|Konzol|console|
 |CSHTML|cshtml|
 |DAX|dax|
 |F#|fsharp|
@@ -221,6 +245,8 @@ Ezekhez a nyelvekhez a rendszer támogatja a névformázást, és legtöbbjük e
 |VSTS CLI|vstscli|
 |XAML|xaml|
 |XML|xml|
+
+A `csharp-interactive` név a C# nyelvre utal, valamint arra, hogy a böngészőből futtathatók a minták. A kódrészletek lefordítása és végrehajtása egy Docker-tárolóban történik, és ennek a programvégrehajtásnak az eredménye jelenik meg a felhasználó böngészőablakában.
 
 #### <a name="example-c"></a>C\#-példa:
 
@@ -256,8 +282,8 @@ __Markdown__
 
     ```sql
     CREATE TABLE T1 (
-      c1 int PRIMARY KEY,
-      c2 varchar(50) SPARSE NULL
+      c1 int PRIMARY KEY,
+      c2 varchar(50) SPARSE NULL
     );
     ```
 
@@ -265,8 +291,8 @@ __Megjelenítés__
 
 ```sql
 CREATE TABLE T1 (
-  c1 int PRIMARY KEY,
-  c2 varchar(50) SPARSE NULL
+  c1 int PRIMARY KEY,
+  c2 varchar(50) SPARSE NULL
 );
 ```
 
@@ -296,6 +322,36 @@ A megjegyzésblokkok 4 típusa közül választhat, hogy felhívja a figyelmet a
 
 Általánosságban elmondható, hogy a megjegyzésblokkokat ritkán szabad használni, mert megtörhetik a cikk folytonosságát. Bár a kódblokkok, képek, listák és hivatkozások használata a megjegyzésblokkokon belül is támogatott, törekedjen egyszerű és könnyen érthető megjegyzésblokkok írására.
 
+Példák:
+
+```markdown
+> [!NOTE]
+> This is a NOTE
+
+> [!WARNING]
+> This is a WARNING
+
+> [!TIP]
+> This is a TIP
+
+> [!IMPORTANT]
+> This is IMPORTANT
+```
+
+Ez a következőképpen jelenik meg:
+
+> [!NOTE]
+> Ez egy MEGJEGYZÉS
+
+> [!WARNING]
+> Ez egy FIGYELMEZTETÉS
+
+> [!TIP]
+> Ez egy TIPP
+
+> [!IMPORTANT]
+> Ez FONTOS
+
 ### <a name="includes"></a>Beágyazások
 
 Ha újrafelhasználható szöveg- vagy képfájlokat kell „beágyaznia” a cikkek fájljaiba, akkor a Markdig fájlbeágyazási funkciójával hivatkozhat a beágyazandó fájlra. Ez a funkció arra utasítja az OPS-t, hogy az összeállítás során az adott fájlt is foglalja bele a cikkbe, így annak tartalma már szerepelni fog a közzétett cikkben. A tartalmak újrafelhasználását háromféle beágyazás segíti:
@@ -317,13 +373,29 @@ Néhány követelmény és megfontolandó szempont a beágyazásokhoz:
 - A hagyományos cikkekhez hasonlóan itt se osszon meg médiát a beágyazott fájlok között. Minden egyes beágyazáshoz és cikkhez használjon külön fájlt, egyedi névvel. A médiafájlt tárolja a beágyazáshoz társított médiamappában.
 - A cikkek ne tartalmazzanak kizárólag egy beágyazást.  A beágyazások a cikk többi része tartalmának kiegészítésére szolgálnak.
 
+Példa:
+
+```markdown
+[!INCLUDE[sample include file](../includes/sampleinclude.md)]
+```
+
 ### <a name="selectors"></a>Választómezők
 
-Technikai cikkekben akkor használjon választómezőket, ha ugyanannak a cikknek többféle változatát írja meg a különböző technológiák és platformok különbségeinek figyelembe vételével. Ez általában a fejlesztőknek szánt, mobilplatformokkal kapcsolatos tartalom esetében a legjellemzőbb. A Markdigben jelenleg kétféle választómező van, az egyszerű és a többszintű.
+Technikai cikkekben akkor használjon választómezőket, ha ugyanannak a cikknek többféle változatát írja meg az eltérő technológiák és platformok különbségeinek figyelembevételével. Ez általában a fejlesztőknek szánt, mobilplatformokkal kapcsolatos tartalom esetében a legjellemzőbb. A Markdigben jelenleg kétféle választómező van, az egyszerű és a többszintű.
 
 Mivel a választott témakörök mindegyikébe ugyanaz a választómezőhöz tartozó Markdown kerül, javasolt a választómezőt egy beágyazható fájlban elhelyezni, majd erre hivatkozni az összes olyan témakörben, amely ugyanazt a választómezőt használja.
 
-### <a name="code-snippets"></a>Kódrészletek
+Ezen a példán egy választómező látható.
+
+```markdown
+> [!div class="op_single_selector"]
+- [macOS](../docs/core/tutorials/using-on-macos.md)
+- [Windows](../docs/core/tutorials/with-visual-studio.md)
+```
+
+Az [Azure dokumentációjában](https://docs.microsoft.com/azure/expressroute/expressroute-howto-circuit-classic) láthatja a választómezők működését.
+
+### <a name="code-includes"></a>Kódbeágyazások
 
 A Markdig a kódrészlet-bővítményével programkódok a cikkekben való speciális megjelenítését is támogatja. A speciális megjelenítés a GFM olyan funkciói mellett, mint például a programozási nyelv kiválasztása és a szintaxisszínek használata, többek között a következő további hasznos lehetőségekre épül:
 
@@ -348,8 +420,7 @@ Az aláhúzás jeleket így jelenítheti meg:
 
 ### <a name="apostrophes-and-quotation-marks"></a>Aposztrófok és idézőjelek
 
-Ha a Wordből másol a Markdown-szerkesztőbe, akkor a szöveg „intelligens” (íves) aposztrófokat és időzőjeleket tartalmazhat. Ezeket kódolni kell, vagy pedig egyszerű aposztrófokra, illetve idézőjelekre kell cserélni,
-különben a fájl közzétételekor a következőhöz hasonló eredményt kaphat: Itâ€™s
+Ha a Wordből másol a Markdown-szerkesztőbe, akkor a szöveg „intelligens” (íves) aposztrófokat és időzőjeleket tartalmazhat. Ezeket kódolni kell, vagy pedig egyszerű aposztrófokra, illetve idézőjelekre kell cserélni, különben a fájl közzétételekor a következőhöz hasonló eredményt kaphat: Itâ€™s
 
 Ezen írásjelek „intelligens” verzióinak kódolásai a következők:
 
