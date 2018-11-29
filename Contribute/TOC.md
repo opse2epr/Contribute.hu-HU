@@ -16,6 +16,7 @@
 ### [Közreműködés a .NET-dokumentációban](dotnet-contribute-process.md)
 ### [.NET-dokumentációs stíluskonvenciók](dotnet-style-guide.md)
 ### [Útmutató a szöveg hangjához és hangneméhez](dotnet-voice-tone.md)
+# [További források](additional-resources.md)
 
 <!--
 ## Creating new content
@@ -79,4 +80,3 @@
 
      Open question: How to keep this up to date?
    -->
-## [További források](additional-resources.md)
