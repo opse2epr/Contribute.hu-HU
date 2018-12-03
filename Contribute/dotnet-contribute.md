@@ -1,13 +1,13 @@
 ---
 title: Közreműködés a .NET-dokumentáció tárházaiban
-description: Ez a cikk a .NET-dokumentációt alkotó tárházakkal foglalkozik.
+description: Ez a cikk azt mutatja be, hogyan működhet közre a .NET-dokumentáció adattáraiban tárolt cikkek és kódminták készítésében.
 ms.date: 11/07/2018
-ms.openlocfilehash: 364a38a0b9adbc9465531eb7d174864cc7b7a1e0
-ms.sourcegitcommit: 44eb4f5ee65c1848d7f36fca107b296eb7687397
+ms.openlocfilehash: 9104e4215538d2a9eeea7128a2572608b6adde8a
+ms.sourcegitcommit: 68d81b61ffa60aba16acfed023760449e16de91b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51609716"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "52299591"
 ---
 # <a name="learn-how-to-contribute-to-the-net-docs-repositories"></a>Megtudhatja, hogyan közreműködhet a .NET-dokumentáció tárházaiban
 
