@@ -2,12 +2,12 @@
 title: Sablon és segédlet .NET-cikkekhez
 description: Ez a cikk egy hasznos sablont tartalmaz, amelyet új cikkek létrehozására használhat a .NET-dokumentumtárakban
 ms.date: 11/07/2018
-ms.openlocfilehash: 8980f5e39213d8f2edd1d29e66d900f2c3d04bbc
-ms.sourcegitcommit: 44eb4f5ee65c1848d7f36fca107b296eb7687397
+ms.openlocfilehash: 15f64ec86c475e2da2f6539c8f388d076389c4e0
+ms.sourcegitcommit: 68d81b61ffa60aba16acfed023760449e16de91b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51609739"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "52299660"
 ---
 # <a name="metadata-and-markdown-template-for-net-docs"></a>Metaadatok és Markdown-sablon .NET-dokumentumokhoz
 
@@ -79,9 +79,11 @@ A .NET-dokumentumok csapata a következő konvenciókat használja:
 - A legtöbbször relatív hivatkozásokat használunk, és nem javasoljuk `~/` használatát a hivatkozásokban, mert a relatív hivatkozások a forrásban lesznek feloldva a GitHubon. Ha azonban egy függő tárban lévő fájlra hivatkozunk, akkor a `~/` karaktert használjuk az elérési út megadásához. Mivel a függő tárban lévő fájlok más helyen vannak a GitHubon, a hivatkozások feloldása nem lesz megfelelő relatív hivatkozásokkal, függetlenül attól, hogyan írták őket.
 - A C# nyelvi specifikációk és a Visual Basic nyelvi specifikációk .NET-dokumentumokba való belefoglalása a programnyelvi kódtárakból a forrás belefoglalásával történik. A Markdown-források kezelése a [csharplang](https://github.com/dotnet/csharplang) és a [vblang](https://github.com/dotnet/vblang) kódtárakban történik.
 
-A specifikációkra mutató hivatkozásoknak azokra a forráskönyvtárakra kell mutatniuk, amelyekben ezek a specifikációk találhatók. C# esetén ez a **~/_csharplang/spec** VB esetén pedig a **~/_vblang/spec**.
+A specifikációkra mutató hivatkozásoknak azokra a forráskönyvtárakra kell mutatniuk, amelyekben ezek a specifikációk találhatók. C# esetén ez a **~/_csharplang/spec**, VB esetén pedig a **~/_vblang/spec**, a következő példához hasonlóan:
 
-- Például: `[C# Query Expressions](~/_csharplang/spec/expressions.md#query-expressions)`
+```markdown
+[C# Query Expressions](~/_csharplang/spec/expressions.md#query-expressions)
+```
 
 ### <a name="links-to-apis"></a>API-kra mutató hivatkozások
 
@@ -111,13 +113,13 @@ Példák:
 - A System.Exception.\#ctor `System.Exception.%23ctor` lesz
 - A System.Lazy\`1.\#ctor(System.Threading.LazyThreadSafetyMode) `System.Lazy%601.%23ctor%28System.Threading.LazyThreadSafetyMode%29` lesz
 
-Az UID-típusokat, a tag túlterhelési listáját vagy az adott túlterhelt tagot a `https://xref.docs.microsoft.com/autocomplete` weblapon találja. A "?text=*\<type-member-name>*" lekérdezési sztring azonosítja azt a tagtípust, amelyiknek az UID-jét látni szeretné. A `https://xref.docs.microsoft.com/autocomplete?text=string.format` például a [String.Format](https://docs.microsoft.com/dotnet/api/system.string.format) túlterheléseket kéri le. Az eszköz a megadott `text` lekérdezési paramétert az UID bármely részében keresi. Kereshet például a tagnévre (ToString), a tagnév egy részére (ToStri), a típusra és a tagnévre (Double.ToString) stb.
+Az UID-típusokat, a tag túlterhelési listáját vagy az adott túlterhelt tagot a `https://xref.docs.microsoft.com/autocomplete` weblapon találja. A(z) `?text=*\<type-member-name>*` lekérdezési sztring azonosítja azt a tagtípust, amelyiknek az UID-jét látni szeretné. A `https://xref.docs.microsoft.com/autocomplete?text=string.format` például a [String.Format](https://docs.microsoft.com/dotnet/api/system.string.format) túlterheléseket kéri le. Az eszköz a megadott `text` lekérdezési paramétert az UID bármely részében keresi. Kereshet például a tagnévre (ToString), a tagnév egy részére (ToStri), a típusra és a tagnévre (Double.ToString) stb.
 
-Ha beszúr egy \* szimbólumot (vagy %2A-t) az UID után, a hivatkozás a túlterhelések oldalát fogja jelölni, nem pedig egy konkrét API-t. Ezt használhatja például, ha a [List\<T>.BinarySearch metódusra](https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.binarysearch) generikus módon szeretne hivatkozni egy adott túlterhelés, például a [List\<T>.BinarySearch(T, IComparer\<T>)](https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.binarysearch#System_Collections_Generic_List_1_BinarySearch__0_) helyett. A \* szimbólumot tagoldalra való hivatkozáshoz is használhatja, ha a tag nincs túlterhelve, így nem kell belefoglalnia a paraméterek listáját a UID-be.
+Ha beszúr egy \* szimbólumot (vagy `%2A`-t) az UID után, a hivatkozás a túlterhelések oldalát fogja jelölni, nem pedig egy konkrét API-t. Ezt használhatja például, ha a [List\<T>.BinarySearch metódusra](https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.binarysearch) generikus módon szeretne hivatkozni egy adott túlterhelés, például a [List\<T>.BinarySearch(T, IComparer\<T>)](https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.binarysearch#System_Collections_Generic_List_1_BinarySearch__0_) helyett. A \* szimbólumot tagoldalra való hivatkozáshoz is használhatja, ha a tag nincs túlterhelve, így nem kell belefoglalnia a paraméterek listáját a UID-be.
 
 Meghatározott metódus-túlterhelésre való hivatkozáshoz meg kell adnia a metódus összes paraméterének teljes típusnevét. Az \<xref:System.DateTime.ToString> például a paraméter nélküli [DateTime.ToString](https://docs.microsoft.com/dotnet/api/system.datetime.tostring#System_DateTime_ToString) metódusra hivatkozik, míg az \<xref:System.DateTime.ToString(System.String,System.IFormatProvider)> a [DateTime.ToString(String,IFormatProvider)](https://docs.microsoft.com/dotnet/api/system.datetime.tostring#System_DateTime_ToString_System_String_System_IFormatProvider_) metódusra.
 
-Általános típusra, például a [System.Collections.Generic.List\<T>](https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1) típusra való hivatkozáshoz a \` (%60) karaktert használja, amelyet az általános típusú paraméterek számának kell követnie. Az \<xref:System.Nullable%601> például a [System.Nullable\<T>](https://docs.microsoft.com/dotnet/api/system.nullable-1) típusra hivatkozik, míg az \<xref:System.Func%602> a [System.Func\<T,TResult>](https://docs.microsoft.com/dotnet/api/system.func-2) delegáltra.
+Általános típusra, például a [System.Collections.Generic.List\<T>](https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1) típusra való hivatkozáshoz a \` (`%60`) karaktert használja, amelyet az általános típusú paraméterek számának kell követnie. A(z) `<xref:System.Nullable%601>` például a [System.Nullable\<T>](https://docs.microsoft.com/dotnet/api/system.nullable-1) típusra hivatkozik, míg a(z) `<xref:System.Func%602>` a [System.Func\<T,TResult>](https://docs.microsoft.com/dotnet/api/system.func-2) delegáltra.
 
 ## <a name="code"></a>Code
 
