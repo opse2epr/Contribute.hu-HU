@@ -1,6 +1,6 @@
 ---
-title: Markdown-referencia az OPS-hez és a docs.microsoft.com webhelyhez
-description: Útmutató OPS-platformra a Markdown és a DocFX-stílusú Markdown- (DFM-) bővítményekhez.
+title: Markdown-referencia a docs.microsoft.com webhelyhez
+description: A Docs platform útmutatója a Markdown használatához.
 author: meganbradley
 ms.author: mbradley
 manager: jemash
@@ -8,24 +8,24 @@ ms.date: 05/18/2018
 ms.topic: contributor-guide
 ms.prod: non-product-specific
 audience: internal,external
-ms.openlocfilehash: 64921bacf48e638221048db4b24e1a941f1d2777
-ms.sourcegitcommit: 44eb4f5ee65c1848d7f36fca107b296eb7687397
+ms.openlocfilehash: 1023f3036e5c1facd0bcd4c31069e6faf3c95483
+ms.sourcegitcommit: 21c9ac71e1abff946466cddf17a1ee97bc349ec5
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51609545"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53245872"
 ---
-# <a name="markdown-reference-for-ops"></a>Markdown-referencia az OPS-hez
+# <a name="markdown-reference"></a>Markdown-referencia
 
-A Markdown egy egyszerűen kezelhető jelölőnyelv, amely a formázatlan szövegek formázására alkalmas szintaxist használ. Az Open Publishing Services (OPS) támogatja a Markdown CommonMark szabványát, és emellett számos olyan egyéni Markdown-bővítményt is, amelyekkel sokrétűbbé tehetők a docs.microsoft.com webhelyen található tartalmak. A cikk betűrendbe szedett referenciát nyújt a Markdown OPS-ben történő és docs.microsoft.com-tartalmak létrehozásához való használatához.
+A Markdown egy egyszerűen kezelhető jelölőnyelv, amely a formázatlan szövegek formázására alkalmas szintaxist használ. A Docs platform támogatja a Markdown CommonMark szabványát, és emellett számos olyan egyéni Markdown-bővítményt is, amelyekkel sokrétűbbé tehetők a docs.microsoft.com webhelyen található tartalmak. A cikk betűrendbe szedett referenciát nyújt a Markdown docs.microsoft.com-tartalmak létrehozásához való használatához.
 
-Markdown-szintaxist bármilyen szövegszerkesztő használatával írhat. Ha olyan szövegszerkesztőt keres, amely a szabványos Markdown-szintaxis mellett támogatja az egyéni OPS-bővítményeket is, javasoljuk a [VS Code](https://code.visualstudio.com/) alkalmazás a [Docs Authoring Pack (Docs-közreműködői csomag)](https://aka.ms/DocsAuthoringPack) bővítmény telepítésével való használatát.
+Markdown-szintaxist bármilyen szövegszerkesztő használatával írhat. Ha olyan szövegszerkesztőt keres, amely a szabványos Markdown-szintaxis mellett támogatja az egyéni Docs-bővítményeket is, javasoljuk a [VS Code](https://code.visualstudio.com/) alkalmazás a [Docs Authoring Pack (Docs-közreműködői csomag)](https://aka.ms/DocsAuthoringPack) bővítmény telepítésével való használatát.
 
-Az OPS már minden újonnan létrehozott adattárhoz szabványos módon a Markdig feldolgozót használja, és a korábban létrehozott adattárak Markdigbe való migrálása is folyamatban van. A [https://babelmark.github.io/](https://babelmark.github.io/) címen tesztelheti, hogyan jelennek meg a Markdown-szövegek a Markdigben más szövegrenderelő motorok képességeivel összevetve.
+A Docs a Markdig Markdown-motort használja. A [https://babelmark.github.io/](https://babelmark.github.io/) címen tesztelheti, hogyan jelennek meg a Markdown-szövegek a Markdigben más szövegrenderelő motorok képességeivel összevetve.
 
 ## <a name="alerts-note-tip-important-caution-warning"></a>Riasztások (Megjegyzés, Tipp, Fontos, Figyelem, Figyelmeztetés)
 
-Az Alerts (Riasztások) egy OPS-hez készült Markdown-bővítmény, amely olyan szövegblokkok létrehozására szolgál, amelyek a tartalom fontosságát jelző különböző színekkel és ikonokkal jelennek meg a docs.microsoft.com webhelyen. A következő riasztási típusok támogatottak:
+Az Alerts (Riasztások) egy Docshoz készült Markdown-bővítmény, amely olyan szövegblokkok létrehozására szolgál, amelyek a tartalom fontosságát jelző különböző színekkel és ikonokkal jelennek meg a docs.microsoft.com webhelyen. A következő riasztási típusok támogatottak:
 
 ```markdown
 > [!NOTE]
@@ -71,7 +71,7 @@ A Markdown-fájlokba kódrészletek is beágyazhatók:
 
 ## <a name="headings"></a>Fejlécek
 
-Az OPS a Markdown-fejlécek hat szintjét támogatja:
+A Docs a Markdown-fejlécek hat szintjét támogatja:
 
 ```markdown
 # This is a first level heading (H1)
@@ -92,7 +92,7 @@ Az OPS a Markdown-fejlécek hat szintjét támogatja:
 
 ## <a name="html"></a>HTML
 
-Bár a Markdown támogatja a beágyazott HTML használatát, az OPS-sel való közzététel esetén nem ajánljuk a HTML használatát, mert néhány, korlátozott számú értéket kivéve általában buildelési hibákat és figyelmeztetéseket váltanak ki. <!--For more information, see HTML Whitelist. // do we want to add the whitelist? -->
+Bár a Markdown támogatja a beágyazott HTML használatát, a Docsban való közzététel esetén nem ajánljuk a HTML használatát, mert néhány, korlátozott számú értéket kivéve általában buildelési hibákat és figyelmeztetéseket váltanak ki. <!--For more information, see HTML Whitelist. // do we want to add the whitelist? -->
 
 ## <a name="images"></a>Képek
 
@@ -116,7 +116,7 @@ Más képtípusok támogatását is biztosíthatja, ha erőforrásként hozzáad
 
 ## <a name="links"></a>Hivatkozások
 
-A legtöbb esetben az OPS hagyományos Markdown-hivatkozásokat használ a más fájlokra vagy oldalakra történő hivatkozáshoz. A különböző hivatkozástípusokat a következő alfejezetekben mutatjuk be.
+A legtöbb esetben a Docs hagyományos Markdown-hivatkozásokat használ a más fájlokra vagy oldalakra történő hivatkozáshoz. A különböző hivatkozástípusokat a következő alfejezetekben mutatjuk be.
 
 > [!TIP]
 > A VS Code alkalmazáshoz készült Docs-közreműködői csomag anélkül segíti a relatív hivatkozások és könyvjelzők helyes beszúrását, hogy az elérési utakkal kellene bajlódnia.
@@ -132,7 +132,7 @@ A legtöbb esetben az OPS hagyományos Markdown-hivatkozásokat használ a más 
 
 ### <a name="relative-links-to-files-in-the-same-doc-set"></a>Ugyanazon dokumentumkészlet más fájljaira mutató relatív hivatkozások
 
-A relatív elérési út a célfájl az aktuális fájlhoz viszonyított elérési útja. Az OPS-ben lehetősége van relatív elérési út használatával hivatkozni egy másik fájlra ugyanazon a dokumentumkészleten belül. A relatív elérési utak szintaxisa a következő:
+A relatív elérési út a célfájl az aktuális fájlhoz viszonyított elérési útja. A Docsban lehetősége van relatív elérési út használatával hivatkozni egy másik fájlra ugyanazon a dokumentumkészleten belül. A relatív elérési utak szintaxisa a következő:
 
 ```markdown
 [link text](../../folder/filename.md)
@@ -142,7 +142,7 @@ Ahol a `../` a hierarchia eggyel magasabb szintjét jelzi.
 
 - A relatív elérési utat a buildelési folyamat során oldja fel a rendszer, beleértve az .md kiterjesztés eltávolítását is.
 - A „../” használatával hivatkozhat a szülőmappában található fájlokra, de az adott fájlnak ugyanabban a dokumentumkészletben kell lennie. A „../” nem használható másik dokumentumkészlet fájljaira való hivatkozásra.
-- Az OPS a relatív elérési utak egy speciális formájának használatát is lehetővé teszi, amelyeknél az elérési út a „~” szimbólummal kezdődik (például ~/foo/bar.md). Ezzel a szintaxissal egy dokumentumkészlet gyökérmappájához képest határozhatók meg a fájlok. Az ilyen útvonal feloldása és ellenőrzése is megtörténik az összeállítás során.
+- A Docs a relatív elérési utak egy speciális formájának használatát is lehetővé teszi, amelyeknél az elérési út a „~” szimbólummal kezdődik (például ~/foo/bar.md). Ezzel a szintaxissal egy dokumentumkészlet gyökérmappájához képest határozhatók meg a fájlok. Az ilyen útvonal feloldása és ellenőrzése is megtörténik az összeállítás során.
 
 > [!IMPORTANT]
 > A relatív útvonalakban adja meg a fájlnévkiterjesztéseket is. A rendszer a buildelés során ellenőrzi, hogy létezik-e a relatív elérési úttal hivatkozott fájl. Ha a relatív elérési út nem tartalmaz fájlnévkiterjesztést, a buildelési folyamat valószínűleg figyelmeztetni fogja, hogy a hivatkozás hibás. Használja például így:
@@ -153,7 +153,7 @@ Ahol a `../` a hierarchia eggyel magasabb szintjét jelzi.
 >
 > `[link text](../../folder/filename)`
 
-### <a name="absolute-links-to-other-files-in-ops"></a>Abszolút hivatkozások más fájlokra az OPS-ben
+### <a name="site-relative-links-to-other-files-on-docs"></a>Hely szerinti relatív hivatkozások más fájlokhoz a Docsban
 
 ```markdown
 [Azure and Linux](/articles/virtual-machines/linux/overview)
@@ -252,7 +252,7 @@ Using XREF may require some configuration. For more information, see XREF Servic
 
 Számozott lista létrehozásához nyugodtan használhat mindegyik listaelemnél 1-eseket, az elemek a közzététel után sorszámozott listaként fognak megjelenni. A forrásfájl olvashatóságának javítása érdekében azonban használhat emelkedő számozást is listáiban.
 
-Ne használjon betűket, még egymásba ágyazott listákban sem. Ezek hibásan jelennek meg az OPS-ben való közzététel után. A számokat használó egymásba ágyazott listák közzététel után kisbetűs sorszámozással jelennek meg. Példa:
+Ne használjon betűket, még egymásba ágyazott listákban sem. Ezek hibásan jelennek meg a Docsban való közzététel után. A számokat használó egymásba ágyazott listák közzététel után kisbetűs sorszámozással jelennek meg. Példa:
 
 ```markdown
 1. This is
@@ -423,14 +423,6 @@ A fenti idézetblokk Markdown-szövege így jelenik meg:
 > - [(Xamarin iOS | Javascript)](how-to-write-workflows-major.md)
 > - [(Xamarin Android | Javascript)](how-to-write-workflows-major.md)
 
-<!-- uncomment and link when Cory's topic is live
-## Tabbed content
-
-Tabs are a Markdown extension for docs.microsoft.com that allow us to present different versions of content, such as procedural steps to accomplish the same task on different platforms, in a tabbed format.
-
-Because the syntax and requirements for tabbed content are fairly complex, they are documented separately in Tabbed Content.
--->
-
 ## <a name="tables"></a>Táblázatok
 
 A Markdown-szintaxissal táblázat a legegyszerűbben függőleges vonal és kötőjel karakterekkel alakítható ki. Normál fejléccel rendelkező táblázatok létrehozásához az első sor után szúrjon be szaggatott vonalat:
@@ -535,13 +527,13 @@ A HTML-táblázatok használata nem ajánlott a docs.microsoft.com webhelyen. En
 
 ### <a name="embedding-videos-into-a-markdown-page"></a>Videók beágyazása Markdown-oldalakba
 
-Az OPS jelenleg a következő három helyen közzétett videók beágyazását támogatja:
+A Docs jelenleg a következő három helyen közzétett videók beágyazását támogatja:
 
 - YouTube
 - Channel 9
 - A Microsoft saját „One Player” rendszere
 
-Videót az alábbi, az OPS által feldolgozott szintaxissal lehet beágyazni.
+Videót az alábbi, a Docs által feldolgozott szintaxissal lehet beágyazni.
 
 ```markdown
 > [!VIDEO <embedded_video_link>]

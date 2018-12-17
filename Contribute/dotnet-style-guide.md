@@ -2,12 +2,12 @@
 title: Sablon és segédlet .NET-cikkekhez
 description: Ez a cikk egy hasznos sablont tartalmaz, amelyet új cikkek létrehozására használhat a .NET-dokumentumtárakban
 ms.date: 11/07/2018
-ms.openlocfilehash: 15f64ec86c475e2da2f6539c8f388d076389c4e0
-ms.sourcegitcommit: 68d81b61ffa60aba16acfed023760449e16de91b
+ms.openlocfilehash: 08c8e19c858e7417d49cc2de543c67f330b93e89
+ms.sourcegitcommit: b0556fc33803358009a030ac9efcaed23f562868
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52299660"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53264502"
 ---
 # <a name="metadata-and-markdown-template-for-net-docs"></a>Metaadatok és Markdown-sablon .NET-dokumentumokhoz
 
@@ -31,8 +31,8 @@ ms.date: [CREATION/UPDATE DATE - mm/dd/yyyy]
 
 - A kettőspont (:) és a metaadatelem értéke között lennie **kell** szóköznek.
 - Az értékben (például a címben) megadott kettőspontok a metaadat-elemző hibás működését eredményezik. Ebben az esetben foglalja a címet kettős idézőjelek közé (például: `title: "Writing .NET Core console apps: An advanced step-by-step guide"`).
-- **title**: a cím megjelenik a keresőmotorok keresési eredményeiben. A cím ne legyen azonos a H1 címsorban megadott címmel, és legfeljebb 60 karaktert tartalmazhat.
-- **description**: A leírás összefoglalja a cikk tartalmát. Általában megjelenik a keresési eredmények oldalán, de nem használatos a keresési eredmények rangsorolásához. A hossza 115–145 karakter legyen szóközökkel együtt.
+- **title**: Megjelenik a keresőmotorok keresési eredményeiben. A cím ne legyen azonos a H1 címsorban megadott címmel, és legfeljebb 60 karaktert tartalmazhat.
+- **description**: Összefoglalja a cikk tartalmát. Általában megjelenik a keresési eredmények oldalán, de nem használatos a keresési eredmények rangsorolásához. A hossza 115–145 karakter legyen szóközökkel együtt.
 - **author**: Az author (szerző) mezőnek tartalmaznia kell a szerző **GitHub-felhasználónevét**.
 - **ms.date**: A legutóbbi jelentős frissítés dátuma. Frissítse ezt az értéket a meglévő cikkekben, ha áttekintette és átdolgozta a teljes cikket. A kisebb javítások, például az elírások és hasonlók miatt nem szükséges frissíteni az értékét.
 
@@ -244,13 +244,13 @@ Gombhivatkozások:
 
 ```markdown
 > [!div class="button"]
-[button links](dotnet-contribute.md)
+> [button links](dotnet-contribute.md)
 ```
 
 Ez így jelenik meg:
 
 > [!div class="button"]
-[gombhivatkozások](dotnet-contribute.md)
+> [gombhivatkozások](dotnet-contribute.md)
 
 A gobokra gyakorlati példát a [Visual Studio dokumentációjában](https://docs.microsoft.com/visualstudio/install/install-visual-studio#step-2---download-visual-studio) talál.
 
@@ -258,8 +258,8 @@ A gobokra gyakorlati példát a [Visual Studio dokumentációjában](https://doc
 
 ```markdown
 >[!div class="step-by-step"]
-[Pre](../docs/csharp/expression-trees-interpreting.md)
-[Next](../docs/csharp/expression-trees-translating.md)
+> [Pre](../docs/csharp/expression-trees-interpreting.md)
+> [Next](../docs/csharp/expression-trees-translating.md)
 ```
 
 A lépésről lépésre módszerre gyakorlati példát a [C# útmutatójában](https://docs.microsoft.com/dotnet/csharp/tour-of-csharp/program-structure) talál.
