@@ -2,12 +2,12 @@
 title: A közreműködés folyamata .NET-dokumentumtárakban
 description: Ez a cikk a .NET-dokumentumtárakban végzett közreműködést mutatja be tömören. Megismerheti az ehhez használt adattárakat, a tartalom szervezésnek folyamatát, és a kódminták és más objektumok kezelésére vonatkozó szabályzatokat.
 ms.date: 11/07/2018
-ms.openlocfilehash: b83a3080f1abd4df8caaa9d10859760006216e86
-ms.sourcegitcommit: 44eb4f5ee65c1848d7f36fca107b296eb7687397
+ms.openlocfilehash: 0e7199b72cf9b94d00a09fb180ffef0558c59a53
+ms.sourcegitcommit: 21c9ac71e1abff946466cddf17a1ee97bc349ec5
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51609762"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53245849"
 ---
 # <a name="process-for-contributing-to-net-docs"></a>A .NET-dokumentumokban való közreműködés folyamata
 
@@ -24,7 +24,7 @@ Ezeknek az irányelveknek a betartása Önnek és nekünk is jobb élményt bizt
 
 ## <a name="make-a-contribution-to-net-docs"></a>Közreműködés készítése .NET-dokumentációhoz
 
-**1. lépés:** Kisebb módosítások esetén hagyja ki ezt a lépést. Ha új tartalom megírása vagy meglévő tartalom alapos átdolgozása iránt érdeklődik, nyisson új [témát](https://github.com/dotnet/docs/issues), és írja le, hogy mit szeretne tenni.
+**1 lépés:** Kisebb módosítások esetén hagyja ki ezt a lépést. Ha új tartalom megírása vagy meglévő tartalom alapos átdolgozása iránt érdeklődik, nyisson új [témát](https://github.com/dotnet/docs/issues), és írja le, hogy mit szeretne tenni.
 
 A **docs** mappa tartalma a Tartalomjegyzék (TOC) által tükrözött szakaszokba van rendszerezve. Adja meg, hogy hol helyezkedik majd el a témakör a tartalomjegyzékben. Ajánlatáról visszajelzést kap.
 
@@ -42,11 +42,11 @@ Megtekintheti a [nyitott témák](https://github.com/dotnet/docs/issues) listáj
 
 Miután kiválasztotta a feladatot, amelyen dolgozni kíván, az [első lépések](get-started-setup-github.md) útmutatót követve hozzon létre egy GitHub-fiókot, és alakítsa ki saját környezetét.
 
-**2. lépés:** Szükségleteinek megfelelően ágaztassa el a `/dotnet/docs`, `dotnet/samples`, `dotnet/dotnet-api-docs`, `dotnet/roslyn-api-docs` vagy `dotnet/ml-api-docs` adattárat, és hozzon létre ágat saját módosításaihoz.
+**2 lépés:** Szükségleteinek megfelelően ágaztassa el a `/dotnet/docs`, `dotnet/samples`, `dotnet/dotnet-api-docs`, `dotnet/roslyn-api-docs` vagy `dotnet/ml-api-docs` adattárat, és hozzon létre ágat saját módosításaihoz.
 
 Kisebb módosítások esetén igazodjon a GitHubon végzett szerkesztésre vonatkozó útmutatáshoz, amely a közreműködői útmutató [kezdőlapján](index.md#quick-edits-to-existing-documents) található.
 
-**3. lépés:** Végezze el a módosításokat ebben az új ágban.
+**3 lépés:** Végezze el a módosításokat ebben az új ágban.
 
 Ha a témakör új, akkor kiindulásként használhatja ezt a [sablon](dotnet-style-guide.md) fájlt. Ez tartalmazza az írásra vonatkozó irányelveket, és ismerteti az egyes cikkekhez szükséges olyan metaadatokat, mint a szerző adatai.
 
@@ -65,7 +65,7 @@ Mindenképpen kövesse a helyes Markdown-szintaxist. Gyakori példákat talál a
             /porting-overview
                 portability_report.png
 
-**4. lépés:** Küldjön lekéréses kérelmet (PR-t) saját ágából a főágba.
+**4 lépés:** Küldjön lekéréses kérelmet (PR-t) saját ágából a főágba.
 
 > [!IMPORTANT]
 > Az [automatizált megjegyzések](how-to-write-workflows-major.md#review-and-sign-off) funkció jelenleg nem érhető el a .NET-dokumentumtárak egyikében sem. Lekéréses kérelmét a .NET-dokumentáció csapata fogja elbírálni és egyesíteni.
@@ -76,7 +76,7 @@ Ha lekéréses kérelme meglévő problémát javít, a véglegesítési üzenet
 
 A .NET-csapat elbírálja lekéréses kérelmét, és értesíti önt, ha a jóváhagyásához további frissítésre/módosításra van szükség.
 
-**5. lépés:** Végezzen el minden szükséges frissítést az ágában, a csapattal egyeztetett módon.
+**5 lépés:** Végezzen el minden szükséges frissítést az ágában, a csapattal egyeztetett módon.
 
 A karbantartók akkor egyesítik lekéréses kérelmét a főágba, ha a visszajelzés alkalmazva lett, és a módosítását jóváhagyták.
 
@@ -131,6 +131,7 @@ Minta létrehozása:
 2. Írja meg a témakört, amely a minta által bemutatott fogalmakat magyarázza el (például: `docs/standard/linq/where-clause.md`).
 3. Írja meg a mintát (például: `WhereClause-Sample1.cs`).
 4. Hozzon létre egy Program.cs fájlt, a mintáit meghívó Main belépési ponttal. Ha már van ilyen, akkor szúrja be a mintája hívását:
+
     ```csharp
     public class Program
     {
@@ -143,6 +144,7 @@ Minta létrehozása:
         }
     }
     ```
+
 .NET Core-kódrészletet vagy -mintát készít a [.NET Core SDK-val](https://www.microsoft.com/net/download) telepíthető .NET Core CLI használatával. A minta fordítása és futtatása:
 
 1. Lépjen a minták mappájába, és hibakeresés céljából végezzen buildelést:

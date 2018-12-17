@@ -2,12 +2,12 @@
 title: A Markdown használata Docs-tartalmak írásához
 description: Ez a cikk alapvető információkat és tájékoztatást nyújt a docs.microsoft.com-cikkekben használt Markdown jelölőnyelvről.
 ms.date: 07/13/2017
-ms.openlocfilehash: 21194c4bd6020d847b526a4d9544c826aa199e2a
-ms.sourcegitcommit: 44eb4f5ee65c1848d7f36fca107b296eb7687397
+ms.openlocfilehash: 8613d525afc11caf9ec760c4f15ea44010781634
+ms.sourcegitcommit: 21c9ac71e1abff946466cddf17a1ee97bc349ec5
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51609522"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53245895"
 ---
 # <a name="how-to-use-markdown-for-writing-docs"></a>A Markdown használata Docs-tartalmak írásához
 
@@ -22,9 +22,9 @@ Mivel a Docs-tartalmak a GitHubon vannak tárolva, azokhoz használható a Markd
 
 ## <a name="markdown-basics"></a>A Markdown alapjai
 
-### <a name="headings"></a>Címsorok
+### <a name="headings"></a>Fejlécek
 
-Címsorok a kettőskereszt karakterrel (#) hozhatók létre, a következőképpen:
+Fejlécek a kettőskereszt karakterrel (#) hozhatók létre, a következőképpen:
 
 ```markdown
 # This is heading 1
@@ -248,7 +248,7 @@ Ezekhez a nyelvekhez a rendszer támogatja a névformázást, és legtöbbjük e
 
 A `csharp-interactive` név a C# nyelvre utal, valamint arra, hogy a böngészőből futtathatók a minták. A kódrészletek lefordítása és végrehajtása egy Docker-tárolóban történik, és ennek a programvégrehajtásnak az eredménye jelenik meg a felhasználó böngészőablakában.
 
-#### <a name="example-c"></a>C\#-példa:
+#### <a name="example-c"></a>Példa: C\#
 
 __Markdown__
 
@@ -276,14 +276,14 @@ public class Hello1
 }
 ```
 
-#### <a name="example-sql"></a>SQL-példa:
+#### <a name="example-sql"></a>Példa: SQL
 
 __Markdown__
 
     ```sql
     CREATE TABLE T1 (
-      c1 int PRIMARY KEY,
-      c2 varchar(50) SPARSE NULL
+      c1 int PRIMARY KEY,
+      c2 varchar(50) SPARSE NULL
     );
     ```
 
@@ -291,8 +291,8 @@ __Megjelenítés__
 
 ```sql
 CREATE TABLE T1 (
-  c1 int PRIMARY KEY,
-  c2 varchar(50) SPARSE NULL
+  c1 int PRIMARY KEY,
+  c2 varchar(50) SPARSE NULL
 );
 ```
 
@@ -304,7 +304,7 @@ CREATE TABLE T1 (
 A Docs-cikkek formázásának nagy része, például a bekezdések, a hivatkozások, a listák és a fejlécek a GFM használatával készülnek. A kifinomultabb formázáshoz a cikkekben többek között az alábbi Markdig-funkciók használhatók:
 
 - Megjegyzésblokkok
-- Beágyazások
+- Beágyazott fájlok
 - Választómezők
 - Beágyazott videók
 - Kódrészletek és -minták
@@ -352,26 +352,26 @@ Ez a következőképpen jelenik meg:
 > [!IMPORTANT]
 > Ez FONTOS
 
-### <a name="includes"></a>Beágyazások
+### <a name="include-files"></a>Beágyazott fájlok
 
 Ha újrafelhasználható szöveg- vagy képfájlokat kell „beágyaznia” a cikkek fájljaiba, akkor a Markdig fájlbeágyazási funkciójával hivatkozhat a beágyazandó fájlra. Ez a funkció arra utasítja az OPS-t, hogy az összeállítás során az adott fájlt is foglalja bele a cikkbe, így annak tartalma már szerepelni fog a közzétett cikkben. A tartalmak újrafelhasználását háromféle beágyazás segíti:
 
-- Soron belüli: egy egyszerű szövegrészlet egy másik mondatban való újrafelhasználását teszi lehetővé.
-- Blokk: egy teljes Markdown-fájl egy cikk egy szakaszába beágyazva való újrafelhasználását teszi lehetővé.
-- Képek: ez a képek normál beillesztésének megvalósítása a Docsban.
+- Beágyazott: Egy egyszerű szövegrészlet egy másik mondatban való újrafelhasználását teszi lehetővé.
+- Blokkszintű: Egy teljes Markdown-fájl egy cikk egy szakaszába beágyazva való újrafelhasználását teszi lehetővé.
+- Képek: Ez a képek normál beillesztésének megvalósítása a Docsban.
 
-A soron belüli és blokk típusú beágyazás egy egyszerű Markdown- (.md) fájlt használ. Ez tetszőleges érvényes Markdown-szintaxist tartalmazhat. Minden beágyazott Markdown-fájlt a tárház gyökerében található [közös `/includes` almappában](git-github-fundamentals.md#includes-subdirectory) kell elhelyezni. A cikk közzétételekor a beágyazott fájl tartalma átmenet nélkül beépül a közzétett témakörbe.
+A soron belüli és blokk típusú fájl egy egyszerű Markdown- (.md) fájl. Ez tetszőleges érvényes Markdown-szintaxist tartalmazhat. Minden beágyazott Markdown-fájlt a tárház gyökerében található [közös `/includes` almappában](git-github-fundamentals.md#includes-subdirectory) kell elhelyezni. A cikk közzétételekor a beágyazott fájl tartalma átmenet nélkül beépül a közzétett témakörbe.
 
-Néhány követelmény és megfontolandó szempont a beágyazásokhoz:
+Néhány követelmény és megfontolandó szempont a beágyazott fájlokhoz:
 
-- Bármikor használhat beágyazást, amikor ugyanazt a szöveget több cikkben is szeretné használni.
-- A blokk típusú beágyazás használata nagyobb mennyiségű tartalomhoz – egy-két bekezdéshez, egy közös eljáráshoz vagy egy közös szakaszhoz – ajánlott. Ne használja egy mondatnál kisebb terjedelmű szöveghez.
-- A beágyazott tartalmak a cikk GitHub által előállított nézetében nem jelennek meg, ugyanis azok Markdig-bővítményeket igényelnek. Azok csak közzététel után jelennek meg.
-- Ügyeljen rá, hogy a beágyazott szöveg teljes mondatokból vagy kifejezésekből álljon, amelyek nem függnek a hivatkozást tartalmazó cikknek a beágyazást megelőző vagy azt követő szövegétől. Ezt az ajánlást figyelmen kívül hagyva lefordíthatatlan sztring jön létre a cikkben, amely megtöri a honosított felületet.
-- Ne alkalmazzon beágyazást más beágyazásokon belül. Ez nem támogatott.
-- A médiafájlokat a beágyazási almappában megadott médiamappában kell elhelyezni. Ez lehet például a `<repo>`/includes/media mappa. A médiamappa gyökere nem tartalmazhat képfájlokat. Ha a beágyazás nem tartalmaz képeket, akkor a hozzá tartozó médiamappára nincs szükség.
-- A hagyományos cikkekhez hasonlóan itt se osszon meg médiát a beágyazott fájlok között. Minden egyes beágyazáshoz és cikkhez használjon külön fájlt, egyedi névvel. A médiafájlt tárolja a beágyazáshoz társított médiamappában.
-- A cikkek ne tartalmazzanak kizárólag egy beágyazást.  A beágyazások a cikk többi része tartalmának kiegészítésére szolgálnak.
+- Bármikor használhat beágyazott fájlt, amikor ugyanazt a szöveget több cikkben is szeretné használni.
+- A blokk típusú beágyazási hivatkozás használata nagyobb mennyiségű tartalomhoz – egy-két bekezdéshez, egy közös eljáráshoz vagy egy közös szakaszhoz – ajánlott. Ne használja egy mondatnál kisebb terjedelmű szöveghez.
+- A beágyazott hivatkozások a cikk GitHub által előállított nézetében nem jelennek meg, ugyanis azok Markdig-bővítményeket igényelnek. Azok csak közzététel után jelennek meg.
+- Ügyeljen rá, hogy a beágyazott fájl teljes mondatokból vagy kifejezésekből álljon, amelyek nem függnek a hivatkozást tartalmazó fájlnak a beágyazást megelőző vagy azt követő szövegétől. Ezt az ajánlást figyelmen kívül hagyva lefordíthatatlan sztring jön létre a cikkben, amely megtöri a honosított felületet.
+- Ne alkalmazzon beágyazási hivatkozást más beágyazott fájlokon belül. Ez nem támogatott.
+- A médiafájlokat a beágyazási almappában megadott médiamappában kell elhelyezni. Ez lehet például a `<repo>`/includes/media mappa. A médiamappa gyökere nem tartalmazhat képfájlokat. Ha a beágyazott fájl nem tartalmaz képeket, akkor a hozzá tartozó médiamappára nincs szükség.
+- A hagyományos cikkekhez hasonlóan itt se osszon meg médiát a beágyazott fájlok között. Minden egyes beágyazási fájlhoz és cikkhez használjon külön fájlt, egyedi névvel. A médiafájlt tárolja a beágyazott fájlhoz társított médiamappában.
+- A cikkek ne tartalmazzanak kizárólag beágyazott fájlt.  A beágyazott fájlok a cikk többi része tartalmának kiegészítésére szolgálnak.
 
 Példa:
 
@@ -383,7 +383,7 @@ Példa:
 
 Technikai cikkekben akkor használjon választómezőket, ha ugyanannak a cikknek többféle változatát írja meg az eltérő technológiák és platformok különbségeinek figyelembevételével. Ez általában a fejlesztőknek szánt, mobilplatformokkal kapcsolatos tartalom esetében a legjellemzőbb. A Markdigben jelenleg kétféle választómező van, az egyszerű és a többszintű.
 
-Mivel a választott témakörök mindegyikébe ugyanaz a választómezőhöz tartozó Markdown kerül, javasolt a választómezőt egy beágyazható fájlban elhelyezni, majd erre hivatkozni az összes olyan témakörben, amely ugyanazt a választómezőt használja.
+Mivel a választott témakörök mindegyikébe ugyanaz a választómezőhöz tartozó Markdown kerül, javasolt a választómezőt egy beágyazható fájlban elhelyezni. Később erre a beágyazott fájlra hivatkozhat az összes olyan témakörben, amely ugyanazt a választómezőt használja.
 
 Ezen a példán egy választómező látható.
 
@@ -395,7 +395,7 @@ Ezen a példán egy választómező látható.
 
 Az [Azure dokumentációjában](https://docs.microsoft.com/azure/expressroute/expressroute-howto-circuit-classic) láthatja a választómezők működését.
 
-### <a name="code-includes"></a>Kódbeágyazások
+### <a name="code-include-references"></a>Kódbeágyazási hivatkozások
 
 A Markdig a kódrészlet-bővítményével programkódok a cikkekben való speciális megjelenítését is támogatja. A speciális megjelenítés a GFM olyan funkciói mellett, mint például a programozási nyelv kiválasztása és a szintaxisszínek használata, többek között a következő további hasznos lehetőségekre épül:
 
