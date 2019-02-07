@@ -5,12 +5,12 @@ author: billwagner
 ms.author: wiwagn
 manager: wpickett
 ms.date: 04/17/2018
-ms.openlocfilehash: dab2de80654fb55382b2ca7c9f78df36df9971dc
-ms.sourcegitcommit: 44eb4f5ee65c1848d7f36fca107b296eb7687397
+ms.openlocfilehash: 4a9a7573a62cfc7d5187b90de7e1fe147825273e
+ms.sourcegitcommit: 203ca15fda2d217f082c74ec648c1f1db323f9f1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51609361"
+ms.lasthandoff: 02/04/2019
+ms.locfileid: "55712855"
 ---
 # <a name="microsoft-docs-contributor-guide-overview"></a>Microsoft Docs-közreműködői útmutató – áttekintés
 
@@ -37,7 +37,7 @@ A gyors szerkesztésekkel leegyszerűsítő a jelentési folyamat, és javíthat
 
 Ez után a cikk szerkesztéséhez kattintson a ceruza ikonra, amely a következő ábrán látható.
 
-![A ceruzaikon helye](./media/index/editicon.png)
+![A ceruzaikon helye](./media/index/edit-icon.png)
 
 > [!NOTE]
 > Ha a ceruza ikon kiszürkítve látható, akkor jelentkezzen be a GitHub-fiókjába, vagy hozzon létre egy új fiókot.
