@@ -2,12 +2,12 @@
 title: Sablon és segédlet .NET-cikkekhez
 description: Ez a cikk egy hasznos sablont tartalmaz, amelyet új cikkek létrehozására használhat a .NET-dokumentumtárakban
 ms.date: 11/07/2018
-ms.openlocfilehash: 08c8e19c858e7417d49cc2de543c67f330b93e89
-ms.sourcegitcommit: b0556fc33803358009a030ac9efcaed23f562868
+ms.openlocfilehash: e342373a09b623dc71aadd63e8d8627d154ec8b6
+ms.sourcegitcommit: 203ca15fda2d217f082c74ec648c1f1db323f9f1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53264502"
+ms.lasthandoff: 02/04/2019
+ms.locfileid: "55712924"
 ---
 # <a name="metadata-and-markdown-template-for-net-docs"></a>Metaadatok és Markdown-sablon .NET-dokumentumokhoz
 
@@ -123,7 +123,7 @@ Meghatározott metódus-túlterhelésre való hivatkozáshoz meg kell adnia a me
 
 ## <a name="code"></a>Code
 
-A kód belefoglalásának legjobb módja kódrészletek belefoglalása egy működő példányból. Hozza létre a mintát a [hozzájárulás a .NET-hez](dotnet-contribute-process.md#contributing-to-samples) cikk útmutatását követve. A kód belefoglalásának alapvető szabályait a [kódra](how-to-write-use-markdown.md#code-includes) vonatkozó általános útmutató tartalmazza.
+A kód belefoglalásának legjobb módja kódrészletek belefoglalása egy működő példányból. Hozza létre a mintát a [hozzájárulás a .NET-hez](dotnet-contribute-process.md#contributing-to-samples) cikk útmutatását követve. A kód belefoglalásának alapvető szabályait a [kódra](how-to-write-use-markdown.md#code-snippets) vonatkozó általános útmutató tartalmazza.
 
 A kódot az alábbi szintaxist követve foglalhatja bele:
 
