@@ -16,6 +16,7 @@
 ### [Közreműködés a .NET-dokumentációban](dotnet-contribute-process.md)
 ### [.NET-dokumentációs stíluskonvenciók](dotnet-style-guide.md)
 ### [Útmutató a szöveg hangjához és hangneméhez](dotnet-voice-tone.md)
+### [Lekéréses kérelem elbírálásának folyamata](dotnet-pr-review.md)
 # [További források](additional-resources.md)
 
 <!--

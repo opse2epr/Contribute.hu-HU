@@ -1,29 +1,17 @@
 ---
 author: meganbradley
 ms.author: mbradley
-ms.openlocfilehash: fa048980afcf3c50f7d990f9c88064df6ee5ebb5
-ms.sourcegitcommit: 6f1997864c000a9cd25fb9171a8f8fdb8b5b5ece
+ms.openlocfilehash: 5488ba364ea561a732357bcebf9bf66039c26542
+ms.sourcegitcommit: 203ca15fda2d217f082c74ec648c1f1db323f9f1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49084530"
+ms.lasthandoff: 02/04/2019
+ms.locfileid: "55712786"
 ---
-# <a name="docs-pr-validation-service"></a>Dokumentumok PR-érvényesítési szolgáltatása
+# <a name="docs-validation-reference"></a>A Docs ellenőrzési referenciája
 
-A Dokumentumok PR-érvényesítési szolgáltatása egy olyan GitHub-alkalmazás, amely érvényesítési szabályokat futtat egy PR-ben szereplő fájlokon.
+Az ebben a szakaszban található cikkek tájékoztatást nyújtanak azon hibákról, figyelmeztetésekről és javaslatokról, amelyek docs.microsoft.com-tárházakhoz kapcsolódó lekérési kérelmek elküldésekor, vagy tárházak a docs.microsoft.com-on való közzétételhez történő létrehozásakor megjelenhetnek.
 
-Ha az érvényesítési szolgáltatás engedélyezve van egy adattáron, az alábbi működés figyelhető meg:
+Ne feledje, hogy nem minden probléma lesz engedélyezve az összes tárházhoz, némelyik bizonyos tartalomkészletekre érvényes. Az összeállítási jelentésben felsorolt problémákat javítsa, és ne az összes, a jelen referenciában ismertetett problémát.
 
-1. Ön elküld egy PR-t.
-1. A PR állapotát jelző GitHub-hozzászólásban az adattáron engedélyezett „ellenőrzések” állapota látható. Ebben a példában kétféle ellenőrzés van engedélyezve: a „Commit Validation” és az „OpenPublishing.Build”:
-
-   ![egyes ellenőrzések sikertelenek](media/validation-failed.png)
-
-   A build akkor is megfelelhet az ellenőrzésen, ha a véglegesítés érvényesítése nem sikerül.
-
-1. További információkért kattintson a **Részletek** gombra.
-1. A Részletek lapon megjelenik az összes érvényesítési ellenőrzés, azok mellett pedig a problémák kijavításával kapcsolatos információk szerepelnek:
-
-   ![érvényesítési üzenet](media/validation-details.png)
-
-A szolgáltatásban aktuálisan engedélyezett érvényesítési műveletek listája a cikk bal oldali tartalomjegyzékében található.
+Azt is vegye figyelembe, hogy a jelen referencia nem teljes – folyamatosan új, az összeállítási jelentések hibakódjaiból hivatkozott cikkekkel bővül. Bár az összeállítási jelentések nyilvánosak, bizonyos problémák megoldásához szükséges információk nem érhetők el a Microsofton kívülről. Ha nem talál dokumentációt egy hibához vagy figyelmeztetéshez, ha az üzenet vagy a dokumentáció nem világos, vagy ha Ön nem Microsoft-közreműködő, és nem fér hozzá további információkhoz, használja az alábbi dokumentációs visszajelzés gombot GitHub-probléma benyújtásához.

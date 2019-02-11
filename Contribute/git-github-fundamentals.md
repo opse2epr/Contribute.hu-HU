@@ -2,12 +2,12 @@
 title: Git- és GitHub-alapismeretek a dokumentációs webhelyhez
 description: Ebből a cikkből megismerheti a Gitet, a GitHub-tárházakat, illetve a docs.microsoft.com webhelyen használt tartalomrendszerezést és elnevezési konvenciókat.
 ms.date: 06/30/2017
-ms.openlocfilehash: 05c758845007f859382014166e88fd9614cdb873
-ms.sourcegitcommit: d3c7b49dc854dae8da9cd49da8ac4035789a5010
+ms.openlocfilehash: b7eb82f299d3efcdb1e49649fb77367ef8ba3fae
+ms.sourcegitcommit: 203ca15fda2d217f082c74ec648c1f1db323f9f1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49805700"
+ms.lasthandoff: 02/04/2019
+ms.locfileid: "55712878"
 ---
 # <a name="git-and-github-essentials-for-docs"></a>Git- és GitHub-alapismeretek a Docs webhelyhez
 
@@ -25,8 +25,8 @@ Ha ismeri a központosított verziókövető rendszereket (ilyen például a Tea
 
 A Git többszintű struktúrában tárolja és kezeli az adott projekthez tartozó tartalmat:
 
-- *Tárház* – ez a legnagyobb tárolási egység, rövid angol neve *repo*. Egy tárház egy vagy több ágat tartalmaz.
-- *Ág* – a projekt tartalomkészletét alkotó fájlokat és mappákat tartalmazó tárolási egység. Az ágak a munkafolyamatok (általános elnevezéssel verziók) elkülönítésére szolgálnak. A közreműködők hatásköre pedig mindig egy adott ágra terjed ki. Minden tárház tartalmaz egy (általában master elnevezésű) főágat és egy vagy több ágat, amelyek végül egyesítve lesznek a főággal. A főág szolgál aktuális verzióként, a projekt „egyetlen hiteles forrásaként”. Ez a tárházban létrehozott összes további ág szülője.
+- *Tárház*: Ez a legnagyobb tárolási egység, rövid angol neve *repo*. Egy tárház egy vagy több ágat tartalmaz.
+- *Ág*: A projekt tartalomkészletét alkotó fájlokat és mappákat tartalmazó tárolási egység. Az ágak a munkafolyamatok (általános elnevezéssel verziók) elkülönítésére szolgálnak. A közreműködők hatásköre pedig mindig egy adott ágra terjed ki. Minden tárház tartalmaz egy (általában master elnevezésű) főágat és egy vagy több ágat, amelyek végül egyesítve lesznek a főággal. A főág szolgál aktuális verzióként, a projekt „egyetlen hiteles forrásaként”. Ez a tárházban létrehozott összes további ág szülője.
 
 A közreműködők helyi szinten és a GitHub szintjén egyaránt a Git használatával frissítik és kezelik a tárházakat:
 
@@ -58,7 +58,7 @@ Minden cikk-könyvtár tartalmaz egy `/media` alkönyvtárat a kapcsolódó méd
 
 Ha újrafelhasználható tartalmat használ két vagy több cikkben, akkor azt a fő `articles` könyvtár `/includes` alkönyvtára tartalmazza. Egy Markdown-fájlban, amely felhasználja a beágyazott fájlt, a beágyazott fájlra való hivatkozás helyén egy megfelelő "include" Markdown-bővítményt kell elhelyezni.
 
-További útmutatást az [A Markdown használata – Beágyazás](how-to-write-use-markdown.md#includes) című szakaszban találhat.
+További iránymutatásokért lásd [A Markdown használata: Beágyazások](how-to-write-use-markdown.md#include-files) című témakört.
 
 ### <a name="markdown-file-template"></a>Markdown-fájlsablon
 
