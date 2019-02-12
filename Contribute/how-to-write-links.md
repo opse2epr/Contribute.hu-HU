@@ -4,17 +4,17 @@ description: Ebből a cikkből megtudhatja, hogyan hozhat létre más tartalmakr
 author: gewarren
 ms.author: gewarren
 ms.date: 10/31/2018
-ms.openlocfilehash: e56bc0fe3a5428af2a79641a8959b4da21270d53
-ms.sourcegitcommit: 44eb4f5ee65c1848d7f36fca107b296eb7687397
+ms.openlocfilehash: 9dc1b6dc2ac19b8f28a5a137817245f9a8c34eaf
+ms.sourcegitcommit: fbdd61ae4fb3761aec072732eefcbf2c2dca8011
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51609430"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55887252"
 ---
 # <a name="using-links-in-documentation"></a>Hivatkozások használata a dokumentációban
 Ebből a cikkből megtudhatja, hogyan használhat hivatkozásokat a docs.microsoft.com webhelyen közzétett lapokon. A hivatkozások Markdown jelölőnyelven való hozzáadása egyszerű: csupán néhány konvenciót kell követnie. A hivatkozások mutathatnak ugyanannak a lapnak egy másik részére, egy másik kapcsolódó lapra, illetve külső webhelyekre és URL-címekre.
 
-A docs.microsoft.com webhely háttérrendszere Open Publishing Services (OPS) szolgáltatást használ, mely a DocFX-stílusú Markdown (DFM) jelölőnyelvet implementálja. A DFM erősen kompatibilis a GitHub-stílusú Markdown (GFM) jelölőnyelvvel, és kiegészíti azt néhány további funkcióval Markdown-bővítmények segítségével.
+A docs.microsoft.com webhely háttérrendszere Open Publishing Services (OPS) szolgáltatást használ, mely támogatja a [Markdigen](https://github.com/lunet-io/markdig) keresztül értelmezett [CommonMark](https://commonmark.org/)-kompatibilis jelölőnyelvet, valamint a [DocFX Flavored Markdown (DFM)](https://dotnet.github.io/docfx/) jelölőnyelvet. Ezek a jelölőnyelv-változatok nagyrészt kompatibilisek a [GitHub Flavored Markdown (GFM)](https://help.github.com/categories/writing-on-github/) jelölőnyelvvel, mivel a legtöbb dokumentum a GitHubon van tárolva, és ott szerkeszthető. Ez néhány Markdown-bővítményeken keresztül hozzáadott funkcióval egészül ki.
 
 > [!IMPORTANT]
 > Minden hivatkozásnak biztonságosnak kell lennie (`https`, nem pedig `http`), ha a cél támogatja azt (az esetek többségében igen).
@@ -137,12 +137,12 @@ Ha a Microsoft tulajdonában lévő másik lapra mutató hivatkozást szeretne l
 
 A legjobb felhasználói környezet az, amely minimális szintre csökkenti a felhasználók másik webhelyre való küldését. Ezért a (néha valóban szükséges) külső webhelyekre mutató hivatkozásokat a következő információk alapján hozza létre:
 
-- **Felelősség:** Akkor hivatkozzon külső tartalomra, ha az külső fél megosztani kívánt információja. Például nem a Microsoft feladata tájékoztatni a felhasználókat az androidos fejlesztői eszközök használatának módjáról (illetve nem a Microsoft a megfelelő platform erre). Ez ugyanis a Google dolga. Ha szükséges, el tudjuk magyarázni az androidos fejlesztői eszközök *Azure-ral* való használatának módját, de a Google feladata ismertetni az eszközeik használatát.
-- **PM-jóváhagyás:** Külső tartalmakra való hivatkozáshoz kérje a Microsoft jóváhagyását. Az ilyen tartalomra mutató hivatkozás létrehozása az abba vetett bizalmunkról tanúskodik, és felelősségvállalást jelent arra az esetre, ha a felhasználók követik az ott szereplő utasításokat.
-- **Naprakészségi ellenőrzések:** Győződjön meg arról, hogy a harmadik féltől származó adatok még aktuálisak, pontosak és relevánsak, illetve hogy a hivatkozás nem módosult.
-- **Külső webhely:** Tudassa a felhasználókkal, hogy másik webhelyet keresnek fel. Ha a kontextusból nem derül ki világosan, biztosítson valamilyen tájékoztató szöveget. Példa: „Az előfeltételek közé tartoznak az androidos fejlesztői eszközök, amelyeket az Android Studio webhelyéről tölthet le.”
-- **Következő lépések:** Nyugodtan felvehet például egy Következő lépések című szakaszba egy MVP-blogra mutató hivatkozást. Itt is fontos tudatni a felhasználókkal, hogy elhagyják a webhelyet.
-- **Jogi szabályozás**: Jogi szempontból az összes ms.com-oldal láblécében szereplő **Használati feltételek** **külső felek webhelyeire mutató hivatkozásokról szóló szakasza** vonatkozik ránk.
+- **Felelősség**: Akkor hivatkozzon külső tartalomra, ha az külső fél megosztani kívánt információja. Például nem a Microsoft feladata tájékoztatni a felhasználókat az androidos fejlesztői eszközök használatának módjáról (illetve nem a Microsoft a megfelelő platform erre). Ez ugyanis a Google dolga. Ha szükséges, el tudjuk magyarázni az androidos fejlesztői eszközök *Azure-ral* való használatának módját, de a Google feladata ismertetni az eszközeik használatát.
+- **PM-jóváhagyás**: Külső tartalmakra való hivatkozáshoz kérje a Microsoft jóváhagyását. Az ilyen tartalomra mutató hivatkozás létrehozása az abba vetett bizalmunkról tanúskodik, és felelősségvállalást jelent arra az esetre, ha a felhasználók követik az ott szereplő utasításokat.
+- **Naprakészségi ellenőrzések**: Győződjön meg arról, hogy a harmadik féltől származó adatok még aktuálisak, pontosak és relevánsak, illetve hogy a hivatkozás nem módosult.
+- **Külső webhely**: Tudassa a felhasználókkal, hogy másik webhelyet keresnek fel. Ha a kontextusból nem derül ki világosan, biztosítson valamilyen tájékoztató szöveget. Példa: „Az előfeltételek közé tartoznak az androidos fejlesztői eszközök, amelyeket az Android Studio webhelyéről tölthet le.”
+- **Következő lépések**: Nyugodtan felvehet például egy Következő lépések című szakaszba egy MVP-blogra mutató hivatkozást. Itt is fontos tudatni a felhasználókkal, hogy elhagyják a webhelyet.
+- **Jogi tudnivalók**: Jogi szempontból az összes ms.com-oldal láblécében szereplő **Használati feltételek** **külső felek webhelyeire mutató hivatkozásokról szóló szakasza** vonatkozik ránk.
 
 ## <a name="links-to-msdn-or-technet"></a>Az MSDN vagy a TechNet webhelyére mutató hivatkozások
 
