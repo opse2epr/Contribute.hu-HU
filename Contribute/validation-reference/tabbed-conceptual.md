@@ -17,7 +17,7 @@ Nem kötelező függő lap:
 
 Példa egyszintű lapszakaszra két lappal és a lapcsoport elválasztójával (---):
 
-```
+```markdown
 # [Linux](#tab/linux)
 
 Content for Linux...
