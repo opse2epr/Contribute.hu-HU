@@ -1,19 +1,19 @@
 ---
-title: ms-date-invalid
-description: Magyarázat és megoldás a Docs ms-date-invalid buildelési problémájára
+title: ms-topic-invalid
+description: Magyarázat és megoldás a Docs ms-topic-invalid buildelési problémájára
 author: meganbradley
 ms.author: mbradley
 ms.topic: error-reference
-ms.date: 1/15/2019
+ms.date: 2/19/2019
 ms.prod: non-product-specific
-ms.openlocfilehash: e960bc2d8e9013e480f2bb391cdfa0c1da043b8b
+ms.openlocfilehash: e7b10f3f146ee33cd00bcd31d16b01e8d99f7134
 ms.sourcegitcommit: f374ad2607360f46d88982b4b7ecc63d3ab08235
 ms.translationtype: HT
 ms.contentlocale: hu-HU
 ms.lasthandoff: 02/20/2019
-ms.locfileid: "56431507"
+ms.locfileid: "56431669"
 ---
-# <a name="ms-date-invalid"></a>ms-date-invalid
+# <a name="ms-topic-invalid"></a>ms-topic-invalid
 
 **Hamarosan elérhető**
 
@@ -21,17 +21,13 @@ ms.locfileid: "56431507"
 
 ## <a name="suggestion"></a>Javaslat
 
-`Invalid value for ms.date: '{value}'. Must be a date in format MM/DD/YYYY.`
+`Invalid value for ms.topic: '{value}'.`
 
 ## <a name="resolution"></a>Megoldás
 
-Ellenőrizze a cikk naprakészségét és a tartalom helyességét, majd adjon hozzá érvényes dátumot HH/NN/ÉÉÉÉ formátumban:
+Adjon meg egy érvényes `ms.topic`-értéket, amely a cikk típusát jelzi.
 
-```yml
----
-ms.date: 02/19/2019
----
-```
+Az érvényes értékekről [a Microsoft egy belső webhelyén](https://docsmetadatatool.azurewebsites.net/whitelists) tájékozódhat.
 
 <!--make sure to add this file to your includes folder and verify the path-->
 [!INCLUDE [validation-reference-help](includes/validation-reference-help.md)]
