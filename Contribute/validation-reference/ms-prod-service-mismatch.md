@@ -6,12 +6,12 @@ ms.author: mbradley
 ms.topic: error-reference
 ms.date: 1/15/2019
 ms.prod: non-product-specific
-ms.openlocfilehash: 4a3cf8bc5435972f0442ca1d41d4147e1ea00d78
-ms.sourcegitcommit: 203ca15fda2d217f082c74ec648c1f1db323f9f1
+ms.openlocfilehash: a7de44e9930def2d2582194f28695e3ef3940541
+ms.sourcegitcommit: 42e5a6ae071826afc2a32a9b7150ca113b39afdf
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/04/2019
-ms.locfileid: "55713177"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57987615"
 ---
 # <a name="ms-prod-service-mismatch"></a>ms-prod-service-mismatch
 
@@ -31,7 +31,7 @@ Helyszíni termékek megadására használja az `ms.prod`, felhőszolgáltatáso
 
 Először győződjön meg róla, hogy a megfelelő szülőattribútumot (`ms.prod` vagy `ms.service`) választotta a cikkhez, majd adja hozzá a megfelelő gyermekmezőt egy érvényes párosított értékkel. Távolítsa el a további mezőket.
 
-Az érvényes értékekről [a Microsoft egy belső webhelyén](https://docsmetadatatool.azurewebsites.net/whitelists) tájékozódhat.
+Az érvényes értékekről [a Microsoft egy belső webhelyén](https://docsmetadatatool.azurewebsites.net/allowlists) tájékozódhat.
 
 <!--make sure to add this file to your includes folder and verify the path-->
 [!INCLUDE [validation-reference-help](includes/validation-reference-help.md)]

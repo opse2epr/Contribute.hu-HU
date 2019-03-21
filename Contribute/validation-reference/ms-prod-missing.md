@@ -6,12 +6,12 @@ ms.author: mbradley
 ms.topic: error-reference
 ms.date: 2/2/2019
 ms.prod: non-product-specific
-ms.openlocfilehash: ee29396a20345f6884a5bbc94aa25f48dafaff52
-ms.sourcegitcommit: 203ca15fda2d217f082c74ec648c1f1db323f9f1
+ms.openlocfilehash: 2578ab47dab315a446529d24357e9489d7fd0bad
+ms.sourcegitcommit: 42e5a6ae071826afc2a32a9b7150ca113b39afdf
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/04/2019
-ms.locfileid: "55713223"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57987698"
 ---
 # <a name="ms-prod-missing"></a>ms-prod-missing
 
@@ -29,7 +29,7 @@ Helyszíni termékek megadására használja az `ms.prod` attribútumot. Az `ms.
 
 Győződjön meg arról, hogy az Ön által megadott `ms.technology` érték a cikkének megfelelő, majd adja hozzá a megfelelő `ms.prod` értéket, amely érvényes szülőattribútum az `ms.technology` számára.
 
-Az érvényes értékekről [a Microsoft egy belső webhelyén](https://docsmetadatatool.azurewebsites.net/whitelists) tájékozódhat.
+Az érvényes értékekről [a Microsoft egy belső webhelyén](https://docsmetadatatool.azurewebsites.net/allowlists) tájékozódhat.
 
 <!--make sure to add this file to your includes folder and verify the path-->
 [!INCLUDE [validation-reference-help](includes/validation-reference-help.md)]
