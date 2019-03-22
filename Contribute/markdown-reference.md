@@ -6,12 +6,12 @@ ms.author: mbradley
 ms.date: 05/18/2018
 ms.topic: contributor-guide
 ms.prod: non-product-specific
-ms.openlocfilehash: 17bc6d3bf2de5077f490bea2f03cddf23d925b78
-ms.sourcegitcommit: 203ca15fda2d217f082c74ec648c1f1db323f9f1
+ms.openlocfilehash: b4ac631a4ebdf7daf00bc39be80fe2e479720392
+ms.sourcegitcommit: 42e5a6ae071826afc2a32a9b7150ca113b39afdf
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/04/2019
-ms.locfileid: "55712947"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57987882"
 ---
 # <a name="markdown-reference"></a>Markdown-referencia
 
@@ -90,7 +90,7 @@ A Docs a Markdown-fejlécek hat szintjét támogatja:
 
 ## <a name="html"></a>HTML
 
-Bár a Markdown támogatja a beágyazott HTML használatát, a Docsban való közzététel esetén nem ajánljuk a HTML használatát, mert néhány, korlátozott számú értéket kivéve általában buildelési hibákat és figyelmeztetéseket váltanak ki. <!--For more information, see HTML Whitelist. // do we want to add the whitelist? -->
+Bár a Markdown támogatja a beágyazott HTML használatát, a Docsban való közzététel esetén nem ajánljuk a HTML használatát, mert néhány, korlátozott számú értéket kivéve általában buildelési hibákat és figyelmeztetéseket váltanak ki.
 
 ## <a name="images"></a>Képek
 
@@ -110,7 +110,7 @@ A képeket egy `/media` elnevezésű mappában kell tárolni a dokumentumkészle
 - .jpg
 - .png
 
-Más képtípusok támogatását is biztosíthatja, ha erőforrásként hozzáadja őket a dokumentumkészlet docfx.json fájljához <!--add link to reference when available-->.
+Más képtípusok támogatását is biztosíthatja, ha erőforrásként hozzáadja őket a docfx.json fájlhoz,<!--add link to reference when available--> amely a dokumentumkészletben található.
 
 ## <a name="links"></a>Hivatkozások
 
@@ -169,7 +169,7 @@ Másik weblapra mutató URL-alapú hivatkozás (tartalmaznia kell a https:// el�
 
 ### <a name="bookmark-links"></a>Könyvjelző-hivatkozások
 
-Könyvjelző-hivatkozás egy másik, ugyanabban az adattárban lévő fájl egyik fejlécére:
+Könyvjelző-hivatkozás egy másik, ugyanabban az adattárban lévő fájl egyik fejlécére. Példa:
 
 ```markdown
 [Managed Disks](../../linux/overview.md#managed-disks)
@@ -181,7 +181,12 @@ Könyvjelző-hivatkozás az aktuális fájl egyik fejlécére:
 [Managed Disks](#managed-disks)
 ```
 
-Használja a kettőskeresztet, majd írja be a fejléc szövegét, írásjelek nélkül és a szóközöket alulvonásokkal helyettesítve.
+Használjon kettős keresztet (`#`), amelyet a fejléc szavai követnek. A fejléc szövegének hivatkozásszövegre való módosítása:
+- Csak kisbetűs karakterek használata
+- Központozás eltávolítása
+- Szóközök kötőjelekre cserélése
+
+Például ha a fejléc neve „2.2 biztonsági szempontok”, a könyvjelző hivatkozási szövege „#22-biztonsági-szempontok” lesz.
 
 ### <a name="explicit-anchor-links"></a>Explicit horgonyhivatkozások
 
@@ -230,7 +235,7 @@ Példák:
 - `<xref:System.String?displayProperty=nameWithType>`, megjelenítve „System.String”.
 - `[String class](xref:System.String)`, megjelenítve „String class”.
 
-Jelenleg a UID azonosítók megkeresésének nincs könnyű módszere. <!-- ? -->Egy API UID-azonosítójának megkeresésére a legjobb módszer, hogy megtekinti a hivatkozni kívánt API-lap forrását, és megkeresi az API-hoz tartozó ms.assetid-értéket. A forrásban az egyes túlterhelési értékek nem jelennek meg. Dolgozunk rajta, hogy a jövőben jobb rendszer álljon rendelkezésre.
+Jelenleg a UID azonosítók megkeresésének nincs könnyű módszere. <!-- ? -->Egy API UID azonosítójának megkeresésére jelenleg az a legjobb módszer, hogy megjeleníti a hivatkozni kívánt API-lap forrását, és megkeresi az ms.assetid értéket. A forrásban az egyes túlterhelési értékek nem jelennek meg. Dolgozunk rajta, hogy a jövőben jobb rendszer álljon rendelkezésre.
 
 Ha az UID-azonosító \`, \# vagy \* speciális karaktert tartalmaz, akkor az UID-értéket a `%60`, a `%23`, illetőleg a `%2A` karakterrel kell HTML-kódolásban megadni. Időnként előfordul a zárójelek kódolása, de ez nem kötelező.
 
@@ -336,7 +341,8 @@ A Következő lépés műveletekben bármilyen támogatott hivatkozásformát ha
 
 ## <a name="section-definition"></a>Szakaszdefiníció
 
-<!-- more info about this would be helpful! -->Előfordulhat, hogy szakaszokat kell definiálnia. Ezt a szintaxist többnyire kódtáblázatokhoz használják.
+<!-- more info about this would be helpful! -->
+Előfordulhat, hogy szakaszokat kell definiálnia. Ezt a szintaxist többnyire kódtáblázatokhoz használják.
 Tekintse meg az alábbi példát:
 
 ````
@@ -360,7 +366,8 @@ A fenti idézetblokk Markdown-szövege így jelenik meg:
 
 ## <a name="selectors"></a>Választómezők
 
-<!-- could be more clear! -->Ha ugyanahhoz a cikkhez különböző oldalakat szeretne kapcsolni, használjon választókat. Így az olvasók szabadon lépkedhetnek az oldalak között.
+<!-- could be more clear! -->
+Ha ugyanahhoz a cikkhez különböző oldalakat szeretne kapcsolni, használjon választókat. Így az olvasók szabadon lépkedhetnek az oldalak között.
 
 > [!NOTE]
 > Ez a bővítmény nem egyformán működik a docs.microsoft.com és az MSDN esetében. <!-- should we keep info about MSDN? If so say how they differ?-->

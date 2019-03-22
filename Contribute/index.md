@@ -12,9 +12,9 @@ ms.date: 02/19/2019
 
 A Microsoft számos dokumentumkészlete nyílt forrású, és a GitHubon elérhető. Vannak nem teljesen nyílt forrású dokumentumkészletek is, de sok rendelkezik nyilvánosan elérhető adattárakkal, ahol lekéréses kérelmeket indíthat. Ez leegyszerűsíti és javítja a termékfejlesztő mérnökök, a tartalomkészítő csapatok és az ügyfelek közötti kommunikációt. A nyílt munkavégzésnek több előnye is van:
 
-- A nyílt forrású adattáraknál a tervezés nyílt, hogy visszajelzést kapjanak, milyen dokumentumokra van a leginkább szükség.
-- A nyílt forrású adattáraknál az áttekintés nyílt, hogy már az első kiadásban a leghasznosabb tartalom jelenhessen meg.
-- Az nyílt forrású adattáraknál a frissítés nyílt, hogy egyszerűbb legyen a tartalom folyamatos javítása.
+- A nyílt forrású adattáraknál a _tervezés nyílt_, hogy visszajelzést kapjanak, milyen dokumentumokra van a leginkább szükség.
+- A nyílt forrású adattáraknál az _áttekintés nyílt_, hogy már az első kiadásban a leghasznosabb tartalom jelenhessen meg.
+- Az nyílt forrású adattáraknál a _frissítés nyílt_, hogy egyszerűbb legyen a tartalom folyamatos javítása.
 
 A [docs.microsoft.com](https://docs.microsoft.com) felhasználói felületén a [GitHub](https://github.com)-munkafolyamatok közvetlen integrációja ezt még egyszerűbbé teszi. Kezdje a [megtekintett dokumentum szerkesztésével](#quick-edits-to-existing-documents). Vagy segítsen [új témakörök áttekintésével](#review-open-prs) vagy [minőségi problémák jelentésével](#create-quality-issues).
 
@@ -25,9 +25,9 @@ A [docs.microsoft.com](https://docs.microsoft.com) felhasználói felületén a 
 
 ## <a name="quick-edits-to-existing-documents"></a>Meglévő dokumentumok gyors szerkesztése
 
-A gyors szerkesztésekkel leegyszerűsítő a jelentési folyamat, és javíthatók a dokumentum kisebb hibái és kihagyásai. Minden erőfeszítés ellenére kisebb nyelvtani vagy helyesírási hibák előfordulhatnak a közzétett dokumentumokban. Problémák jelzésével jelentheti a hibákat, de gyorsabb és egyszerűbb a probléma megoldásához lekéréses kérelmet (PR) létrehozni, ha ez a lehetőség is elérhető.
+A gyors szerkesztésekkel leegyszerűsítő a jelentési folyamat, és javíthatók a dokumentum kisebb hibái és kihagyásai. Minden erőfeszítés ellenére kisebb nyelvtani vagy helyesírási hibák _előfordulhatnak_ a közzétett dokumentumokban. Problémák jelzésével jelentheti a hibákat, de gyorsabb és egyszerűbb a probléma megoldásához lekéréses kérelmet (PR) létrehozni, ha ez a lehetőség is elérhető.
 
-1. Egyes dokumentumok oldalán lehetőség van közvetlenül a böngészőben is a tartalom szerkesztésére. Ilyen esetben az alábbi képen láthatóhoz hasonló **Szerkesztés** gomb is megjelenik az oldalon. Ha rákattint a **Szerkesztés** (vagy más nyelven ugyanilyen) gombra, akkor megnyílik a forrásfájl a GitHubon. Ha nem jelenik meg a **Szerkesztés** gomb (a ceruza ikon), az azt jelenti, hogy a dokumentum nem módosítható az oldalon.
+1. Egyes dokumentumok oldalán lehetőség van közvetlenül a böngészőben is a tartalom szerkesztésére. Ilyen esetben az alábbi képen láthatóhoz hasonló **Szerkesztés** gomb is megjelenik az oldalon. Ha rákattint a **Szerkesztés** (vagy más nyelven ugyanilyen) gombra, akkor megnyílik a forrásfájl a GitHubon. Ha nem jelenik meg a **Szerkesztés** gomb (a szöveg nélküli ceruza ikon), az azt jelenti, hogy a dokumentum nem módosítható az oldalon.
 
    ![Az Edit (Szerkesztés) hivatkozás helye](./media/index/edit-article.png)
 
@@ -46,7 +46,7 @@ A gyors szerkesztésekkel leegyszerűsítő a jelentési folyamat, és javíthat
 
    ![lekéréses kérelem létrehozása](media/index/create-pull-request.png)
 
-   Kattintson a **Lekéréses kérelem létrehozása** lehetőségre, a lekéréses kérelemhez adjon meg egy címet (és ha szeretné, leírást is), majd kattintson újra a **Lekéréses kérelem létrehozása** elemre.
+   Kattintson a **Lekéréses kérelem létrehozása** lehetőségre, a lekéréses kérelemhez adjon meg egy címet (és ha szeretné, leírást is), majd kattintson újra a **Lekéréses kérelem létrehozása** elemre. (Ha még nem ismeri a GitHubot, tekintse meg a [lekéréses kérelmeket ismertető](https://help.github.com/en/articles/about-pull-requests) cikket további információért.)
 
 6. Ennyi az egész! A tartalomcsapat tagjai át fogják tekinteni és egyesíteni fogják a lekéréses kérelmet. Ha nagyobb módosításokat végzett változtatásokat kérő visszajelzést kaphat.
 
@@ -72,7 +72,7 @@ Dokumentumainkat folyamatosan fejlesztjük. A jelzett problémák segítenek, ho
 
 A Microsoft dokumentációiban sok oldalon megtalálható egy **Visszajelzés** szakasz is az oldal alján, ahol egy kattintás után **Visszajelzést küldhet a termékről** vagy a **tartalomól**, és nyomon követheti a cikkel kapcsolatos problémákat is.
 
-A problémák jelzésével elindul a párbeszéd arról, hogy mire van szükség. A tartalomcsapat ezekre a jelzett problémákra a dokumentáció bővítésére vonatkozó ötletekkel fog válaszolni, és megkérdezi a véleményét. Vázlat létrehozásakor megkérjük, hogy [tekintse át a lekéréses kérelmet](#review-open-prs).
+A problémák jelzésével elindul a párbeszéd arról, hogy mire van szükség. A tartalomcsapat ezekre a jelzett problémákra a dokumentáció bővítésére vonatkozó ötletekkel fog válaszolni, és megkérdezi a véleményét. Vázlat létrehozásakor megkérjük, hogy [tekintse át a lekéréses kérelmet](#review-open-PRs).
 
 ## <a name="get-more-involved"></a>Vegyen részt még több mindenben
 

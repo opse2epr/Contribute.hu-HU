@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: fa7cd177f6c4a3c4862677dbfa89f63a91e7f464
+ms.sourcegitcommit: 42e5a6ae071826afc2a32a9b7150ca113b39afdf
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57987819"
+---
 # <a name="tabbed-conceptual"></a>Többlapos fogalmi tartalom
 
 > [!IMPORTANT]
@@ -58,13 +66,13 @@ Az alábbi ellenőrzések a lapszintaxisra vonatkoznak:
 - A függőségnek csak egy szintje engedélyezett.
 - Legalább két lapnak szerepelnie kell.
 - Legfeljebb négy lap használata engedélyezett.
-- A lapokat engedélyezni kell.
+- A lapokat jóvá kell hagyni.
 - A lap/azonosító pároknak érvényesnek kell lenniük.
 - Ugyanabban a lapcsoportban nem szerepelhet többször ugyanaz a lapazonosító.
 
-## <a name="tab-whitelist"></a>Engedélyezett lapok
+## <a name="approved-tabs"></a>Jóváhagyott lapok
 
-Az alábbi lapnév/lapazonosító párok vannak engedélyezve. A függő lapazonosítók nincsenek párosítva, de a lapazonosító oszlop alapján érvényesnek kell lenniük. Az értékek megkülönböztetik a kis- és nagybetűket
+Az alábbi lapnév/lapazonosító párok vannak jóváhagyva. A függő lapazonosítók nincsenek párosítva, de a lapazonosító oszlop alapján érvényesnek kell lenniük. Az értékek megkülönböztetik a kis- és nagybetűket
 
 |Lap neve              |Lap azonosítója            |
 |----------------------|------------------|
