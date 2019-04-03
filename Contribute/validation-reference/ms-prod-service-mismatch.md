@@ -6,16 +6,14 @@ ms.author: mbradley
 ms.topic: error-reference
 ms.date: 1/15/2019
 ms.prod: non-product-specific
-ms.openlocfilehash: a7de44e9930def2d2582194f28695e3ef3940541
-ms.sourcegitcommit: 42e5a6ae071826afc2a32a9b7150ca113b39afdf
+ms.openlocfilehash: a8d1698a4842ace0e5dd07db170f40a310c666a6
+ms.sourcegitcommit: 8e897e90268a8a87dc4b97d7c28d22ed5950c8d9
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57987615"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58636793"
 ---
 # <a name="ms-prod-service-mismatch"></a>ms-prod-service-mismatch
-
-**Hamarosan elérhető**
 
 [!INCLUDE [suggestion-note](includes/suggestion-note.md)]
 
