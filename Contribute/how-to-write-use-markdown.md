@@ -1,19 +1,18 @@
 ---
 title: A Markdown használata Docs-tartalmak írásához
 description: Ez a cikk alapvető információkat és tájékoztatást nyújt a docs.microsoft.com-cikkekben használt Markdown jelölőnyelvről.
-ms.date: 01/29/2019
-ms.openlocfilehash: 5235189d11c8c20ac20c91572d8bafcf525fb7c0
-ms.sourcegitcommit: fbdd61ae4fb3761aec072732eefcbf2c2dca8011
+ms.date: 03/26/2019
+ms.openlocfilehash: eeb49961fbf530676b55ae4e42d4fca7b8d7edf7
+ms.sourcegitcommit: 8e897e90268a8a87dc4b97d7c28d22ed5950c8d9
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55887298"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58637483"
 ---
 # <a name="how-to-use-markdown-for-writing-docs"></a>A Markdown használata Docs-tartalmak írásához
 
-A [docs.microsoft.com](http://docs.microsoft.com) cikkei a rendkívül egyszerű [Markdown](https://daringfireball.net/projects/markdown/) jelölőnyelv használatával készülnek, amely könnyen olvasható és könnyen elsajátítható. Ez az oka, hogy rövid idő alatt iparági szabvánnyá vált.
+A [docs.microsoft.com](http://docs.microsoft.com) cikkei a rendkívül egyszerű [Markdown](https://daringfireball.net/projects/markdown/) jelölőnyelv használatával készülnek, amely könnyen olvasható és könnyen elsajátítható. Ez az oka, hogy rövid idő alatt iparági szabvánnyá vált. A Docs-webhely a Markdown [Markdig változatát](#markdown-flavor) használja.
 
-A docs.microsoft.com webhely háttérrendszere Open Publishing Services (OPS) szolgáltatást használ, mely támogatja a [Markdigen](https://github.com/lunet-io/markdig) keresztül értelmezett [CommonMark](https://commonmark.org/)-kompatibilis jelölőnyelvet, valamint a [DocFX Flavored Markdown (DFM)](https://dotnet.github.io/docfx/) jelölőnyelvet. Ezek a jelölőnyelv-változatok nagyrészt kompatibilisek a [GitHub Flavored Markdown (GFM)](https://help.github.com/categories/writing-on-github/) jelölőnyelvvel, mivel a legtöbb dokumentum a GitHubon van tárolva, és ott szerkeszthető. Ez néhány Markdown-bővítményeken keresztül hozzáadott funkcióval egészül ki.
 
 ## <a name="markdown-basics"></a>A Markdown alapjai
 
@@ -162,7 +161,6 @@ az alábbi módon jelenik meg:
 
 További információ a táblázatok létrehozásáról:
 
-- A Markdig széles táblázatok formázását segítő [táblázatbehatárolási funkcióját](#table-wrapping) ismertető szakasz.
 - Az [Információk rendszerezése táblázatokkal](https://help.github.com/articles/organizing-information-with-tables/) című GitHub-cikk.
 - A [Markdown Tables Generator](https://www.tablesgenerator.com/markdown_tables) webalkalmazás.
 - [Adam Pritchard: Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#wiki-tables) (Markdown-segédlet).
@@ -207,6 +205,7 @@ Ezekhez a nyelvekhez a rendszer támogatja a névformázást, és legtöbbjük e
 |AzCopy|azcopy|
 |Azure CLI|azurecli|
 |Azure PowerShell|azurepowershell|
+|Bash|bash|
 |C++|cpp|
 |C++/CX|cppcx|
 |C++/WinRT|cppwinrt|
@@ -430,6 +429,10 @@ Ezen írásjelek „intelligens” verzióinak kódolásai a következők:
 Helyőrzők jelölésére általában csúcsos zárójeleket alkalmazunk. Ha ezt szövegben használja (és nem kódban), a csúcsos zárójelet kódolnia kell. Ellenkező esetben a Markdown úgy fogja értelmezni, hogy HTML-címkének szánták őket.
 
 A `<script name>` kódolása például a következő: `&lt;script name&gt;`
+
+## <a name="markdown-flavor"></a>Markdown-változat
+
+A docs.microsoft.com webhely háttérrendszere Open Publishing Services (OPS) szolgáltatást használ, mely támogatja a [Markdig](https://github.com/lunet-io/markdig) elemzési motoron keresztül értelmezett [CommonMark](https://commonmark.org/)-kompatibilis jelölőnyelvet. Ez a jelölőnyelv-változat nagyrészt kompatibilis a [GitHub Flavored Markdown (GFM)](https://help.github.com/categories/writing-on-github/) jelölőnyelvvel, mivel a legtöbb dokumentum a GitHubon van tárolva, és ott szerkeszthető. Ez néhány Markdown-bővítményeken keresztül hozzáadott funkcióval egészül ki.
 
 ## <a name="see-also"></a>Lásd még:
 

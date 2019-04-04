@@ -1,16 +1,21 @@
 ---
 title: Microsoft Docs-közreműködői útmutató – áttekintés
-description: 'Ez az útmutató bemutatja, hogyan működhet közre a Microsoft dokumentációs webhelyén, a docs.microsoft.com-on.'
+description: Ez az útmutató bemutatja, hogyan működhet közre a Microsoft dokumentációs webhelyén, a docs.microsoft.com-on.
 author: billwagner
 ms.author: wiwagn
 ms.date: 02/19/2019
+ms.openlocfilehash: 9b091f864f5191c9f7a00900ec11a4a1cffdb698
+ms.sourcegitcommit: af37d44eb67daa2841959817cd205ec95db18cec
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58653505"
 ---
-
 # <a name="microsoft-docs-contributor-guide-overview"></a>Microsoft Docs-közreműködői útmutató – áttekintés
 
 Üdvözöljük a [docs.microsoft.com](https://docs.microsoft.com) (más néven Docs) Közreműködői útmutatójában!!
 
-A Microsoft számos dokumentumkészlete nyílt forrású, és a GitHubon elérhető. Vannak nem teljesen nyílt forrású dokumentumkészletek is, de sok rendelkezik nyilvánosan elérhető adattárakkal, ahol lekéréses kérelmeket indíthat. Ez leegyszerűsíti és javítja a termékfejlesztő mérnökök, a tartalomkészítő csapatok és az ügyfelek közötti kommunikációt. A nyílt munkavégzésnek több előnye is van:
+A Microsoft számos dokumentumkészlete nyílt forrású, és a GitHubon elérhető. Nem minden dokumentumkészlet teljesen nyílt forrású, de sok rendelkezik nyilvánosan elérhető adattárakkal, ahol Ön javasolt módosításokat végezhet lekéréses kérelmekkel. Ez a nyílt forráskódú megközelítés leegyszerűsíti és javítja a termékfejlesztő mérnökök, a tartalomkészítő csapatok és az ügyfelek közötti kommunikációt, valamint további előnyökkel szolgál:
 
 - A nyílt forrású adattáraknál a _tervezés nyílt_, hogy visszajelzést kapjanak, milyen dokumentumokra van a leginkább szükség.
 - A nyílt forrású adattáraknál az _áttekintés nyílt_, hogy már az első kiadásban a leghasznosabb tartalom jelenhessen meg.
@@ -72,7 +77,7 @@ Dokumentumainkat folyamatosan fejlesztjük. A jelzett problémák segítenek, ho
 
 A Microsoft dokumentációiban sok oldalon megtalálható egy **Visszajelzés** szakasz is az oldal alján, ahol egy kattintás után **Visszajelzést küldhet a termékről** vagy a **tartalomól**, és nyomon követheti a cikkel kapcsolatos problémákat is.
 
-A problémák jelzésével elindul a párbeszéd arról, hogy mire van szükség. A tartalomcsapat ezekre a jelzett problémákra a dokumentáció bővítésére vonatkozó ötletekkel fog válaszolni, és megkérdezi a véleményét. Vázlat létrehozásakor megkérjük, hogy [tekintse át a lekéréses kérelmet](#review-open-PRs).
+A problémák jelzésével elindul a párbeszéd arról, hogy mire van szükség. A tartalomcsapat ezekre a jelzett problémákra a dokumentáció bővítésére vonatkozó ötletekkel fog válaszolni, és megkérdezi a véleményét. Vázlat létrehozásakor megkérjük, hogy [tekintse át a lekéréses kérelmet](#review-open-prs).
 
 ## <a name="get-more-involved"></a>Vegyen részt még több mindenben
 
