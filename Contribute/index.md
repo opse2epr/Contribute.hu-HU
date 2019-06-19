@@ -13,7 +13,7 @@ ms.locfileid: "58653505"
 ---
 # <a name="microsoft-docs-contributor-guide-overview"></a>Microsoft Docs-közreműködői útmutató – áttekintés
 
-Üdvözöljük a [docs.microsoft.com](https://docs.microsoft.com) (más néven Docs) Közreműködői útmutatójában!!
+Üdvözöljük a [docs.microsoft.com](https://docs.microsoft.com) (más néven Docs) közreműködői útmutatójában!
 
 A Microsoft számos dokumentumkészlete nyílt forrású, és a GitHubon elérhető. Nem minden dokumentumkészlet teljesen nyílt forrású, de sok rendelkezik nyilvánosan elérhető adattárakkal, ahol Ön javasolt módosításokat végezhet lekéréses kérelmekkel. Ez a nyílt forráskódú megközelítés leegyszerűsíti és javítja a termékfejlesztő mérnökök, a tartalomkészítő csapatok és az ügyfelek közötti kommunikációt, valamint további előnyökkel szolgál:
 
@@ -30,7 +30,7 @@ A [docs.microsoft.com](https://docs.microsoft.com) felhasználói felületén a 
 
 ## <a name="quick-edits-to-existing-documents"></a>Meglévő dokumentumok gyors szerkesztése
 
-A gyors szerkesztésekkel leegyszerűsítő a jelentési folyamat, és javíthatók a dokumentum kisebb hibái és kihagyásai. Minden erőfeszítés ellenére kisebb nyelvtani vagy helyesírási hibák _előfordulhatnak_ a közzétett dokumentumokban. Problémák jelzésével jelentheti a hibákat, de gyorsabb és egyszerűbb a probléma megoldásához lekéréses kérelmet (PR) létrehozni, ha ez a lehetőség is elérhető.
+A gyors szerkesztésekkel leegyszerűsíthető a jelentési folyamat, és javíthatók a dokumentum kisebb hibái és hiányosságai. Minden erőfeszítés ellenére kisebb nyelvtani vagy helyesírási hibák _előfordulhatnak_ a közzétett dokumentumokban. Problémák jelzésével jelentheti a hibákat, de gyorsabb és egyszerűbb a probléma megoldásához lekéréses kérelmet (PR) létrehozni, ha ez a lehetőség is elérhető.
 
 1. Egyes dokumentumok oldalán lehetőség van közvetlenül a böngészőben is a tartalom szerkesztésére. Ilyen esetben az alábbi képen láthatóhoz hasonló **Szerkesztés** gomb is megjelenik az oldalon. Ha rákattint a **Szerkesztés** (vagy más nyelven ugyanilyen) gombra, akkor megnyílik a forrásfájl a GitHubon. Ha nem jelenik meg a **Szerkesztés** gomb (a szöveg nélküli ceruza ikon), az azt jelenti, hogy a dokumentum nem módosítható az oldalon.
 
@@ -43,19 +43,19 @@ A gyors szerkesztésekkel leegyszerűsítő a jelentési folyamat, és javíthat
 
 3. Végezze el a módosításokat a webszerkesztőben. A módosítás formázásának ellenőrzéséhez kattintson a **Preview changes** (Módosítások előnézete) fülre.
 
-4. Miután elvégezte a módosításokat görgessen a lap aljára. Adja meg a módosítás címét és leírását, majd kattintson a **Propose file change** (Fájlmódosítás javasolása) elemre az alábbi ábrának megfelelően:
+4. Miután elvégezte a módosításokat, görgessen a lap aljára. Adja meg a módosítás címét és leírását, majd kattintson a **Propose file change** (Fájlmódosítás javasolása) elemre az alábbi ábrának megfelelően:
 
    ![Fájlmódosítás javasolása](./media/index/submit-pull-request.png)
 
-5. A módosításjavaslat után arra kell kérnie a tárház tulajdonosait, hogy „kérjék le” (angolul pull) a módosításokat a tárházukba. Ezt a lekéréses kérelem (angolul pull request) használatával teheti meg. Amikor a fenti **Fájlmódosítás javasolása** lehetősége kattintott, akkor az alábbi képen láthatóhoz hasonló oldalra került:
+5. A módosításjavaslat után arra kell kérnie a tárház tulajdonosait, hogy „kérjék le” (angolul pull) a módosításokat a tárházukba. Ezt a lekéréses kérelem (angolul pull request) használatával teheti meg. Amikor a fenti **Propose file change** (Fájlmódosítás javasolása) lehetősége kattintott, akkor az alábbi képen láthatóhoz hasonló oldalra került:
 
    ![lekéréses kérelem létrehozása](media/index/create-pull-request.png)
 
-   Kattintson a **Lekéréses kérelem létrehozása** lehetőségre, a lekéréses kérelemhez adjon meg egy címet (és ha szeretné, leírást is), majd kattintson újra a **Lekéréses kérelem létrehozása** elemre. (Ha még nem ismeri a GitHubot, tekintse meg a [lekéréses kérelmeket ismertető](https://help.github.com/en/articles/about-pull-requests) cikket további információért.)
+   Kattintson a **Create pull request** (Lekéréses kérelem létrehozása) lehetőségre, a lekéréses kérelemhez adjon meg egy címet (és ha szeretné, leírást is), majd kattintson újra a **Create pull request** (Lekéréses kérelem létrehozása) elemre. (Ha még nem ismeri a GitHubot, tekintse meg a [lekéréses kérelmeket ismertető](https://help.github.com/en/articles/about-pull-requests) cikket további információért.)
 
-6. Ennyi az egész! A tartalomcsapat tagjai át fogják tekinteni és egyesíteni fogják a lekéréses kérelmet. Ha nagyobb módosításokat végzett változtatásokat kérő visszajelzést kaphat.
+6. Ennyi az egész! A tartalomcsapat tagjai át fogják tekinteni és egyesíteni fogják a lekéréses kérelmet. Ha nagyobb módosításokat végzett, változtatásokat kérő visszajelzést kaphat.
 
-A GitHub szerkesztői felhasználói felülete az adattárban meglévő engedélyeinek megfelelő választ ad. Az előző képek olyan közreműködő esetén pontosak, akinek nincsenek írási jogosultságai a céladatbázisban. A GitHub automatikusan létrehoz egy adattármásolatot a céladattárról a fiókjában. Ha írási engedélye van a céladattárban, a GitHub létrehoz egy új ágat a céladattárban. Az ág nevének formátuma **\<GitHubAzonosító\>-javítás-n** a GitHub-azonosítót és egy számazonosítót használva a javítóághoz.
+A GitHub szerkesztői felülete az adattárhoz tartozó engedélyeknek megfelelő választ ad. Az előző képek olyan közreműködő esetén pontosak, akinek nincsenek írási jogosultságai a céladatbázisban. A GitHub automatikusan létrehoz egy adattármásolatot a céladattárról az Ön fiókjában. Ha Önnek írási engedélye van a céladattárhoz, a GitHub létrehoz egy új ágat a céladattárban. Az ág nevének formátuma **\<GitHubAzonosító\>-patch-n**, ami a GitHub-azonosítót tartalmazza, valamint a javítóág számazonosítóját.
 
 Minden módosításhoz lekéréses kérelmeket használunk, még az írási engedéllyel rendelkező közreműködőknél is. A legtöbb adattárban a `master` ág védett, ezért a frissítéseket lekéréses kérelemként kell beküldeni.
 
@@ -63,8 +63,8 @@ A böngészőn belüli szerkesztési környezet kisebb vagy ritka módosítások
 
 > [!NOTE]
 > Ha ez a lehetőség engedélyezve van, akkor **bármilyen nyelvű** cikket módosíthat, és a szerkesztés típusától függően a következő történik majd:
-> 1. minden jóváhagyott nyelvi módosítás hozzájárul a gépi fordítási motorunk fejlesztéséhez is
-> 2. az olyan módosítások, amelyek jelentős mértékben megváltoztatják a cikk tartalmát, belsőleg lesznek kezelve, melynek során a módosítást ugyanannak a cikknek az angol nyelvű változatához is elküldjük, így az minden nyelvre lokalizálva lesz, ha a módosítást jóváhagyják.
+> 1. Minden jóváhagyott nyelvi módosítás hozzájárul a gépi fordítási motorunk fejlesztéséhez is.
+> 2. Az olyan módosítások, amelyek jelentős mértékben megváltoztatják a cikk tartalmát, belsőleg lesznek kezelve, melynek során a módosítást ugyanannak a cikknek az angol nyelvű változatán is alkalmazzuk, így az minden nyelvre lokalizálva lesz, ha a módosítást jóváhagyják.
 > Így a javasolt módosítások nem csak a saját nyelvén, de minden elérhető nyelven is megjelennek a cikkeknél.
 
 ## <a name="review-open-prs"></a>Nyitott lekéréses kérelmek áttekintése
@@ -75,7 +75,7 @@ A jelenleg nyitott lekéréses kérelmek átnézésével elolvashatja az új té
 
 Dokumentumainkat folyamatosan fejlesztjük. A jelzett problémák segítenek, hogy erőfeszítéseinket a közösség számára legfontosabb dolgokra összpontosítsuk. Minél több részletet meg tud adni, annál nagyobb segítségünkre lesz a probléma. Mondja el, milyen információt keresett. Írja le a használt keresési kifejezéseket. Ha nem tudta megtenni az első lépéseket, mondja el, hogyan szeretné elkezdeni egy új technológia felfedezését.
 
-A Microsoft dokumentációiban sok oldalon megtalálható egy **Visszajelzés** szakasz is az oldal alján, ahol egy kattintás után **Visszajelzést küldhet a termékről** vagy a **tartalomól**, és nyomon követheti a cikkel kapcsolatos problémákat is.
+Sok Microsoft-dokumentum oldalán található egy **Visszajelzés** szakasz is az oldal alján, ahol egy kattintás után **visszajelzést küldhet a termékről** vagy a **tartalomól**, és nyomon követheti a cikkel kapcsolatos problémákat is.
 
 A problémák jelzésével elindul a párbeszéd arról, hogy mire van szükség. A tartalomcsapat ezekre a jelzett problémákra a dokumentáció bővítésére vonatkozó ötletekkel fog válaszolni, és megkérdezi a véleményét. Vázlat létrehozásakor megkérjük, hogy [tekintse át a lekéréses kérelmet](#review-open-prs).
 
