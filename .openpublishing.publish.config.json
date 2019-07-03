@@ -19,18 +19,20 @@
     }
   ],
   "notification_subscribers": [],
+  "sync_notification_subscribers": [],
   "branches_to_filter": [
     "live",
     "master"
   ],
+  "git_repository_url_open_to_public_contributors": "https://github.com/MicrosoftDocs/Contribute.hu-hu",
+  "git_repository_branch_open_to_public_contributors": "live",
   "continue_with_document_error": true,
   "skip_source_output_uploading": false,
   "need_preview_pull_request": true,
-	"contribution_branch_mappings": {
-		       "live-sxs": "live"
+  "need_pr_comments": false,
+  "contribution_branch_mappings": {
+    "live-sxs": "live"
   },
-  "git_repository_url_open_to_public_contributors": "https://github.com/MicrosoftDocs/Contribute.hu-hu",
-  "git_repository_branch_open_to_public_contributors": "live",
   "dependent_repositories": [
     {
       "path_to_root": "_themes",
@@ -40,7 +42,7 @@
     },
     {
       "path_to_root": "_repo.en-us",
-      "url": "https://github.com/MicrosoftDocs/Contribute",
+      "url": "https://github.com/opse2epr/Contribute",
       "branch": "live",
       "branch_mapping": {
         "live": "live",
