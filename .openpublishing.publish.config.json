@@ -4,15 +4,22 @@
       "docset_name": "ContributionGuide",
       "build_source_folder": "Contribute",
       "build_output_subfolder": "ContributionGuide",
-      "locale": "hu-HU",
+      "locale": "hu-hu",
       "monikers": [],
       "moniker_ranges": [],
       "open_to_public_contributors": false,
+      "type_mapping": {
+        "Conceptual": "Content",
+        "ManagedReference": "Content",
+        "RestApi": "Content",
+        "ZonePivotGroups": "Toc"
+      },
       "build_entry_point": "docs",
       "template_folder": "_themes"
     }
   ],
   "notification_subscribers": [],
+  "sync_notification_subscribers": [],
   "branches_to_filter": [
     "live-sxs",
     "master-sxs"
@@ -20,17 +27,18 @@
   "continue_with_document_error": true,
   "skip_source_output_uploading": false,
   "need_preview_pull_request": true,
+  "need_pr_comments": false,
   "contribution_branch_mappings": {},
   "dependent_repositories": [
     {
       "path_to_root": "_themes",
-      "url": "https://github.com/Microsoft/templates.docs.msft.hu-HU",
+      "url": "https://github.com/Microsoft/templates.docs.msft.hu-hu",
       "branch": "master",
       "branch_mapping": {}
     },
     {
       "path_to_root": "_repo.en-us",
-      "url": "https://github.com/MicrosoftDocs/Contribute",
+      "url": "https://github.com/opse2epr/Contribute",
       "branch": "live",
       "branch_mapping": {
         "live": "live",
