@@ -22,7 +22,8 @@
   "sync_notification_subscribers": [],
   "branches_to_filter": [
     "live",
-    "master"
+    "master",
+    "docs-build-v3"
   ],
   "git_repository_url_open_to_public_contributors": "https://github.com/MicrosoftDocs/Contribute.hu-hu",
   "git_repository_branch_open_to_public_contributors": "live",
@@ -31,7 +32,8 @@
   "need_preview_pull_request": true,
   "need_pr_comments": false,
   "contribution_branch_mappings": {
-    "live-sxs": "live"
+    "live-sxs": "live",
+    "docs-build-v3-sxs":"docs-build-v3"
   },
   "dependent_repositories": [
     {
