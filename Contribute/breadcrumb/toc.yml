@@ -1,7 +1,5 @@
 - name: Docs
   href: /
-  homepage: /
   items:
     - name: Közreműködői útmutató
       href: /contribute/
-      homepage: /contribute/
