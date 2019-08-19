@@ -47,7 +47,7 @@
       "branch_mapping": {
         "live": "live",
         "master": "master",
-        "docs-build-v3-loc-sxs": "docs-build-v3-loc"
+        "docs-build-v3-loc-sxs": "master"
       }
     }
   ],
